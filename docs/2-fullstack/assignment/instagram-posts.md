@@ -13,7 +13,7 @@ We will build on the previous exercise to incorporate file uploads and store dat
 
 ## Setup
 
-1. Start with the code we wrote in the previous exercise in our forked and cloned copy of the <a href="https://github.com/rocketacademy/instagram-3.2" target="_blank">Instagram starter repo</a>.
+1. Start with the code we wrote in the previous exercise in our forked and cloned copy of the <a href="https://github.com/SkillsUnion/instagram-base-app" target="_blank">Instagram starter repo</a>.
 2. Set up Firebase Storage in the repo as per the <a href="https://firebase.google.com/docs/storage/web/start" target="_blank">official Firebase documentation</a>
    1. Start from "Create a default Cloud Storage bucket"; we just completed the prerequisite in the previous step
       1. Choose "Start in Test mode" when setting up Cloud Storage to avoid setting up security rules for now. We will address this after learning Firebase Authentication.

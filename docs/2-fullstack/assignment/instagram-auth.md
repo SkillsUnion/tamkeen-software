@@ -13,7 +13,7 @@ We will build on the previous exercise to incorporate authentication and user in
 
 ## Setup
 
-1. Start with the code we wrote in the previous exercise in our forked and cloned copy of the <a href="https://github.com/rocketacademy/instagram-3.2" target="_blank">Rocket Academy Instagram starter repo</a>
+1. Start with the code we wrote in the previous exercise in our forked and cloned copy of the <a href="https://github.com/SkillsUnion/instagram-base-app" target="_blank">Rocket Academy Instagram starter repo</a>
 2. Set up Firebase Authentication in our local `firebase.jsx` as per the <a href="https://firebase.google.com/docs/auth/web/start" target="_blank">official Firebase documentation</a>
    1. Under "Add and initialize the Authentication SDK", we will need to import `getAuth` and export a named export with the Auth object, like `export const auth = getAuth(firebaseApp);`
    2. Skip "(Optional) Prototype and test with Firebase Local Emulator Suite" and everything below it for now; that content will be covered in the next step.

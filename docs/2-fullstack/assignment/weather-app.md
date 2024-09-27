@@ -13,7 +13,7 @@ We will build a weather app that shows the latest weather forecast for a city th
 
 ## Setup
 
-1. Fork and clone the <a href="https://github.com/rocketacademy/weather-app-3.2" target="_blank">Rocket Academy Weather App Repo</a>
+1. Fork and clone the <a href="https://github.com/SkillsUnion/weather-app-base" target="_blank">Rocket Academy Weather App Repo</a>
 2. <a href="https://home.openweathermap.org/users/sign_up" target="_blank">Create an Open Weather account</a> to access Open Weather's free weather API. After confirming your email you will receive an API key to use to make API requests. <mark style="color:red;">**This can take up to 24 hours so please do this during pre-class.**</mark>
 
 ## Base: Show current weather for user-provided city

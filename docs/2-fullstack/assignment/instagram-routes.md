@@ -14,7 +14,7 @@ We will build on previous Instagram exercises to incorporate React Router and cr
 
 ## Setup
 
-1. Start with the code we wrote in the previous exercise in our forked and cloned copy of the <a href="https://github.com/rocketacademy/instagram-3.2" target="_blank">Instagram starter repo</a>
+1. Start with the code we wrote in the previous exercise in our forked and cloned copy of the <a href="https://github.com/SkillsUnion/instagram-base-app" target="_blank">Instagram starter repo</a>
 2. Set up React Router in our repo as per the official <a href="https://reactrouter.com/en/6.18.0/start/overview#nested-routes" target="_blank">React Router documentation</a>
 3. Practice safe sharing, create implement your .env so that you do not share your Firebase credentials online when pushing to GitHub.
 

@@ -13,7 +13,7 @@ This is the first of multiple exercises culminating in an Instagram clone. We st
 
 ## Setup
 
-1. Fork and clone the <a href="https://github.com/rocketacademy/instagram-3.2" target="_blank">Rocket Academy Instagram starter repo</a>
+1. Fork and clone the <a href="https://github.com/SkillsUnion/instagram-base-app" target="_blank">Rocket Academy Instagram starter repo</a>
    1. Run `npm install` to install packages in `package.json` after cloning
 2. <a href="https://firebase.google.com/docs/web/setup" target="_blank">Add Firebase to our project</a>
    1. Please follow the text and not the video instructions on the Firebase docs page because the video demonstrates creating a Firebase app from scratch, not with Rocket's starter repo that includes starter code from Vitejs.
