@@ -26,7 +26,7 @@ In Instagram Auth we created an `AuthForm` component that renders instead of the
 
 Now that we will use Links and Routes to navigate between our auth form and news feed, we no longer need `shouldRenderAuthForm` state and the `toggleAuthForm` method to determine whether to render the auth form. We can remove all mentions of `shouldRenderAuthForm` and `toggleAuthForm` from `App`, and update `toggleAuthForm` usage to either a React Router `Link` to `/authform` or `useNavigate`/`navigate` to `/` after auth form submission.
 
-You may remember that we cannot use React Hooks in class components. There is no need to rewrite all of our components to be functional components, but we will need to rewrite ones such as `AuthForm` that need the React Router `useNavigate` hook.&#x20;
+You may remember that we cannot use React Hooks in class components. There is no need to rewrite all of our components to be functional components, but we will need to rewrite ones such as `AuthForm` that need the React Router `useNavigate` hook.
 
 ## Comfortable: Dedicated page and route for each post
 

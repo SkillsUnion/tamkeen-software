@@ -13,7 +13,7 @@ We will build a weather app that shows the latest weather forecast for a city th
 
 ## Setup
 
-1. Fork and clone the <a href="https://github.com/SkillsUnion/weather-app-base" target="_blank">Rocket Academy Weather App Repo</a>
+1. Fork and clone the <a href="https://github.com/SkillsUnion/weather-app-base" target="_blank"> Weather App Repo</a>
 2. <a href="https://home.openweathermap.org/users/sign_up" target="_blank">Create an Open Weather account</a> to access Open Weather's free weather API. After confirming your email you will receive an API key to use to make API requests. <mark style="color:red;">**This can take up to 24 hours so please do this during pre-class.**</mark>
 
 ## Base: Show current weather for user-provided city
@@ -128,4 +128,4 @@ Deploy your app to the internet, follow Vitejs GitHub Pages <a href="https://vit
 
 >**Use HTTPS URLs for API requests for deployment**
 >
->HTTPS sites can only make HTTPS requests and not HTTP requests. To deploy our app to GitHub Pages, update all API URLs in our app to use HTTPS instead of HTTP (i.e. `https://myurl.com` instead of `http://myurl.com`. Open Weather Geocoding and Weather Icons docs share HTTP links, but luckily they both also support HTTPS.
+>HTTPS sites can only make HTTPS requests and not HTTP requests. To deploy our app to GitHub Pages, update all API URLs in our app to use HTTPS instead of HTTP (i.e. `https://myurl.com` instead of `http://myurl.com`). Open Weather Geocoding and Weather Icons docs share HTTP links, but luckily they both also support HTTPS.
