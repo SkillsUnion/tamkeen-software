@@ -1,6 +1,6 @@
 ## Lesson Objectives
 
-- Understand the Role of Constructors and explain its function in initializing objects in Java.
+- Understand the role of Constructors and explain its function in initializing objects in Java.
 
 - Write and implement both default and parameterized constructors in Java classes.
 
