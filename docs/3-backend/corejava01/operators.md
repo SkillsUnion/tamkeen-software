@@ -135,6 +135,7 @@ compoundSub -= 5;
 System.out.println("compoundSub: " + compoundSub);
 System.out.println();
 ```
+
 ## Relational Operators
 
 | Operator               | Description                                             | Example |
@@ -153,7 +154,6 @@ System.out.println("a > b: " + (a > b));
 System.out.println("a >= b: " + (a >= b));
 System.out.println("a < b: " + (a < b));
 System.out.println("a <= b: " + (a <= b));
-
 ```
 ## Logical/Conditional Operators
 
