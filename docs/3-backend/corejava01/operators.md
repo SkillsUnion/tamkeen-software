@@ -1,5 +1,6 @@
+# Operators 
 
-# Lesson Objectives
+## Lesson Objectives
 - Understand what operators are and their purpose in performing various operations on variables and values.
 
 - Learn about the four category of operators (arithmetic, assignment, comparison, logical) and write programs to demonstrate the usage.
@@ -7,7 +8,7 @@
 - Understand Operator Precedence and Associativity
 
 
-# Operators
+## Introduction
 Operators are symbols that perform operations on variables and values.
 
 The basic types of operators:
@@ -40,14 +41,7 @@ public class LearnOperators {
 | `%`                   | Remainder                                               | x%y             |
 
 
-
-
-|
-|
-
-
-
-## Notes:
+### Notes
 
  `+` is also used to concatenate strings e.g. "Hello" + "World"
   becomes "HelloWorld".
@@ -68,9 +62,6 @@ System.out.println("b % a = " + (b % a));
 | `++`                   | Increment                                               | ++x             |
 | `--`                   | Decrement                                               | --x             |
 | `!`                    | Not                                                     | !x              |
-
-
-
 
 ```java
 
@@ -180,7 +171,7 @@ System.out.println("!value1: " + (!value1));
 System.out.println(a > b ? "a is larger" : "b is larger");
 ```
 
-### Type Comparison Operator
+## Type Comparison Operator
 
 |  Operator  |    Example     |
 | :--------: | :------------: |
@@ -193,7 +184,7 @@ String name = "John";
 System.out.println("name is String?" + name instanceof String);
 ```
 
-### Operator Precedence
+## Operator Precedence
 
 Operator precedence determines the order in which operators are evaluated. Operators with higher precedence are evaluated first.
 

@@ -1,6 +1,8 @@
-# Lesson Objectives
+# Control Flow Statements
 
-- Learn differences between sequential execution, conditional (branching), and iterative (looping) control flow in Java.
+## Lesson Objectives
+
+- Learn differences between sequential execution, conditional , and iterative control flow in Java.
 
 - Implement Conditional Statements :if, if-else, switch in Java programs.
 
@@ -8,26 +10,23 @@
 
 - Use Break and Continue Statements to control the flow within loops and switch cases.
 
-
-
-
-##  Control Flow Statements
+## Introduction
 
 Control flow or conditional statements allow programs alter their outputs given different inputs.
 
 The control flow statements:
 
-1. Decision Making Statements
+### 1. Decision Making Statements
 
 - if else
 - switch
 
-2. Loop Statements
+### 2. Loop Statements
 
 - for
 - while / do while
 
-3. Jump/Branching Statements
+### 3. Jump/Branching Statements
 
 - break
 - continue
@@ -45,7 +44,7 @@ public class LearnControlFlow {
 }
 ```
 
-### `if else`
+## `if else`
 
 ```java
 if(budget > expense) {
@@ -92,7 +91,7 @@ if(age > 18) {
 }
 ```
 
-### On Comparing `String` Variables
+## On Comparing `String` Variables
 
 Because the `String` is not a primitive type, when comparing `String` variables, you should use the `equals()` method instead of the `==` operator.
 
@@ -108,7 +107,7 @@ myFruit == hisFruit; // false because different memory addresses
 myFruit.equals(hisFruit); // true because commparing the contents
 ```
 
-### `for` Loop
+## `for` Loop
 
 The `for`, `while` and `do while` statements are used for looping i.e. to execute a block of code repeatedly.
 
@@ -120,7 +119,7 @@ for (int i = 0; i < 5; i++) {
 }
 ```
 
-### `while` Loop
+## `while` Loop
 
 The `while` loop is used when the number of iterations is unknown.
 
@@ -136,7 +135,7 @@ while (isRunning) {
 }
 ```
 
-### `do while` Loop
+## `do while` Loop
 
 The difference between `while` and `do while` is that the `do while` loop will always execute the code block at least once, even if the condition is false.
 
@@ -152,7 +151,7 @@ do {
 } while (isRunning);
 ```
 
-### `break` and `continue`
+## `break` and `continue`
 
 The `break` statement is used to terminate a loop. It is usually used with an `if` statement.
 
@@ -178,9 +177,7 @@ for (int i = 0; i < 10; i++) {
 }
 ```
 
-
-
-### `switch` Statement
+## `switch` Statement
 
 The `switch` statement is used to perform different actions based on different conditions. It is similar to `if else` but is more concise when there are many conditions.
 
@@ -212,9 +209,9 @@ public class LearnSwitch {
 }
 ```
 
-The `break` statement is used to terminate a `case` statement. Without the `break` statement, the program will continue to execute the next `case` statement. This is known as "falling through".
+### The `break` statement is used to terminate a `case` statement. Without the `break` statement, the program will continue to execute the next `case` statement. This is known as "falling through".
 
-`default` is used to specify the code to run if there is no case match.
+### `default` is used to specify the code to run if there is no case match.
 
 Note that the `switch` statement can only be used with the following data types: `byte`, `short`, `char`, `int`, `String` and `enum` (to be discussed later). For other data types, you must use `if else` statements.
 
@@ -266,7 +263,7 @@ switch (month) {
 }
 ```
 
-### Enhanced `switch` Statement
+## Enhanced `switch` Statement
 
 The enhanced `switch` statement, also known as a **switch expression**, was introduced in JDK 14. It is more concise than the traditional `switch` statement. If you are using earlier versions of Java, you should use the traditional `switch` statement.
 
@@ -329,83 +326,5 @@ String rating = switch (ratingScore) {
 
 System.out.println("rating is : " + rating);
 ```
-
-### 👨‍💻 Activity: `ConditionalsPractice.java`
-
-
-
-Recall in our previous lesson, we used `System.console().readLine()` to read user input. Using `if else`, we can check if a user name is entered correctly.
-
-```java
-String userName = System.console().readLine("Enter your user name: ");
-System.out.println("userName: " + userName);
-
-if(userName.equals("admin")) {
-  System.out.println("😊 Welcome Admin");
-} else {
-  System.out.println("😡 Unauthorized user!");
-}
-```
-
-#### Task 1
-
-Use the `do while` loop to prompt the user to enter the user name. If the user name is not "admin", prompt the user to enter the user name again.
-
-We will use the command line to compile and run this program as the IDE blocks `readline()`.
-
-```bash
-javac LearnControlFlow.java && java LearnControlFlow
-```
-
-🍀 Hint: You will need a variable to track if the user name is valid.
-
-#### Task 2
-
-If the user name is still incorrect after 3 tries, terminate the program.
-
-🍀 Hint: You will need to `break` out of the loop.
-
-
----
-
-## Part 3: `enum`
-
-Java provides a special data type called `enum` to support enumeration. It is used to define a collection of constants. Enums are useful to represent a fixed set of values, such as days of the week, months of the year, etc.
-
-Because it is a finite set of constants, it is more type safe than using `String` or `int` variables.
-
-By convention, we use `SCREAMING_SNAKE_CASE` for enum constants.
-
-```java
-enum CompassDirection {
-  N, S, E, W
-}
-
-enum Month {
-  JAN, FEB, MAR, APR, JUN, JUL, AUG, SEP, OCT, NOV, DEC
-}
-
-Month nationalDayMonth = Month.AUG;
-System.out.println("nationalDayMonth: " + nationalDayMonth);
-```
-
----
-
-## Part 4: `switch` Expression with Enums
-
-As mentioned earlier, enum is one of the types supported by the switch statement.
-
-```java
-CompassDirection myDirection = CompassDirection.N;
-
-switch (myDirection) {
-  case N -> System.out.println("You have chosen North");
-  case E -> System.out.println("You have chosen East");
-  case W -> System.out.println("You have chosen West");
-  case S -> System.out.println("You have chosen South");
-  default -> System.out.println("Invalid input");
-}
-```
-
 ---
 
