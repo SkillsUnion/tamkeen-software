@@ -125,20 +125,20 @@ System.out.println("y: " + y);
 
 - Compound assignment operators are shorthand for performing an operation and assigning the result to the same variable. For example, x += y is the same as x = x + y.
 - Compound operators cannot be used to declare variables. For example, int x += 5 is invalid.
+
 ```java
 int compoundAdd = 8;
 compoundAdd += 10;
 System.out.println("compoundAdd: " + compoundAdd);
-
 int compoundSub = 10;
 compoundSub -= 5;
 System.out.println("compoundSub: " + compoundSub);
 System.out.println();
 ```
 
-## Relational Operators
+## Relational Operators:
 
-| Operator               | Description                                             | Example |
+| Operator               | Description                                             | Example          |
 | :--------------------- | :-------------------------------------------------------| :--------------- |
 | `==`                   | `Equals`                                                |`x==y;`           |
 | `!=`                   | `Not Equal`                                             |`x!=y;`           |
@@ -146,6 +146,7 @@ System.out.println();
 | `>=`                   | `Greater or Equal`                                      |`x>=y`            |
 | `<`                    | `Less Than`                                             |`x<y`             |
 | `<=`                   | `Less Than Or Equal`                                    |`x<=y`            |
+
 
 ```java
 System.out.println("a == b: " + (a == b));
