@@ -44,7 +44,7 @@ public class LearnControlFlow {
 }
 ```
 
-## `if else`
+## `if else`:
 
 ```java
 if(budget > expense) {
@@ -54,7 +54,7 @@ if(budget > expense) {
 }
 ```
 
-### `if else if`
+### `if else if`:
 
 ```java
 int score = 70;
@@ -72,7 +72,7 @@ if(score > 90) {
 }
 ```
 
-### Nested `if else`
+### Nested `if else`:
 
 `if else` can be nested if needed.
 
@@ -91,7 +91,7 @@ if(age > 18) {
 }
 ```
 
-## On Comparing `String` Variables
+## On Comparing `String` Variables :
 
 Because the `String` is not a primitive type, when comparing `String` variables, you should use the `equals()` method instead of the `==` operator.
 
@@ -107,7 +107,7 @@ myFruit == hisFruit; // false because different memory addresses
 myFruit.equals(hisFruit); // true because commparing the contents
 ```
 
-## `for` Loop
+## `for` Loop :
 
 The `for`, `while` and `do while` statements are used for looping i.e. to execute a block of code repeatedly.
 
@@ -119,7 +119,7 @@ for (int i = 0; i < 5; i++) {
 }
 ```
 
-## `while` Loop
+## `while` Loop :
 
 The `while` loop is used when the number of iterations is unknown.
 
@@ -135,7 +135,7 @@ while (isRunning) {
 }
 ```
 
-## `do while` Loop
+## `do while` Loop :
 
 The difference between `while` and `do while` is that the `do while` loop will always execute the code block at least once, even if the condition is false.
 
@@ -151,7 +151,7 @@ do {
 } while (isRunning);
 ```
 
-## `break` and `continue`
+## `break` and `continue` :
 
 The `break` statement is used to terminate a loop. It is usually used with an `if` statement.
 
@@ -177,7 +177,7 @@ for (int i = 0; i < 10; i++) {
 }
 ```
 
-## `switch` Statement
+## `switch` Statement :
 
 The `switch` statement is used to perform different actions based on different conditions. It is similar to `if else` but is more concise when there are many conditions.
 
@@ -209,11 +209,11 @@ public class LearnSwitch {
 }
 ```
 
-### The `break` statement is used to terminate a `case` statement. Without the `break` statement, the program will continue to execute the next `case` statement. This is known as "falling through".
+### The `break` statement is used to terminate a `case` statement. 
 
 ### `default` is used to specify the code to run if there is no case match.
 
-Note that the `switch` statement can only be used with the following data types: `byte`, `short`, `char`, `int`, `String` and `enum` (to be discussed later). For other data types, you must use `if else` statements.
+Note that the `switch` statement can only be used with the following data types: `byte`, `short`, `char`, `int`, `String` a For other data types, you must use `if else` statements.
 
 Multiple `case` statements can be combined too.
 
