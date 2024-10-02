@@ -326,5 +326,4 @@ String rating = switch (ratingScore) {
 
 System.out.println("rating is : " + rating);
 ```
----
 

@@ -20,6 +20,7 @@ The basic types of operators:
 - Logical / Conditional
 
 You can create a LearnOperators.java file and code along as we go through these operators.
+
 ```java
 public class LearnOperators {
   public static void main(String[] args) {
@@ -152,6 +153,7 @@ System.out.println("a > b: " + (a > b));
 System.out.println("a >= b: " + (a >= b));
 System.out.println("a < b: " + (a < b));
 System.out.println("a <= b: " + (a <= b));
+
 ```
 ## Logical/Conditional Operators
 
@@ -161,6 +163,7 @@ System.out.println("a <= b: " + (a <= b));
 | `\|\|`                 |  OR                                                     |  x || y           |
 | `!`                    |  NOT                                                    |  !x               |
 | `? :`                  | Ternary                                                 |  x? y : z         |
+
 
 ```java
 boolean value1 = true;
@@ -197,6 +200,8 @@ Operator precedence determines the order in which operators are evaluated. Opera
 |    %     |     12     |
 |    +     |     11     |
 |    -     |     11     |
+
+
 
 ```java
 int order1 = 10 + 5 * 2;
