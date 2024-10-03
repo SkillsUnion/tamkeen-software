@@ -1,8 +1,16 @@
-Loops and Accessing arrays
+# Loop through an Array and ArrayList
 
-Create a `LearnLoops.java` file and code along.
+## Lesson Objectives
 
-To loop over an `Array` or `ArrayList`, we can use a `for` loop.
+- Learn how to iterate over an Array and ArrayList using for loop with index-based access.
+
+- Implement the enhanced for-each loop for iterating through an ArrayList
+
+## Introduction
+
+To loop over an `Array` or `ArrayList`, we can use a `for` loop and use the length property to specify how many times the loop should run.
+
+### Create a `LearnLoops.java` file and code along.
 
 ```java
 int[] scoresList = { 74, 32, 82, 45, 56 };
@@ -21,6 +29,8 @@ for (int i = 0; i < heroes.size(); i++) {
     System.out.println(heroes.get(i));
 }
 ```
+
+## Enhanced or **for-each** loop.
 
 We can also use an enhanced for loop, which is also known as a **for-each** loop.
 
@@ -47,31 +57,9 @@ for (String hero : heroes) {
     hero = "Thanos"; // ❌ ERROR
 }
 ```
-
-### 👨‍💻 Activity
-
-Create a new file called `ArrayActivity.java`.
-
-Write a program to do the following:
-
-- Allow a user to enter a list of suspect names
-- Print out the list of suspect names
-- Allow the user to enter the suspects with alibis
-- Print out the updated list of suspects
-- Find the suspect with the longest name
-- Print out the suspect with the longest name
-
-Hints:
-
-- Use `ArrayLists` to store the suspect names and suspects with alibi names
-- Use `while` loops to allow the user to enter the suspect names and suspects with alibi names
-- Use `contains()` to check for repeats or an invalid suspect name
-- Use `removeAll` to remove the suspects with alibis from the list of suspects
-- Use a `for`/enhanced `for` loop to find the longest name (`String` length can be found using `.length()`)
-
 ---
 
-## Part 4 - Lambda Expressions for ArrayLists (Optional)
+### Lambda Expressions for ArrayLists (Optional)
 
 Lambda expressions was introduced in Java 8. They are used to represent a block of code that can be passed around.
 
