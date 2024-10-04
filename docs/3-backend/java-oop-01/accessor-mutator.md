@@ -1,13 +1,11 @@
+# Accessor and Mutator Methods
 
 ## Lesson Objectives
 
-- Understand the Concept of Encapsulation and its role in object-oriented programming.
+- Encapsulate class data by using private fields and understand how to access and modify the values using Accessor and Mutator methods.
 
-- understand how access modifiers (private, public, protected, default) control access to class members in Java
 
-- Encapsulate class data by using private fields and providing public getter and setter methods.
-
-## Encapsulation, Accessor and Mutator Methods
+## Introduction
 
 In the previous lesson, we learned how to use access modifiers to control access to methods. We can also use access modifiers to control access to attributes. We refer to class attributes and methods as **class members**.
 
@@ -16,7 +14,7 @@ In the previous lesson, we learned how to use access modifiers to control access
 | `public`       | accessible from anywhere                        |
 | `private`      | accessible only from within the class           |
 | `protected`    | accessible from within the class and subclasses |
-| blank          | accessible from within the class and package    |
+| `blank`          | accessible from within the class and package    |
 
 Currently, we can access attributes directly from the `App` class.
 
@@ -113,10 +111,6 @@ tony.setAge(25);
 It is good practice to keep fields private and provide getters and setters to access and modify the values because it allows us to control how the values are accessed and modified.
 
 This is one of the principles of Object Oriented Programming (OOP) - **Encapsulation**.
-
-<img src="https://prepinsta.com/wp-content/uploads/2023/05/Encapsulation.webp" width=500>
-
-Source: https://prepinsta.com/java/encapsulation/
 
 In OOP, encapsulation means two things:
 

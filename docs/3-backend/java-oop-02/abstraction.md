@@ -1,5 +1,7 @@
+# Abstraction
 
 # Learning Objectives
+
 - Understand the concept of abstraction 
 
 - Recognize the role of abstract classes and interfaces in achieving abstraction in Java.
@@ -8,9 +10,7 @@
 
 - Explore the use of default methods in interfaces (introduced in Java 8).
 
-
-
-## Abstraction
+## Introduction
 
 Abstraction is when we generalize a set of characteristics and behaviors into a class.
 
@@ -24,7 +24,7 @@ We can do abstraction in Java using:
 - Interfaces
 - Superclasses
 
-### Abstract Classes
+## Abstract Classes
 
 An abstract class is a class that is declared with the `abstract` keyword. It can have abstract and non-abstract methods.
 
@@ -52,7 +52,7 @@ Now when we try to instantiate the `Person` class, we will get an error.
 Person person = new Person("Tony Stark", 2000, 12345);
 ```
 
-### Interfaces
+## Interfaces
 
 An **interface** is a similar concept to an abstract class. It is declared with the `interface` keyword. Unlike abstract classes though, an interface cannot have instance variables. From Java 8 onwards, it can also have default methods and static methods.
 
