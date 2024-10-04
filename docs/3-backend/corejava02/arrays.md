@@ -1,13 +1,22 @@
+# Arrays
 
-### Arrays
+## Lesson Objectives
+
+- Learn how to Declare, initialize, and access arrays in Java
+
+- Perform basic operations on arrays, such as sorting and searching
+
+- Learn how to copy arrays using utility methods 
+
+## Introduction
 
 The array is a data structure that allows you to store a sequence of values, all of the same type.
 
 Arrays can store any of the 8 primitive types (`int`, `char`, etc.) as well as object references (`String`, `SomeCustomClass` etc.)
 
-Create `LearnArrays.java` and code along.
+#### Create `LearnArrays.java` and code along.
 
-#### Declaring an Array
+### Declaring an Array
 
 ```java
 // Declare an array of integers
@@ -20,7 +29,7 @@ String[] namesList;
 String namesList[];
 ```
 
-#### Instantiating an Array
+### Instantiating an Array
 
 One way to instantiate a new array is to use the `new` keyword. The number in the brackets is the size of the array.
 
@@ -33,7 +42,7 @@ Integer[] scoresList2 = new Integer[5];
 String[] studentsList = new String[10];
 ```
 
-#### Initializing an Array
+### Initializing an Array
 
 If we already know the values for our array, we can initialize it.
 
@@ -61,7 +70,7 @@ favMovies = {"Avengers","Infinity War", "Iron Man"}; // ❌ ERROR
 favMovies = new String[] {"Avengers","Infinity War", "Iron Man"}; // ✅ OK
 ```
 
-#### Accessing Elements
+### Accessing Elements
 
 We can access elements in an array using the index. The index starts at 0 and ends at the size of the array minus 1.
 
@@ -71,7 +80,7 @@ System.out.println(favMovies[1]); // Infinity War
 System.out.println(favMovies[2]); // Iron Man
 ```
 
-#### Changing Elements
+### Changing Elements
 
 We can change the value of an element in an array by assigning a new value to it.
 
@@ -80,7 +89,7 @@ favMovies[0] = "Endgame";
 System.out.println(favMovies[0]); // Endgame
 ```
 
-#### Array Length
+### Array Length
 
 We can get the length of an array using the `length` property.
 
@@ -109,7 +118,7 @@ System.out.println(favMovies); // [Ljava.lang.String;@39a054a5
 System.out.println(scoresList); // [I@6d06d69c
 ```
 
-#### `java.util.Arrays`
+### `java.util.Arrays`
 
 Java's array type is very basic and does not provide useful methods. As you saw, what we can do is just to check the property length.
 
@@ -131,14 +140,10 @@ System.out.println(Arrays.toString(scoresList)); // [0, 0, 0, 0, 0]
 System.out.println(Arrays.toString(scoresList2)); // [null, null, null, null, null]
 ```
 
-🤔 Why are the initial element values different for array of integers i.e. `0` and `null`?
+#### Note: Java initializes the array with default values. For primitive types, the default value is `0`. For object references, the default value is `null`.
 
-<details>
-<summary>💡 Answer</summary>
-This is because Java initializes the array with default values. For primitive types, the default value is `0`. For object references, the default value is `null`.
-</details>
 
-#### More utils - `sort`, `fill`, `copyOf`
+### More utils - `sort`, `fill`, `copyOf`
 
 We can sort an array using `Arrays.sort()`.
 
@@ -180,7 +185,7 @@ String[] heroesExtendedCopy = Arrays.copyOf(heroes, heroes.length + 3);
 System.out.println("heroesExtendedCopy = " + Arrays.toString(heroesExtendedCopy));
 ```
 
-#### Binary Search
+### Binary Search
 
 We can search for an element in an array using `Arrays.binarySearch()`. This method returns the index of the element if it is found, or a negative number if it is not found. Note that the array **must be sorted** before we can use this method.
 
@@ -194,7 +199,7 @@ System.out.println("Search for Hulk " + Arrays.binarySearch(heroes, "Hulk"));
 System.out.println("Search for Ironman " + Arrays.binarySearch(heroes, "Ironman"));
 ```
 
-#### Comparing Arrays
+### Comparing Arrays
 
 We can compare two arrays using `Arrays.equals()`. This method returns `true` if the arrays are equal, or `false` if they are not.
 

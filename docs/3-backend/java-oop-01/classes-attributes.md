@@ -1,3 +1,5 @@
+# Class Attributes and Methods
+
 ## Lesson Objectives
 
 - what are classes and their use cases.
@@ -10,7 +12,7 @@
 
 - Implement private properties to the class and its accessor methods.
 
-## Class Attributes and Methods
+## Introduction
 
 Create an `App.java` and code along.
 

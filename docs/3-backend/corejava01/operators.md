@@ -1,5 +1,6 @@
+# Operators 
 
-# Lesson Objectives
+## Lesson Objectives
 - Understand what operators are and their purpose in performing various operations on variables and values.
 
 - Learn about the four category of operators (arithmetic, assignment, comparison, logical) and write programs to demonstrate the usage.
@@ -7,7 +8,7 @@
 - Understand Operator Precedence and Associativity
 
 
-# Operators
+## Introduction
 Operators are symbols that perform operations on variables and values.
 
 The basic types of operators:
@@ -19,6 +20,7 @@ The basic types of operators:
 - Logical / Conditional
 
 You can create a LearnOperators.java file and code along as we go through these operators.
+
 ```java
 public class LearnOperators {
   public static void main(String[] args) {
@@ -40,14 +42,7 @@ public class LearnOperators {
 | `%`                   | Remainder                                               | x%y             |
 
 
-
-
-|
-|
-
-
-
-## Notes:
+### Notes
 
  `+` is also used to concatenate strings e.g. "Hello" + "World"
   becomes "HelloWorld".
@@ -68,9 +63,6 @@ System.out.println("b % a = " + (b % a));
 | `++`                   | Increment                                               | ++x             |
 | `--`                   | Decrement                                               | --x             |
 | `!`                    | Not                                                     | !x              |
-
-
-
 
 ```java
 
@@ -133,19 +125,20 @@ System.out.println("y: " + y);
 
 - Compound assignment operators are shorthand for performing an operation and assigning the result to the same variable. For example, x += y is the same as x = x + y.
 - Compound operators cannot be used to declare variables. For example, int x += 5 is invalid.
+
 ```java
 int compoundAdd = 8;
 compoundAdd += 10;
 System.out.println("compoundAdd: " + compoundAdd);
-
 int compoundSub = 10;
 compoundSub -= 5;
 System.out.println("compoundSub: " + compoundSub);
 System.out.println();
 ```
-## Relational Operators
 
-| Operator               | Description                                             | Example |
+## Relational Operators:
+
+| Operator               | Description                                             | Example          |
 | :--------------------- | :-------------------------------------------------------| :--------------- |
 | `==`                   | `Equals`                                                |`x==y;`           |
 | `!=`                   | `Not Equal`                                             |`x!=y;`           |
@@ -153,6 +146,7 @@ System.out.println();
 | `>=`                   | `Greater or Equal`                                      |`x>=y`            |
 | `<`                    | `Less Than`                                             |`x<y`             |
 | `<=`                   | `Less Than Or Equal`                                    |`x<=y`            |
+
 
 ```java
 System.out.println("a == b: " + (a == b));
@@ -171,6 +165,7 @@ System.out.println("a <= b: " + (a <= b));
 | `!`                    |  NOT                                                    |  !x               |
 | `? :`                  | Ternary                                                 |  x? y : z         |
 
+
 ```java
 boolean value1 = true;
 boolean value2 = false;
@@ -180,7 +175,7 @@ System.out.println("!value1: " + (!value1));
 System.out.println(a > b ? "a is larger" : "b is larger");
 ```
 
-### Type Comparison Operator
+## Type Comparison Operator
 
 |  Operator  |    Example     |
 | :--------: | :------------: |
@@ -193,7 +188,7 @@ String name = "John";
 System.out.println("name is String?" + name instanceof String);
 ```
 
-### Operator Precedence
+## Operator Precedence
 
 Operator precedence determines the order in which operators are evaluated. Operators with higher precedence are evaluated first.
 
@@ -206,6 +201,8 @@ Operator precedence determines the order in which operators are evaluated. Opera
 |    %     |     12     |
 |    +     |     11     |
 |    -     |     11     |
+
+
 
 ```java
 int order1 = 10 + 5 * 2;

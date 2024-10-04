@@ -8,7 +8,7 @@
 
 
 # Try-Catch-Finally
-The other approach for handling exceptions is the  EAFP approach using a `try-catch` block.
+The other approach for handling exceptions is the EAFP approach using a `try-catch` block.
 
 ```java
 try {
