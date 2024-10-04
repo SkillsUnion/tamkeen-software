@@ -44,7 +44,7 @@
 - *a. Both statements are true*
 - b. Statement A is true
 - c. Statement B is true
-- d. Neither of the statements is true
+- d. Neither of the statements are true
 
 8. Which of the following is a correct way to write an if statement in JavaScript?
 - a. if x > 10 { //statements }
@@ -53,9 +53,9 @@
 - d. if (x > 10) -> { //statements }
 
 9. Which is a correct declaration of an array?
-- a. var arr = {1, 2, 3, 4}
-- b. var arr = (1, 2, 3, 4)
-- *c. var arr = [1, 2, 3, 4]*
+- a. const arr = {1, 2, 3, 4}
+- b. const arr = (1, 2, 3, 4)
+- *c. const arr = [1, 2, 3, 4]*
 - d. array arr = [1, 2, 3, 4]
 
 10. Which is not a kind of loop?
@@ -93,10 +93,10 @@
 - *d. Props can be modified within the component.*
 
 16. What symbols allow developers to write and execute JavaScript bound to the JSX?
-- a. "<>"
-- b. "()"
-- *c. "{}"*
-- d. "[]"
+- a. Greater than and Less than symbols "<>"
+- b. Parenthesis "()"
+- *c. Curly Braces "{}"*
+- d. Square Brackets "[]"
 
 17. What is the syntax for a React state using the useState hook?
 - *a. const [state, setState] = useState(initialState);*
