@@ -13,7 +13,7 @@ All software engineers use version control to manage and review project versions
 
 Version control is not strictly necessary to create programs, but it makes software development easier by reducing the fear of breaking code. If we break code when using version control, we can compare our changes to the last working version, easily find bugs to fix, or even rolling back to the last working version if needed.
 
-In this submodule we will learn how to create code versions, more commonly known as "commits".&#x20;
+In this submodule we will learn how to create code versions, more commonly known as "commits".
 
 We will continue to learn Git techniques as we progress through Bootcamp.
 
@@ -49,9 +49,9 @@ The following are common Git commands we will use as software engineers.
 
 The following exercises should help familiarise you with Git. We use text instead of code, but the Git functionality is the same. You may wish to have 3 windows open on your screen: VS Code, the Git Commands table above, and the following instructions.
 
-1. Open today's folder in terminal and create a folder with the command `mkdir`
+1. Create a folder with the command `mkdir`
 2. `cd` into the folder, and initialise it as a git repo using the command `git init`
-3. Create a text file in the command line using `touch spring-poem.txt` and open it in VS Code with `code spring-poem.txt`
+3. Create a text file in the command line using `touch spring-poem.txt` (or `ni spring-poem.txt` in Powershell)and open it in VS Code with `code spring-poem.txt`
 4. Write a poem about spring (or anything) in `spring-poem.txt` and save the file
 5. Stage and commit `spring-poem.txt` with `git add .` and `git commit -m`
 6. Edit our poem to reference leaves (or anything). Stage and commit the edits
@@ -63,6 +63,4 @@ The following exercises should help familiarise you with Git. We use text instea
 ## Additional Resources
 
 1. [Intro to Version Control by Git](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
-2. (Below): Intro to Git video from a prior version of Rocket Academy's Coding Basics course
-
-Intro to Git [video](https://youtu.be/GudllO59HJQ) from a prior version of Rocket's Coding Basics course
+2. [Intro to Git](https://youtu.be/GudllO59HJQ) 

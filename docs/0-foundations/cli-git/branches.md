@@ -11,17 +11,17 @@
 
 A Git Branch is an independent series of commits. Every Git repo starts with a single branch, typically `main`, which we can imagine to be a linear series of commits.
 
-![Every repo starts with the main branch by default](<../../../.gitbook/assets/0.2.1 - Branches - Single Branch.png>)
+![Every repo starts with the main branch by default](<./assets/0.2.1 - Branches - Single Branch.png>)
 
 Using multiple branches allows software engineers to develop new features based on production code in `main` without affecting `main`, even after pushing to GitHub. We typically refer to non-`main` branches as "feature branches". Feature branches can be for changes as small as a typo and as large as new products.
 
 Feature branches are independent series of commits that typically "branch" from `main` , and merge back into  `main` after we have completed and tested the new feature.
 
-![Create and work on a feature branch when working on a new feature](<../../../.gitbook/assets/0.2.1 - Branches - Feature Branch.png>)
+![Create and work on a feature branch when working on a new feature](<./assets/0.2.1 - Branches - Feature Branch.png>)
 
 We can delete feature branches after merging them to `main`.
 
-![Git state after merging feature branch to main. All commits from feature branch are copied to main, and Git adds an extra "merge commit" to resolve differences.](<../../../.gitbook/assets/0.2.1 - Branches - Merge Feature Branch.png>)
+![Git state after merging feature branch to main. All commits from feature branch are copied to main, and Git adds an extra "merge commit" to resolve differences.](<./assets/0.2.1 - Branches - Merge Feature Branch.png>)
 
 At large tech companies, 1000s of engineers can be working on independent feature branches that branch from `main` and merge back to `main` at different points in time.
 
@@ -66,7 +66,7 @@ Once done with our feature on our feature branch, we can merge our changes to `m
 
 1. Checkout and verify we are on our feature branch with `git branch`
 2. Run `git push` to push latest commits from our feature branch to GitHub. If this is our first time pushing this feature branch to GitHub, we may have to run `git push --set-upstream origin` followed by our feature branch name, e.g. `git push --set-upstream origin my-feature`.
-3. See instructions in [0.3.1: Pull Requests](../../0.3-github/0.3.1-pull-requests.md) for how to create and merge a pull request in GitHub.
+3. See instructions in Pull Requests lesson for how to create and merge a pull request in GitHub.
 
 We may see the following output when pushing a feature branch to GitHub for the first time with `git push`. To resolve, enter the command Git suggests: `git push --set upstream origin my-feature`, where `my-feature` is the name of our feature branch.
 
@@ -104,9 +104,7 @@ In addition to merging feature branches to `main`, another common workflow is to
 
 ## Merge Conflicts
 
-[video](https://youtu.be/56B7MOgm_CE)
-
-Demo of how merge conflicts happen and how to resolve them
+{% include youtube.html id="56B7MOgm_CE" %}
 
 ### What are merge conflicts and why do they happen?
 
@@ -114,7 +112,7 @@ Merge conflicts are situations when Git cannot automatically merge changes from 
 
 VS Code highlights differences in files with conflicts. The lines surrounded by `<<<<<<< HEAD` and `=======` are changes from the branch we are on, and the lines surrounded by `=======` and `>>>>>>> main` are changes from the incoming branch.
 
-![Git will tell us where we have merge conflicts when we enter git status after merging. Within those files, VS Code will tell us which lines are in conflict, and we can click buttons above the conflict to resolve the conflicts.](<../../../.gitbook/assets/0.2.1 - Branches - Merge - Intro.png>)
+![Git will tell us where we have merge conflicts when we enter git status after merging. Within those files, VS Code will tell us which lines are in conflict, and we can click buttons above the conflict to resolve the conflicts.](<./assets/0.2.1 - Branches - Merge - Intro.png>)
 
 ### How to resolve merge conflicts
 
@@ -124,23 +122,23 @@ After Git tells us we have merge conflicts, use `git status` to confirm which fi
 
 Open each file with conflicts and resolve conflicts in each file by removing lines starting with `<<<<<<<`, `=======` and `>>>>>>>` and updating the code to what it should be. We can use VS Code's Accept Current/Incoming/Both Changes buttons and/or manually edit the files.
 
-![VS Code gives us buttons above each conflict to conveniently resolve each conflict.](<../../../.gitbook/assets/0.2.1 - Branches - Merge - Resolve Conflict.png>)
+![VS Code gives us buttons above each conflict to conveniently resolve each conflict.](<./assets/0.2.1 - Branches - Merge - Resolve Conflict.png>)
 
 Once we have resolved all conflicts, verify our app still works as expected. Once satisfied with our changes, `git add` the resolved files to add them to staging area for commit.
 
-![Once we have resolved the conflict in the file we can git add to stage the file with conflicts for commit. We need to make a new commit to mark the conflict resolved.](<../../../.gitbook/assets/0.2.1 - Branches - Merge - Resolve Conflict 2 (1).png>)
+![Once we have resolved the conflict in the file we can git add to stage the file with conflicts for commit. We need to make a new commit to mark the conflict resolved.](<./assets/0.2.1 - Branches - Merge - Resolve Conflict 2 (1).png>)
 
 Commit changes to finalise Git's merge commit and complete merge.
 
-![Entering git commit after adding resolved files to staging area will open a commit message window. Save and close the file to complete commit.](<../../../.gitbook/assets/0.2.1 - Branches - Merge - Resolve Conflict (1).png>)
+![Entering git commit after adding resolved files to staging area will open a commit message window. Save and close the file to complete commit.](<./assets/0.2.1 - Branches - Merge - Resolve Conflict (1).png>)
 
 After committing, `git status` should no longer mention conflicts.
 
-![Once we save the commit message file, we should see the commit completed.](<../../../.gitbook/assets/0.2.1 - Branches - Merge - Resolve Conflict 2.png>)
+![Once we save the commit message file, we should see the commit completed.](<./assets/0.2.1 - Branches - Merge - Resolve Conflict 2.png>)
 
 We can verify merge success by checking commit history in Git Logs with `git log`.
 
-![We can verify successful merge by looking at Git Logs.](<../../../.gitbook/assets/0.2.1 - Branches - Merge - Resolve Conflict 3.png>)
+![We can verify successful merge by looking at Git Logs.](<./assets/0.2.1 - Branches - Merge - Resolve Conflict 3.png>)
 
 ## Exercises
 

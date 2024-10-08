@@ -11,9 +11,6 @@
 
 The command line, also known as "terminal" is a text-based computer interface. We will use the command line to manage files, use Git version control and run Node applications. Using the command line is separate from writing application code, though we will need the command line to build apps effectively.
 
-
-> If you are a Windows user, please use the VS Code terminal connected to Ubuntu in WSL. The Windows Command Prompt runs PowerShell by default which is not compatible with Unix-based commands that most software engineers use. See [Windows Command Line Setup](../logistics/required-software.md#install-and-setup-windows-subsystem-for-linux-wsl) for details.
-
 ## Common Commands
 
 Below, we have listed some of the most commonly used terminal commands that software engineers use. To learn more about these commands, google "man" followed by the command name to get the "manual" page for the command (eg. to learn more about "pwd", simply enter "man pwd" into google).
@@ -32,11 +29,11 @@ The following paths are shortcuts to common locations and are often used in fold
 
 ## Exercise
 
-Run each of the above commands with local files and folders. Verify file and folder changes in Ubuntu File Manager or MacOS Finder.
+Run each of the above commands with local files and folders. Verify file and folder changes in File Manager or MacOS Finder.
 
 ## Additional Resources
 
-The following is a command line tutorial from a previous version of Rocket's Coding Basics course.&#x20;
+The following is a command line tutorial video (the three ways all point to the same video).
 
 ### Link
 [video](https://youtu.be/iRnFyFMvH1o)
