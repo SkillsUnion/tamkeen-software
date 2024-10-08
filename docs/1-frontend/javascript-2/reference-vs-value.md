@@ -62,7 +62,7 @@ var array2 = array1;
 array1.pop();
 ```
 
-![array2 references the same data structure as array1](<../../.gitbook/assets/Ref vs Value Example 1.png>)
+![array2 references the same data structure as array1](<../assets/Ref vs Value Example 1.png>)
 
 Example 2:
 
@@ -75,7 +75,7 @@ var array2 = [...array1];
 array1.pop();
 ```
 
-![array2 references a data structure independent from array1](<../../.gitbook/assets/Ref vs Value Example 2.png>)
+![array2 references a data structure independent from array1](<../assets/Ref vs Value Example 2.png>)
 
 ## Additional Resources
 
