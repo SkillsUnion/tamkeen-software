@@ -104,9 +104,7 @@ In addition to merging feature branches to `main`, another common workflow is to
 
 ## Merge Conflicts
 
-[video](https://youtu.be/56B7MOgm_CE)
-
-Demo of how merge conflicts happen and how to resolve them
+[Merge Conflicts Demo](https://youtu.be/56B7MOgm_CE)
 
 ### What are merge conflicts and why do they happen?
 
