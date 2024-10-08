@@ -10,15 +10,13 @@
 
 ## Introduction
 
-![Organise HTML elements into conceptual boxes before planning how to use CSS for layout. Source: W3Schools](<../../.gitbook/assets/1.2 - CSS Layout - 1 - Layout Example.gif>)
+![Organise HTML elements into conceptual boxes before planning how to use CSS for layout. Source: W3Schools](<../_assets/1.2 - CSS Layout - 1 - Layout Example.gif>)
 
 When determining how to layout elements with CSS, first organise elements into nested boxes, then determine which CSS styles need to apply to which boxes. By default browsers will render all HTML elements in a single vertical column.
 
 ## CSS Box Model
 
-![Margin is spacing outside the content's border. Padding is spacing inside the content's border. Source: W3Schools](<../../.gitbook/assets/1.2 - CSS Layout - 3 - Box Model.png>)
-
-​
+![Margin is spacing outside the content's border. Padding is spacing inside the content's border. Source: W3Schools](<../_assets/1.2 - CSS Layout - 3 - Box Model.png>)
 
 The CSS box model controls how much space an element takes on screen with CSS properties such as content `width`, content `height`, `margin` (area outside border), `border` (area surrounding content) and `padding` (area inside border but outside content). While helpful for controlling exact size of HTML elements, we recommend using flexbox properties (covered in later submodule) to layout HTML elements for a more robust layout.
 
@@ -63,7 +61,7 @@ p {
 
 Chrome helps us visualise CSS box properties of every element on every page at the bottom of the Styles window in the Elements tab in Chrome DevTools. To see box properties of any HTML element, right click the element and click "Inspect". Box properties in the box visualisation should match the most-specific box properties at the top of the CSS styles list (ordered in decreasing specificity).
 
-![Chrome DevTools helps us visualise box properties of every HTML element on screen](<../../.gitbook/assets/1.2 - CSS Layout - 3 - Box Model Chrome.png>)
+![Chrome DevTools helps us visualise box properties of every HTML element on screen](<../_assets/1.2 - CSS Layout - 3 - Box Model Chrome.png>)
 
 >**Apply `box-sizing` CSS property to include padding and border in box size**
 >
@@ -93,7 +91,7 @@ The CSS `display` property controls the way target elements render on screen. Th
 
 `inline-block` is a 3rd `display` property that enables `inline` elements with `block` properties such as spacing on all sides. `inline` elements cannot have custom spacing around them.
 
-![block, inline and inline-block are the most basic CSS display values. Source: Stack Overflow](<../../.gitbook/assets/1.2 - CSS Layout - 2 - Inline and Block.png>)
+![block, inline and inline-block are the most basic CSS display values. Source: Stack Overflow](<../_assets/1.2 - CSS Layout - 2 - Inline and Block.png>)
 
 ### Centring elements on screen
 
@@ -196,7 +194,7 @@ Say we had this CSS classes and code block:
 
 The resulting output on the screen would look something like this:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-10-25 at 10.53.08 AM.png" alt=""><figcaption><p>Example without flex</p></figcaption></figure>
+<figure><img src="../_assets/Example-without-flex.png" alt=""><figcaption><p>Example without flex</p></figcaption></figure>
 
 Lets add a flex property on the div containing all of the circle elements.
 
@@ -224,7 +222,7 @@ Lets add a flex property on the div containing all of the circle elements.
 
 By adding the class `flexContainer` to the parent element and applying the `display: flex;` property,  we take each "flex item" and alter how they are rendered onto the screen. In this case we stop them from appearing as block level elements and make them appear as in-line elements.  The elements now appear like this:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-10-25 at 10.59.42 AM.png" alt=""><figcaption><p>Example with just flex</p></figcaption></figure>
+<figure><img src="../_assets/Example-with-just-flex.png" alt=""><figcaption><p>Example with just flex</p></figcaption></figure>
 
 The next flex property that we will explore is `flexDirection`, this specifies to the direction the container should stack the "flex items", as a `column` or `row`, you can even alter the order of the "flex items"  with the `row-reverse` or `column-reverse` value. Below we alter the last element in the container to appear as a sqaure, but we will alter the elements order and make it a column again.
 
@@ -256,7 +254,7 @@ The next flex property that we will explore is `flexDirection`, this specifies t
 }
 ```
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-10-25 at 11.14.07 AM.png" alt=""><figcaption><p>flex and flex direction</p></figcaption></figure>
+<figure><img src="../_assets/Flex-and-flex-direction.png" alt=""><figcaption><p>flex and flex direction</p></figcaption></figure>
 
 Altering the order and changing the direction though important isn't really what developers use flex for. Flex allows developers to state how they want information rendered, depending on the size of the screen, the number of items and size of the items flex will dynamically sort out each element to render it on screen. In the next example we will explore `flex-wrap` which can wrap the "flex-items" if they overflow out of their current container. Below is the code were we apply `flex-wrap` and add in additional elements. When applying this property you can use `wrap`, `no-wrap` and `wrap-reverse`.
 
@@ -300,7 +298,7 @@ Altering the order and changing the direction though important isn't really what
 }
 ```
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-10-25 at 11.22.59 AM.png" alt=""><figcaption><p>flex, flex-direction, flex-wrap</p></figcaption></figure>
+<figure><img src="../_assets/flex-wrap.png" alt=""><figcaption><p>flex, flex-direction, flex-wrap</p></figcaption></figure>
 
 It is actually possible to combine the `flex-direction` and `flex-wrap` properties, to do this use the `flex-flow` property and apply both values within. This will be shown in the next example.
 
@@ -346,7 +344,7 @@ At this stage its possible to see the awesome power of flex and how it can be us
 </div>
 ```
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-10-25 at 11.36.58 AM.png" alt=""><figcaption><p>flex, flex-direction, flex-wrap, justify-content</p></figcaption></figure>
+<figure><img src="../_assets/Justify-content.png" alt=""><figcaption><p>flex, flex-direction, flex-wrap, justify-content</p></figcaption></figure>
 
 As you can see the "flex elements" have been centered within the container, and wrap when there isn't enough space for the overflow elements. You can use this property with a few values, not just 'center'.
 
@@ -418,7 +416,7 @@ You should note that you can apply other values than center, similar to `justify
 
 As you can see from the image below the "flex-items" are centered horizontally and vertically within the image. This is a common pattern that is used when applying flex onto websites.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-10-25 at 11.52.34 AM.png" alt=""><figcaption><p>flex, flex-direction, flex-wrap, justify-content, align-items</p></figcaption></figure>
+<figure><img src="../_assets/Align-items.png" alt=""><figcaption><p>flex, flex-direction, flex-wrap, justify-content, align-items</p></figcaption></figure>
 
 To truly become great at flex, please go through the exercises below, this will help you greatly when considering your user interfaces, which is what you users will ultimately see.
 

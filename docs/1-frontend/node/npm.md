@@ -9,7 +9,7 @@
 
 ## Introduction
 
-![NPM allows us to install, manage and use 3rd-party packages](<../../.gitbook/assets/0.5.2 - NPM Illustration.png>)
+![NPM allows us to install, manage and use 3rd-party packages](<../_assets/0.5.2 - NPM Illustration.png>)
 
 [NPM](https://www.npmjs.com) (Node Package Manager) is Node's most popular package manager and allows us to install 3rd-party software packages (aka libraries) in our apps. All apps use 3rd-party libraries, and package managers like NPM simplify managing app dependencies.
 
