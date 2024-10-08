@@ -104,7 +104,7 @@ In addition to merging feature branches to `main`, another common workflow is to
 
 ## Merge Conflicts
 
-{include youtube.html id="56B7MOgm_CE"}
+{% include youtube.html id="56B7MOgm_CE" %}
 
 ### What are merge conflicts and why do they happen?
 

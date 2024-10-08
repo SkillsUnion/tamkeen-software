@@ -13,7 +13,7 @@ All software engineers use version control to manage and review project versions
 
 Version control is not strictly necessary to create programs, but it makes software development easier by reducing the fear of breaking code. If we break code when using version control, we can compare our changes to the last working version, easily find bugs to fix, or even rolling back to the last working version if needed.
 
-In this submodule we will learn how to create code versions, more commonly known as "commits".&#x20;
+In this submodule we will learn how to create code versions, more commonly known as "commits".
 
 We will continue to learn Git techniques as we progress through Bootcamp.
 
@@ -63,6 +63,4 @@ The following exercises should help familiarise you with Git. We use text instea
 ## Additional Resources
 
 1. [Intro to Version Control by Git](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
-2. (Below): Intro to Git video from a prior version of Rocket Academy's Coding Basics course
-
-Intro to Git [video](https://youtu.be/GudllO59HJQ) from a prior version of Rocket's Coding Basics course
+2. [Intro to Git](https://youtu.be/GudllO59HJQ) 
