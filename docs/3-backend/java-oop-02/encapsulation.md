@@ -1,3 +1,5 @@
+# Encapsulation
+
 # Learning Objective
 
 -  Understand encapsulation and how it improves data security and abstraction.
@@ -9,10 +11,7 @@
 -  Write a Java class that encapsulates its fields using private access modifiers
 
 
-
-
-
-## Object Oriented Programming
+## Introduction
 
 Object Oriented Programming (OOP) is a programming paradigm that is based on the concept of objects. It is a way of organizing code into objects that have state (attributes) and behavior (methods).
 
@@ -23,9 +22,9 @@ OOP is based on 4 principles:
 - Polymorphism
 - Abstraction
 
-## Encapsulation
 
-### What is Encapsulation?
+
+## What is Encapsulation?
 
 Encapsulation is
 

@@ -1,4 +1,6 @@
-# Learning Objective
+# Inheritance
+
+## Learning Objective
 
 - Define inheritance in object-oriented programming.
 
@@ -10,15 +12,14 @@
 
 - Use the super keyword to call superclass constructors and methods.
 
-##  Inheritance
 
-### What is Inheritance?
+## Introduction
 
 Inheritance is organizing code into a parent-child hierarchy so that the child can inherit the properties and methods of the parent.
 
 Take for example, a `Person` class. It is the base class of a hierarchy of classes for other child classes such as `Student`, `Teacher`, `Employee`, `Janitor` etc.
 
-### Creating a child class
+## Creating a child class
 
 Let's create a `Student` class that inherits from the `Person` class. To do that, we use the `extends` keyword.
 
@@ -104,7 +105,7 @@ Currently, we have to manually initialize the `name` and `age` fields using the 
 
 But how do we initialize these values since the `Student` class does not have these fields?
 
-### `super` keyword
+## `super` keyword
 
 The `super` keyword is like `this` but it refers to the parent class. It can be used to call the parent class constructor. Recall that the parent class is also known as the **super** class, hence that is what calling `super()` does.
 
@@ -161,7 +162,7 @@ student.addGrade(90);
 System.out.println("My average grade is " + student.getAverageGrade());
 ```
 
-### The `protected` access modifier
+## The `protected` access modifier
 
 In an earlier lesson we had mentioned about the `protected` access modifier. The `protected` access modifier allows the field to be accessed by the child class.
 

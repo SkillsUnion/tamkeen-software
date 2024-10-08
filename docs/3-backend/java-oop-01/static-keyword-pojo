@@ -1,3 +1,5 @@
+# Static Keyword & POJOs in Java
+
 ## Lesson Objectives
 
 -Define the static keyword and explain its role in Java for variables, methods, and blocks.
@@ -8,11 +10,7 @@
 
 -Understand a POJO (Plain Old Java Object) and explain its role in simplifying object-oriented programming in Java.
 
-
-
-
-
-##  `static` Keyword
+##  Introduction
 
 In the previous lesson we used the `static` keyword on methods. We can also use it on attributes.
 
@@ -77,7 +75,7 @@ Static members are associated with the class, not with any particular instance o
 
 ---
 
-## Part 5: `toString` and `@Override`
+##  `toString` and `@Override`
 
 By default, if we try to print out an object, we will get the class name and the hashcode.
 
@@ -98,7 +96,7 @@ The `@Override` annotation is used to indicate that the method is overriding a m
 
 ---
 
-## Part 6: Intro to the POJO
+## POJO in Java
 
 A Plain Old Java Object (POJO) is a simple object used to represent data in a Java program.
 

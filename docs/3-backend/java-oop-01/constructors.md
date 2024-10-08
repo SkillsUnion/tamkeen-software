@@ -1,3 +1,5 @@
+# Java Constructors
+
 ## Lesson Objectives
 
 - Understand the role of Constructors and explain its function in initializing objects in Java.
@@ -7,7 +9,8 @@
 - Understand Constructor Overloading and learn how to overload constructors by creating multiple constructors with different parameter lists in a class.
 
 - Understand the Role of the this Keyword in constructors and apply the this keyword to differentiate    between instance variables and constructor.
-##  Constructors
+
+##  Introduction
 
 A **constructor** is a special method that is called when an object is instantiated i.e. when the `new` keyword is used. The purpose of a constructor is to initialize values for the newly created object.
 
