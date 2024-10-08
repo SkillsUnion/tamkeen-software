@@ -1,4 +1,6 @@
-# Lesson Objective
+# Polymorphism
+
+## Lesson Objective
 
 - Understand Polymorphism and its significance in object-oriented programming (OOP).
 
@@ -8,10 +10,7 @@
 
 - Understand method overriding as a form of runtime polymorphism.
 
-
-## Polymorphism
-
-### What is Polymorphism?
+## Introduction
 
 Polymorphism means many forms i.e. the ability of a method to have different behaviours in different situations.
 
@@ -20,7 +19,11 @@ There are 2 types of polymorphism:
 1. Static or compile-time polymorphism
 2. Dynamic or run-time polymorphism
 
-### Compile-time Polymorphism
+{% include youtube.html id="https://www.youtube.com/watch?v=gICOd0m84R0&t=38s" %}
+
+
+
+## Compile-time Polymorphism
 
 Compile-time polymorphism is also known as **method overloading**. It occurs when there are multiple methods with the same name but different parameters.
 
@@ -65,7 +68,7 @@ And run it in `main`.
 student.doWork("homework");
 ```
 
-### Runtime Polymorphism
+## Runtime Polymorphism
 
 Runtime polymorphism is also known as **method overriding**. It occurs when a child class overrides a method of the parent class.
 
@@ -90,27 +93,11 @@ Now when we run the following code, the `doWork()` method in the `Student` class
 student.doWork();
 ```
 
-#### The `@Override` annotation
+## The `@Override` annotation
 
 The `@Override` annotation is used to indicate that a method is being overridden. It is not required but it is good practice to use it.
 
-This is because without the annotation, if we accidentally misspell the method name or change the method signature, the compiler will not be able to detect it and we will not get any error messages.
-
-```java
-// @Override
-public void doWerk() {
-  System.out.println(this.name + " is studying.");
-}
-```
-
-And then when we run the following code, the `doWork()` method in the `Person` class will be called.
-
-```java
-Person student = new Student("John", 2000, 12345, "Computer Science", 2020);
-student.doWork(); // I am working.
-```
-
-#### Runtime Polymorphism with `super`
+## Runtime Polymorphism with `super`
 
 In some cases, we may want to call the parent class method from the child class, in addition to defining a new behavior in the child class.
 
