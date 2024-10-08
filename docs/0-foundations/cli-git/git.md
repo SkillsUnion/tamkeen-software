@@ -51,7 +51,7 @@ The following exercises should help familiarise you with Git. We use text instea
 
 1. Create a folder with the command `mkdir`
 2. `cd` into the folder, and initialise it as a git repo using the command `git init`
-3. Create a text file in the command line using `touch spring-poem.txt` and open it in VS Code with `code spring-poem.txt`
+3. Create a text file in the command line using `touch spring-poem.txt` (or `ni spring-poem.txt` in Powershell)and open it in VS Code with `code spring-poem.txt`
 4. Write a poem about spring (or anything) in `spring-poem.txt` and save the file
 5. Stage and commit `spring-poem.txt` with `git add .` and `git commit -m`
 6. Edit our poem to reference leaves (or anything). Stage and commit the edits
