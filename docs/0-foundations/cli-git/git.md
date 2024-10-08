@@ -49,7 +49,7 @@ The following are common Git commands we will use as software engineers.
 
 The following exercises should help familiarise you with Git. We use text instead of code, but the Git functionality is the same. You may wish to have 3 windows open on your screen: VS Code, the Git Commands table above, and the following instructions.
 
-1. Open today's folder in terminal and create a folder with the command `mkdir`
+1. Create a folder with the command `mkdir`
 2. `cd` into the folder, and initialise it as a git repo using the command `git init`
 3. Create a text file in the command line using `touch spring-poem.txt` and open it in VS Code with `code spring-poem.txt`
 4. Write a poem about spring (or anything) in `spring-poem.txt` and save the file
