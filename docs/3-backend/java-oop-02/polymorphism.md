@@ -19,7 +19,9 @@ There are 2 types of polymorphism:
 1. Static or compile-time polymorphism
 2. Dynamic or run-time polymorphism
 
-{% include youtube.html id="gICOd0m84R0" time="8s" %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gICOd0m84R0?si=3qniRKVcZeTdZrS5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
 
 
 
