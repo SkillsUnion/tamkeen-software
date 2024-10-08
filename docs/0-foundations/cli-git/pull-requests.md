@@ -14,12 +14,7 @@ A GitHub [**pull request**](https://docs.github.com/en/free-pro-team@latest/gith
 
 ## How to create, comment on and merge pull requests
 
-Below is a demo video for how to create, comment on and merge pull requests.
-
-[Video]("https://youtu.be/-m5ShISXdg8")
-
-Demo video on how to create, comment on and merge pull requests
-
+Here is a [demo video]("https://youtu.be/-m5ShISXdg8") for how to create, comment on and merge pull requests.
 
 To create a pull request to merge a change from a feature branch to `main` (or any other branch), first push the latest changes from that feature branch from our local repo to GitHub.
 
