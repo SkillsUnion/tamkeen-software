@@ -19,7 +19,7 @@ There are 2 types of polymorphism:
 1. Static or compile-time polymorphism
 2. Dynamic or run-time polymorphism
 
-{% include youtube.html id="https://www.youtube.com/watch?v=gICOd0m84R0&t=38s" %}
+{% include youtube.html id="gICOd0m84R0" time="8s" %}
 
 
 
