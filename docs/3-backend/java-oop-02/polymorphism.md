@@ -19,12 +19,6 @@ There are 2 types of polymorphism:
 1. Static or compile-time polymorphism
 2. Dynamic or run-time polymorphism
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gICOd0m84R0?si=SZSh3YN9HS8pWV8E&amp;start=378" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-
-
-
 ## Compile-time Polymorphism
 
 Compile-time polymorphism is also known as **method overloading**. It occurs when there are multiple methods with the same name but different parameters.
