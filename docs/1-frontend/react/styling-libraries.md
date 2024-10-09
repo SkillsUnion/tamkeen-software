@@ -75,7 +75,7 @@ export default App;
 
 The output on the browser is as follows:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-10-25 at 4.33.48 PM.png" alt=""><figcaption><p>Bootstrap added</p></figcaption></figure>
+<figure><img src="../assets/blue-button.png" alt=""><figcaption><p>Bootstrap added</p></figcaption></figure>
 
 From the image above we can see a new blue button has been added into the application, we didnt style this button, it was all React-Bootstrap. This is how you can utilise React-Bootstrap within a React application. Utilise more complex components using this styling library to save yourself time during development.
 
@@ -127,7 +127,7 @@ Here is a simple implementation of the react-bootstrap grid system
  </Container>
 ```
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-10-26 at 10.48.04 AM.png" alt=""><figcaption><p>Simple Grid System</p></figcaption></figure>
+<figure><img src="../assets/grid-1.png" alt=""><figcaption><p>Simple Grid System</p></figcaption></figure>
 
 It is possible to make the `Col` Components respond to the windows width, based off the breakpoints that were pointed out earlier. This allows columns to wrap and resize their content to ensure that data is shown exactly as intended, to do this we need to make use of Bootstraps breakpoint properties on our `Col` Components as shown below. You are able to apply as many breakpoint properties on a `Col` as are needed.
 
@@ -168,13 +168,13 @@ It is possible to make the `Col` Components respond to the windows width, based 
 
 Below is the output of the code above, depending on the size of the window.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-10-26 at 11.06.17 AM.png" alt=""><figcaption><p>Extra Large Screen ≥1200px</p></figcaption></figure>
+<figure><img src="../assets/xl-screen.png" alt=""><figcaption><p>Extra Large Screen ≥1200px</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-10-26 at 11.06.49 AM.png" alt=""><figcaption><p>Large Screen ≥992px</p></figcaption></figure>
+<figure><img src="../assets/lg-screen.png" alt=""><figcaption><p>Large Screen ≥992px</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-10-26 at 11.07.26 AM.png" alt=""><figcaption><p>Medium Screen ≥768x</p></figcaption></figure>
+<figure><img src="../assets/md-screen.png" alt=""><figcaption><p>Medium Screen ≥768x</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-10-26 at 11.07.50 AM.png" alt=""><figcaption><p>Small Screen ≥576px</p></figcaption></figure>
+<figure><img src="../assets/sm-screen.png" alt=""><figcaption><p>Small Screen ≥576px</p></figcaption></figure>
 
 The Grid system in `react-bootstrap` affords developers an easy way to dynamically resize content dependant on their users screens. This system of Bootstrap Components comes together to build fully responsive webpages, it should be noted that the underlying system used here is flexbox. This system is a fantastic way to ensure that an applications content can be visible to users across multiple device sizes without the need to add in hundreds of `@mediaqueries`.
 

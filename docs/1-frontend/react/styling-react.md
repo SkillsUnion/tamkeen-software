@@ -10,7 +10,7 @@ Learning Objectives
 
 In a previous section we introduced CSS, which is used to apply styles to HTML pages beautifying content. Within ReactJs we can use CSS in order style our rendered output, you can apply any CSS style within React. It should be noted that because we are writing JSX, there are some different rules than applying style in HTML. An important distinction is that the className property is used on JSX elements to apply classes, this is because the word class in JavaScript is a reserved key word. We can use the boilerplate code that is generated from the npx Create React Application, we actually have some built in styling. Below is an example of the boilerplate output.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-12-15 at 1.08.08 PM.png" alt=""><figcaption><p>Create React Application</p></figcaption></figure>
+<figure><img src="../assets/cra.png" alt=""><figcaption><p>Create React Application</p></figcaption></figure>
 
 
 
@@ -43,7 +43,7 @@ Notice how the opening p tag on line 4 contains a style property which equals to
 
 This is the resulting render in the browser.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-12-15 at 1.25.46 PM.png" alt=""><figcaption><p>Create React Application In-line style</p></figcaption></figure>
+<figure><img src="../assets/cra-inline.png" alt=""><figcaption><p>Create React Application In-line style</p></figcaption></figure>
 
 ### Style Objects
 
@@ -83,13 +83,13 @@ function App() {
 export default App;
 ```
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-10-25 at 4.30.02 PM.png" alt=""><figcaption><p>New header added </p></figcaption></figure>
+<figure><img src="../assets/cra-new-header.png" alt=""><figcaption><p>New header added </p></figcaption></figure>
 
-If you have multiple style objects that are consistent and used across components you could make a .js file that contains all of the common properties and import them into necessary components.&#x20;
+If you have multiple style objects that are consistent and used across components you could make a .js file that contains all of the common properties and import them into necessary components.
 
 ### Stylesheets React
 
-Another way one can apply style within Reactjs is through the stylesheet, as stated previously the App.js component is already affect by some boilerplate style, that should be found in App.css. We can alter the content further by adding new classes into the App.css stylesheet and by adding new classes to our App.js code.&#x20;
+Another way one can apply style within Reactjs is through the stylesheet, as stated previously the App.js component is already affect by some boilerplate style, that should be found in App.css. We can alter the content further by adding new classes into the App.css stylesheet and by adding new classes to our App.js code.
 
 Lets change the link below to remove all text decoration such that we can apply our own style.
 
@@ -109,7 +109,7 @@ The output should look like this within the browser.
 
 
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-10-25 at 4.31.57 PM.png" alt=""><figcaption><p>Stylesheet applied</p></figcaption></figure>
+<figure><img src="../assets/cra-stylesheet.png" alt=""><figcaption><p>Stylesheet applied</p></figcaption></figure>
 
 Stylesheets are used within the Application by importing them at the top of the component. The full component should be similar to the code below.
 
