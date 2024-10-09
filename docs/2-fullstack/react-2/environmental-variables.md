@@ -31,11 +31,11 @@ Note there are different implementations of dotenv in different environments, in
 4. Create a .env.sample file to indicate what credentials are required in your application.
 5.  Remember if you alter your .env file you may need to restart React application, stop your server and run `npm run dev`.
 
-    <figure><img src="../../.gitbook/assets/Screenshot 2023-10-31 at 6.08.20 PM.png" alt=""><figcaption><p>Sample Folder Structure</p></figcaption></figure>
+    <figure><img src="../assets/sample-folder-structure.png" alt=""><figcaption><p>Sample Folder Structure</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-10-31 at 6.09.05 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../assets/vite-env-variable.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-10-31 at 6.09.20 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../assets/env-var-use.png" alt=""><figcaption></figcaption></figure>
 
 #### Use cases for the .env?
 

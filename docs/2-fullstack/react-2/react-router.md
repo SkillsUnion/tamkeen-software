@@ -114,7 +114,7 @@ export default function App() {
 }
 ```
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-10-31 at 11.33.16 AM.png" alt=""><figcaption><p>http://localhost:5173/profile</p></figcaption></figure>
+<figure><img src="../assets/profile.png" alt=""><figcaption><p>http://localhost:5173/profile</p></figcaption></figure>
 
 The code above will implement a simple form of routing within our a basic React Application, when viewing the application in the browser following the command `npm run dev`, you will be able to access each element that was passed into `createBrowserRouter`, based off the URL endpoint that is visited. Eg: `http://localhost:5173/profile` to render the Profile Component.   As you can see from the code above each object contains a "path" and an "element" key. The element can be a collection of JSX or a React Component, we will explore using Components within the router in the next example. Note that the path value matches a `Link`'s "to" property value that is defined in the file `Navbar.jsx`. This is how routing is set up utilising React Router DOM.
 
@@ -237,7 +237,7 @@ Once you have set up basic routing you will want to consider your user flow and 
 
 <a href="https://reactrouter.com/en/main/hooks/use-navigate" target="_blank">useNavigate</a> This hook allows us to move our users around our application using React Router. An example of this implementation can be seen within our example.
 
-The `ErrorPage` Component is rendered when a user has navigated to a path that isn't handled in the implemented router system. As indicated by the code below, `useNavigate` has been implemented to help the user, this tool allows us to access and alter current url that the user has visited. In this example the user will be navigated back to the home page when the "Home" button is clicked. Note that we could push the users to any page handled within the React Router system, just pass in the relevant path.&#x20;
+The `ErrorPage` Component is rendered when a user has navigated to a path that isn't handled in the implemented router system. As indicated by the code below, `useNavigate` has been implemented to help the user, this tool allows us to access and alter current url that the user has visited. In this example the user will be navigated back to the home page when the "Home" button is clicked. Note that we could push the users to any page handled within the React Router system, just pass in the relevant path.
 
 ```jsx
 import { useNavigate } from "react-router-dom";
@@ -253,7 +253,7 @@ function ErrorPage() {
 export default ErrorPage;
 ```
 
-Below are the some example Components that could be used to implement the React Router example above.&#x20;
+Below are the some example Components that could be used to implement the React Router example above.
 
 ```jsx
 function Home() {
@@ -346,13 +346,13 @@ export default function PokeCard(props) {
 ```
 
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-10-31 at 11.36.32 AM.png" alt=""><figcaption><p>http://localhost:5173/profile/view</p></figcaption></figure>
+<figure><img src="../assets/profile-view.png" alt=""><figcaption><p>http://localhost:5173/profile/view</p></figcaption></figure>
 
-This is the output of the current code showcasing the nested route and what it would look like. If you would like to checkout the code implementation please checkout <a href="https://github.com/rocketacademy/react-routing-3.2/tree/nested_routes" target="_blank">this repository</a>.&#x20;
+This is the output of the current code showcasing the nested route and what it would look like. If you would like to checkout the code implementation please checkout <a href="https://github.com/rocketacademy/react-routing-3.2/tree/nested_routes" target="_blank">this repository</a>.
 
 ### createRoutesFromElements
 
-While the above implementation works and is able to render out various pages it is possible to make routing easier to read, such that you can easily identify nested routes within your codebase. To do this we would need to convert the objects that were passed in the previous example into `Route` Components, passing any required properties, the key props are "path" and "element".  &#x20;
+While the above implementation works and is able to render out various pages it is possible to make routing easier to read, such that you can easily identify nested routes within your codebase. To do this we would need to convert the objects that were passed in the previous example into `Route` Components, passing any required properties, the key props are "path" and "element".
 
 
 ```jsx
@@ -417,11 +417,11 @@ export default function App() {
 ```
 
 
-In the code sample above nested routes become easier to identify compared to the earlier implementation of React Router DOM as `Route` tags wrap around any child 'routes' or 'paths'. This is indicated by the `Route` tag which renders the `Root` Component, it starts on line 20 and encompasses all defined `Route`s and closes on line 48. Another example of this is the `Route` that renders the `Profile` Component, it is defined on line 23 and closes on like 44, encompassing the `Route`s that contain the paths 'edit' and 'view'. By developing an application in this manner it is possible to map out possible pages and understand the routing system that was setup.&#x20;
+In the code sample above nested routes become easier to identify compared to the earlier implementation of React Router DOM as `Route` tags wrap around any child 'routes' or 'paths'. This is indicated by the `Route` tag which renders the `Root` Component, it starts on line 20 and encompasses all defined `Route`s and closes on line 48. Another example of this is the `Route` that renders the `Profile` Component, it is defined on line 23 and closes on like 44, encompassing the `Route`s that contain the paths 'edit' and 'view'. By developing an application in this manner it is possible to map out possible pages and understand the routing system that was setup.
 
-### Parameters and useParams&#x20;
+### Parameters and useParams
 
-Notice how we added an additional `Route` in the example above, the `user` route, which renders the `User` Component, note that the path property has been implemented with the `username` parameter. This parameter signifies that the value is whatever is passed within the URL provided the rest of the path matches. EG: "http://localhost:5173/user/sam" and  "http://localhost:5173/user/kai" render the the same Component but will appear difference every time the url changes. Below is the `User` Component, it displays a welcome message as well as the "username" that is passed into the URL.   We can consider this Component to be dynamic because when you navigate to the page and React Router will process the endpoint value of the URL to alter what is rendered within the browser.  Note that if you are implementing this code, there are no navigation `Link`s to this Component, to visit this Component alter the URL in the browser or generate some `Link`s and add them to the Navbar Component.&#x20;
+Notice how we added an additional `Route` in the example above, the `user` route, which renders the `User` Component, note that the path property has been implemented with the `username` parameter. This parameter signifies that the value is whatever is passed within the URL provided the rest of the path matches. EG: "http://localhost:5173/user/sam" and  "http://localhost:5173/user/kai" render the the same Component but will appear difference every time the url changes. Below is the `User` Component, it displays a welcome message as well as the "username" that is passed into the URL.   We can consider this Component to be dynamic because when you navigate to the page and React Router will process the endpoint value of the URL to alter what is rendered within the browser.  Note that if you are implementing this code, there are no navigation `Link`s to this Component, to visit this Component alter the URL in the browser or generate some `Link`s and add them to the Navbar Component.
 
 
 ```jsx
@@ -440,15 +440,15 @@ export default User;
 ```
 
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-10-31 at 11.39.38 AM.png" alt=""><figcaption><p>http://localhost:5173/user/John</p></figcaption></figure>
+<figure><img src="../assets/hello-john.png" alt=""><figcaption><p>http://localhost:5173/user/John</p></figcaption></figure>
 
-If you would like to checkout the code implementation please checkout <a href="https://github.com/rocketacademy/react-routing-3.2/tree/nested_routes_route" target="_blank">this repository</a>. Here is the <a href="https://rocketacademy.github.io/react-routing-3.2/" target="_blank">deployed link</a>.&#x20;
+If you would like to checkout the code implementation please checkout <a href="https://github.com/rocketacademy/react-routing-3.2/tree/nested_routes_route" target="_blank">this repository</a>. Here is the <a href="https://rocketacademy.github.io/react-routing-3.2/" target="_blank">deployed link</a>.
 
 ## Private Routing
 
-It should be noted that the section below should only be attempted after authentication has been implemented within an application. Before this you wouldn't be implementing a meaningful authenticated routing system. We will be covering authentication later within this module.&#x20;
+It should be noted that the section below should only be attempted after authentication has been implemented within an application. Before this you wouldn't be implementing a meaningful authenticated routing system. We will be covering authentication later within this module.
 
-When you have achieved authentication within your applications you may desire to create private routes. Private routes are routes whose components are wrapped in authenticating logic, this means that users who are not authenticated are unable to access the URL that they tried to visited and will be redirected to another page within the application.&#x20;
+When you have achieved authentication within your applications you may desire to create private routes. Private routes are routes whose components are wrapped in authenticating logic, this means that users who are not authenticated are unable to access the URL that they tried to visited and will be redirected to another page within the application.
 
 
 ```jsx
@@ -490,6 +490,6 @@ const RequireAuth = ({ children, redirectTo, user }) => {
 ```
 
 
-The `RequireAuth` function checks to see if the user is authenticated, by validating the existence of a "user.uid", if this uid exists, then, then the Component will proceed to render the appropriate Components, in this case the `Profile`. On the other hand if the uid is return undefined, the user is seen as not logged in and they will be redirected to the '/' path. &#x20;
+The `RequireAuth` function checks to see if the user is authenticated, by validating the existence of a "user.uid", if this uid exists, then, then the Component will proceed to render the appropriate Components, in this case the `Profile`. On the other hand if the uid is return undefined, the user is seen as not logged in and they will be redirected to the '/' path. 
 
 If you would like to checkout the code implementation please checkout <a href="https://github.com/rocketacademy/react-routing-3.2/tree/nested_routes_route_auth" target="_blank">this repository.</a>

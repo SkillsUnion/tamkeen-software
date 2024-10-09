@@ -68,6 +68,6 @@ axios.get('/user?ID=12345')
 
 TC provides a convenient interface for creating and populating request URLs, methods, bodies, and query parameters. After sending requests with TC, TC formats responses for us in the VS Code interface.
 
-![Thunder Client provides a convenient interface for testing APIs. Source: Thunder Client](<../../.gitbook/assets/2.1.2 - HTTP Requests and Responses - Thunder Client.png>)
+![Thunder Client provides a convenient interface for testing APIs. Source: Thunder Client](<../assets/thunder-client.png>)
 
 There are many alternatives to Thunder Client, among which is a popular software called <a href="https://www.postman.com/" target="_blank">Postman</a>. You can try either Thunder Client or Postman to help you get familiarize with using different tools.

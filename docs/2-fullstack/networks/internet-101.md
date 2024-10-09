@@ -7,7 +7,7 @@
 
 ## Introduction
 
-![Global map of submarine internet cables. Source: Ars Technica](<../../.gitbook/assets/2.1 - World Submarine Cable Map.png>)
+![Global map of submarine internet cables. Source: Ars Technica](<../assets/cable-map.png>)
 
 The internet consists of computers, wires and software that sends data between computers through wires.
 
@@ -27,7 +27,7 @@ HTTP consists of "requests" and "responses". Frontends (e.g. browsers, mobile ap
 
 URLs (Uniform Resource Locators) are internet addresses. We will send HTTP requests with URLs to retrieve our frontends and communicate with our backends and 3rd-party APIs.
 
-![A URL consists of these key components. Source: Rocket Academy](<../../.gitbook/assets/2.1 - URL.jpg>)
+![A URL consists of these key components. Source: Rocket Academy](<../assets/url.jpg>)
 
 We use ports to identify requests and responses to different applications on the same computer. We can omit ports in URLs when our applications use default ports (e.g. 443 for HTTPS requests, 80 for HTTP).
 
