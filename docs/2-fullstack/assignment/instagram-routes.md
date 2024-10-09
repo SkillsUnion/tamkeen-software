@@ -44,6 +44,6 @@ Deploy your app to the internet, follow Vitejs GitHub Pages <a href="https://vit
 
 You may see the following warning from Chrome when visiting the reference deployment. This may be because we used "Instagram" as our app name and we have "instagram" in our URL. To visit the site anyway, click "Details" and "visit this unsafe site" like in the screenshots below.
 
-![Chrome warns us of deceptive sites.](<../../.gitbook/assets/2.E.4 - Instagram Routes - Deceptive Site.png>)
+![Chrome warns us of deceptive sites.](<../assets/instagram-routes-deceptive-site.png>)
 
-![To visit the site anyway, click "visit this unsafe site".](<../../.gitbook/assets/2.E.4 - Instagram Routes - Deceptive Site Details.png>)
+![To visit the site anyway, click "visit this unsafe site".](<../assets/instagram-routes-deceptive-site-details.png>)
