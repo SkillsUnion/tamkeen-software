@@ -25,11 +25,9 @@ Properties like make, model, year, etc., are private and can only be accessed an
 
 The describe() method is overridden in the Car and Bike classes to provide specific information for each vehicle type.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gICOd0m84R0?si=cNBBze5Aag-x597F&amp;start=377" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 ## Instructions
 
-##    Fork and clone a copy of <a href="https://github.com/SkillsUnion/vehicle-hub.git" target="_blank">Vehicle Hub repo</a>
+##  Fork and clone a copy of <a href="https://github.com/SkillsUnion/vehicle-hub.git" target="_blank">Vehicle Hub repo</a>
 
 ### Set Up Your Project:
 
@@ -164,9 +162,6 @@ public class Car extends Vehicle {
     
 }
 ```
-
-            
-
            
 ## Step-by-Step Implementation:
 
@@ -246,6 +241,8 @@ Bike: 2019 Giant Escape, Type: Mountain.
 Engine has started.
 Bike bell is ringing!
 ```
+
+
    
 
 
