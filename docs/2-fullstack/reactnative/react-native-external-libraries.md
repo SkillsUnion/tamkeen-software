@@ -66,7 +66,7 @@ What will happen is that when the app launches, it will ask for permission for c
 
 After setting up the configuration in `app.json`, we code the content for `App.js`.
 
-```js
+```jsx
 //App.js
 import { StyleSheet, Text, View, Button } from 'react-native';
 import { CameraView, Camera } from 'expo-camera';

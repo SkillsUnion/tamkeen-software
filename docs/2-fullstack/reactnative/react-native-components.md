@@ -78,12 +78,12 @@ To use local images, put the image into the project's `assets` folder. Create a 
 > Note: This assumes that you have an image called `sample.png` in the `assets/images` folder
 
 Import the image as a variable:
-```js
+```jsx
 import samplePng from "./assets/sample.png";
 ```
 
 Use the Image component in the return statement:
-```js
+```jsx
 return (
   <View>
     <Text>Hello, smile!</Text>
@@ -98,13 +98,13 @@ The Image component can also use images online, however, it has to be styled fir
 
 Import the StyleSheet component from react-native:
 
-```js
+```jsx
 import { Text, View, Image, StyleSheet } from "react-native"; //Add the StyleSheet in the import
 ```
 
 Create a `styles` object outside of the function component:
 
-```js
+```jsx
 function App(){
     ...
 }
@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
 
 Then add the Image component, for images from the web, provide a `style` and `source` with the `uri` property. 
 
-```js
+```jsx
 return (
   <View>
     <Text>Hello, smile!</Text>
@@ -144,13 +144,13 @@ This is not something new to us. To have TextInput component working, we have to
 
 Import the TextInput component from react-native:
 
-```js
+```jsx
 import { Text, View, Image, StyleSheet, TextInput } from "react-native";
 ```
 
 Include the TextComponent in the return block:
 
-```js
+```jsx
 return (
   <View>
     <Text>Hello, smile!</Text>
@@ -171,7 +171,7 @@ return (
 ```
 
 Add styling for the TextInput:
-```js
+```jsx
 const styles = StyleSheet.create({
   image: {
     height: 500,
@@ -187,7 +187,7 @@ const styles = StyleSheet.create({
 ```
 
 Implement state management via useState:
-```js
+```jsx
 import React, { useState } from "react"; // the import
 //other imports
 
@@ -200,7 +200,7 @@ function App(){
 
 You would notice that the TextInput might not be visible. This is because that it is located at the bottom of the app which the screen doesn't show. To mitigate this, we will allow the view to be scrollable. We do this by converting the View component into using the ScrollView component.
 
-```js
+```jsx
 import {
   StyleSheet, Text, View, Image, TextInput, ScrollView // Add the ScrollView in our import.
 } from "react-native";
@@ -216,7 +216,7 @@ In this part, we will only use the View component and Stylesheet. This example i
 
 Create a new React Native app called flexboxApp and import the necessary components:
 
-```js
+```jsx
 import {View, StyleSheet} from "react-native";
 
 function App (){

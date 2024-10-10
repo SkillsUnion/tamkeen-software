@@ -54,7 +54,7 @@ How tab navigation works is that you have screens that would correspond to compo
 
 Begin by creating two screens, HomeScreen and SettingsScreen:
 
-```js
+```jsx
 import * as React from 'react';
 import { Text, View } from 'react-native';
 
@@ -85,7 +85,7 @@ Import the `NavigationContainer` and `createBottomTabNavigator` from `react-navi
 
 After which, a `Tab` component is created and we use it for the screens.
 
-```js
+```jsx
 import * as React from 'react';
 import { Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
@@ -152,7 +152,7 @@ Drawer screens work similarly on how it works for Tab screens.
 
 Begin by creating two screens, Feed and Article:
 
-```js
+```jsx
 import * as React from 'react';
 import { Text, View } from 'react-native';
 
@@ -179,7 +179,7 @@ After creating the screens, we now create the container and the drawer to naviga
 
 Import the dependencies as seen in the code below:
 
-```js
+```jsx
 import * as React from 'react';
 import { Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
