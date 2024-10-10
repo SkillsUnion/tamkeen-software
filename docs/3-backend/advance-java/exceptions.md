@@ -1,13 +1,14 @@
+# Exception
+
 # Lesson Objective
 
 - Define what an exception is and understand its role in managing errors during program execution.
 
 - Understand how exceptions propagate through the call stack.
 
-- Learn about the two different approaches to deal with exceptions
+- Learn about the different approaches to deal with exceptions.
 
-
-# What is an Exception?
+## Introduction 
 
 An exception (or exceptional event) is a problem that arises during the execution of a program. When an Exception occurs the normal flow of the program is disrupted and the program/Application terminates abnormally, which is not recommended, therefore, these exceptions are to be handled.
 
@@ -23,7 +24,7 @@ The runtime system searches the **call stack** for a method that contains a bloc
 
 If no appropriate exception handler is found, then the program terminates.
 
-Advantages of Exceptions
+### Advantages of Exceptions
 
 1. Separating Error-Handling Code from "Regular" Code
 
@@ -31,13 +32,13 @@ Advantages of Exceptions
 
 1. Propagating Errors Up the Call Stack
 
-   - The ability to propagate errors up the call stack in this manner means that you do not have to check for errors immediately where they occur and handle them there. Instead, you can let a sequence of methods return from their work and pass the buck to their callers. This allows you to write your methods to handle the normal case and to simply propagate exceptions that are caused by boundary conditions or other unexpected situations.
+   - The ability to propagate errors up the call stack in this manner means that you do not have to check for errors immediately where they occur and handle them there. Instead, you can let a sequence of methods return from their work and pass the bug to their callers. This allows you to write your methods to handle the normal case and to simply propagate exceptions that are caused by boundary conditions or other unexpected situations.
 
 1. Grouping and Differentiating Error Types
 
    - Each exception that occurs indicates a particular error condition. You can create your own exceptions to indicate to callers of your methods that your methods cannot achieve their stated goals.
 
-### Looking at Our First Exception
+## Looking at Our First Exception
 
 Create a file `LearnExceptions.java` and code along.
 
@@ -76,7 +77,7 @@ Exception in thread "main" java.lang.ArithmeticException: / by zero
         at LearnExceptions.main(LearnExceptions.java:5)
 ```
 
-### LBYL and EAFP Approaches
+## LBYL and EAFP Approaches
 
 There are 2 main approaches to dealing with errors when programming.
 

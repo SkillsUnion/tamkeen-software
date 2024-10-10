@@ -1,15 +1,13 @@
 
-# Lesson Objectives
+# Checked And UnChecked Exceptions
+
+## Lesson Objectives
 
 - Understand the distinction between checked exceptions (compile-time) and unchecked exceptions (runtime).
 
 - Learn how to handle checked exceptions using try, catch, and finally blocks.
 
 - Understand the role of throws clause in method declarations for checked exceptions.
-
-
-
-# Checked vs Unchecked Exceptions
 
 ## Unchecked Exceptions
 
@@ -25,7 +23,7 @@ The other type is known as **checked exceptions**, which are checked at compile 
 
 The Java compiler checks and ensures that the code handles the checked exceptions. If the code does not handle the checked exceptions, the code will not compile.
 
-Let's try to use the `FileInputStream` class to read a file.docs\3-backend\advance java\exceptions_img01.jpg
+Let's try to use the `FileInputStream` class to read a file.
 
 ```java
 FileInputStream f = new FileInputStream("test.txt");
@@ -84,7 +82,8 @@ We can propagate this exception using the `throws` keyword. With the `throws Fil
 
 ```java
 public static void readFileFirstLine(String filename) throws FileNotFoundException
-```docs\3-backend\advance java\exceptions_img01.jpg
+```
+
 And in our `main`:
 
 ```java
