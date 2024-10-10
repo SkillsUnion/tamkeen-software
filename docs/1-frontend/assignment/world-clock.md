@@ -17,7 +17,7 @@ We will build a collection of clocks with different time zones to demonstrate th
 
 ### Clone starter code
 
-Fork and clone <a href="https://github.com/SkillsUnion/world-clock" target="_blank">World Clock repo</a> (Rocket-themed React Vite application). Run `npm install` to install default packages our app needs to run, and run `npm run dev` to start the app next open your browser and navigate to <a href="http://localhost:5173/" target="_blank">http://localhost:5173</a>.
+Fork and clone <a href="https://github.com/SkillsUnion/world-clock" target="_blank">World Clock repo</a> (React Vite application). Run `npm install` to install default packages our app needs to run, and run `npm run dev` to start the app next open your browser and navigate to <a href="http://localhost:5173/" target="_blank">http://localhost:5173</a>.
 
 ### Understand starter code
 
@@ -97,8 +97,6 @@ We should also consider how we have altered the original render method. We assig
 Notice the value of `element` in `tick` looks similar to the element returned in the `return` statement within the `App.jsx`, that being, HTML with a JavaScript date inserted using curly braces `{}` in JSX.
 
 The difference between `main.jsx` and `App.jsx` is the `setInterval` in `main.jsx` that calls `tick` and hence `root.render` method every second.
-
-## Comfortable (Second day)
 
 ### `setInterval` inside the `App` component
 
@@ -239,7 +237,7 @@ The grid might look something like the following.
 | London      | `<Clock timeZone="Europe/London" />`       |
 | Singapore   | `<Clock timeZone="Asia/Singapore" />`      |
 
-## More Comfortable: `WorldClock` component with dynamic number of clocks
+## Challenge: `WorldClock` component with dynamic number of clocks
 
 Refactor our world clock UI into its own component `WorldClock` in its own file such that others can use it to create world clock UIs with a custom number of clocks with a custom set of timezones. `WorldClock` should accept a `clockData` prop that is an array of time zone strings, where each string corresponds to a new clock. `WorldClock` should use the `Clock` component internally, and our `App` component should import and use `WorldClock`. You may find the upcoming reading in <a href="https://react.dev/learn/rendering-lists" target="_blank">Lists and Keys</a> helpful for mapping an array of time zone strings to `Clock` components.
 
