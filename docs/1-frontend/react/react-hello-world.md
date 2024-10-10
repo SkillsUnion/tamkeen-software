@@ -22,7 +22,7 @@ Then using arrow keys once more navigate down to 'JavaScript', if you don't need
 
 Now you can follow the instructions within the CLI to first navigate into the newly created directory, then install the required dependancies and finally run the React application using the command `npm run dev`, to view the application you should open the URL that is shown in your CLI, it should be something like <a href="http://localhost:5173/" target="_blank">**http://localhost:5173**</a>, the output on the page should be similar to the image below. 
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-10-18 at 2.49.25 PM.png" alt=""><figcaption><p>Vite and React</p></figcaption></figure>
+<figure><img src="../assets/vitejs.png" alt=""><figcaption><p>Vite and React</p></figcaption></figure>
 
 There are some key files that you should be aware of within this starter code. Note that the index.html is in the root of the project directory, it is in the entry point to your application and is required for the React App. Please explore the files within the starter code and consider the points below,
 

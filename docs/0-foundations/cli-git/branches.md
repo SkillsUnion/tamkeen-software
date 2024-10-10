@@ -82,9 +82,9 @@ react % git push --set-upstream origin my-feature
 Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
 remote:
 remote: Create a pull request for 'my-feature' on GitHub by visiting:
-remote:      https://github.com/kai-rocket/react/pull/new/my-feature
+remote:      https://github.com/SkillsUnion/react/pull/new/my-feature
 remote:
-To https://github.com/kai-rocket/react.git
+To https://github.com/SkillsUnion/react.git
  * [new branch]          my-feature -> my-feature
 Branch 'my-feature' set up to track remote branch 'my-feature' from 'origin'.
 react %
