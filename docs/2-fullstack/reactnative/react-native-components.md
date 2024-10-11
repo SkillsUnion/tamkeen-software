@@ -155,12 +155,12 @@ Include the TextComponent in the return block:
 return (
   <View>
     <Text>Hello, smile!</Text>
-    <Image
+{/*    <Image
       style={styles.image}
       source={{
         uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR2wcpqmDDUjViB6TEfWO-hxzaf5cwENejaQ&usqp=CAU",
       }}
-    ></Image>
+    ></Image>*/}
     <Image source={monkeyPng}></Image>
     <TextInput
       style={styles.input}
@@ -170,6 +170,8 @@ return (
   </View>
 );
 ```
+
+Remove the comments from the image to make them appear in your app.
 
 Add styling for the TextInput:
 ```jsx
@@ -231,9 +233,9 @@ function App (){
         },
       ]}
     >
-      <View style={{ flex: 1, backgroundColor: "red" }} />
+      {/*<View style={{ flex: 1, backgroundColor: "red" }} />
       <View style={{ flex: 2, backgroundColor: "darkorange" }} />
-      <View style={{ flex: 4, backgroundColor: "green" }} />
+      <View style={{ flex: 4, backgroundColor: "green" }} />*/}
     </View>
   );
 }
@@ -247,5 +249,7 @@ const styles = StyleSheet.create({
 
 export default App
 ```
+
+Remove the comments from the views to make them appear in your app.
 
 Try playing around with the number of views and flex values. Do remember to check the documentation for additional flex properties.
