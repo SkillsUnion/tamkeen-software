@@ -40,7 +40,7 @@ Components should be first imported from `react-native` before they can used in 
 
 Let's try to use the two components in our application:
 
-```js
+```jsx
 //App.js
 import { Text, View } from "react-native"; //Add this to import the components from react-native
 
@@ -54,7 +54,8 @@ return (
 ```
 
 > Note: In case you find it's font too tiny, use inline style to increase its font size: 
-```js
+
+```jsx
 <Text style={{fontSize:50}}>Hello, smile!</Text>
 ```
 
@@ -66,7 +67,7 @@ The Image component is a React component for displaying different types of image
 
 Include the Image component in the import:
 
-```js
+```jsx
 import { Text, View, Image } from "react-native";
 ```
 
