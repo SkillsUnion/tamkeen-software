@@ -121,6 +121,7 @@ const styles = StyleSheet.create({
 Then add the Image component, for images from the web, provide a `style` and `source` with the `uri` property. 
 
 ```jsx
+{% raw %}
 return (
   <View>
     <Text>Hello, smile!</Text>
@@ -133,6 +134,8 @@ return (
     <Image source={samplePng}></Image>
   </View>
 );
+
+{% endraw %}
 ```
 
 See the results of adding the two images.
@@ -155,12 +158,12 @@ Include the TextComponent in the return block:
 return (
   <View>
     <Text>Hello, smile!</Text>
-{/*    <Image
+    <Image
       style={styles.image}
       source={{
         uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR2wcpqmDDUjViB6TEfWO-hxzaf5cwENejaQ&usqp=CAU",
       }}
-    ></Image>*/}
+    ></Image>
     <Image source={monkeyPng}></Image>
     <TextInput
       style={styles.input}
