@@ -30,4 +30,4 @@ We will need this step to deploy our React apps with React Router `BrowserRouter
 
 If you are unable to access the Firebase Realtime Database or Firebase Storage following deployment online, please checkout the document above. You may need to update your security rules for each Firebase application that is associated to the application. You can find this in the Rules section of each app.
 
-//TODO: change it to ViteJS documentation: https://vitejs.dev/guide/static-deploy#google-firebase
+You can also check out how to use firebase for ViteJS applications using the ViteJS documentation: https://vitejs.dev/guide/static-deploy#google-firebase
