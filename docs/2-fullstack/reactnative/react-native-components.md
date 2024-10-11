@@ -40,7 +40,7 @@ Components should be first imported from `react-native` before they can used in 
 
 Let's try to use the two components in our application:
 
-```text
+```jsx
 //App.js
 import { Text, View } from "react-native"; //Add this to import the components from react-native
 
@@ -55,8 +55,8 @@ return (
 
 > Note: In case you find it's font too tiny, use inline style to increase its font size: 
 
-```text
-<Text style={{fontSize:50}}>Hello, smile!</Text>
+```jsx
+<Text style={ {fontSize:50} }>Hello, smile!</Text>
 ```
 
 Try adding more Text components and see what happens.
@@ -67,7 +67,7 @@ The Image component is a React component for displaying different types of image
 
 Include the Image component in the import:
 
-```text
+```jsx
 import { Text, View, Image } from "react-native";
 ```
 
@@ -79,12 +79,12 @@ To use local images, put the image into the project's `assets` folder. Create a 
 > Note: This assumes that you have an image called `sample.png` in the `assets/images` folder
 
 Import the image as a variable:
-```text
+```jsx
 import samplePng from "./assets/sample.png";
 ```
 
 Use the Image component in the return statement:
-```text
+```jsx
 return (
   <View>
     <Text>Hello, smile!</Text>
@@ -99,13 +99,13 @@ The Image component can also use images online, however, it has to be styled fir
 
 Import the StyleSheet component from react-native:
 
-```text
+```jsx
 import { Text, View, Image, StyleSheet } from "react-native"; //Add the StyleSheet in the import
 ```
 
 Create a `styles` object outside of the function component:
 
-```text
+```jsx
 function App(){
     ...
 }
@@ -120,16 +120,16 @@ const styles = StyleSheet.create({
 
 Then add the Image component, for images from the web, provide a `style` and `source` with the `uri` property. 
 
-```text
+```jsx
 {% raw %}
 return (
   <View>
     <Text>Hello, smile!</Text>
     <Image
       style={styles.image}
-      source={{
+      source={ {
         uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR2wcpqmDDUjViB6TEfWO-hxzaf5cwENejaQ&usqp=CAU",
-      }}
+      } }
     ></Image>
     <Image source={samplePng}></Image>
   </View>
@@ -148,21 +148,21 @@ This is not something new to us. To have TextInput component working, we have to
 
 Import the TextInput component from react-native:
 
-```text
+```jsx
 import { Text, View, Image, StyleSheet, TextInput } from "react-native";
 ```
 
 Include the TextComponent in the return block:
 
-```text
+```jsx
 return (
   <View>
     <Text>Hello, smile!</Text>
     <Image
       style={styles.image}
-      source={{
+      source={ {
         uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR2wcpqmDDUjViB6TEfWO-hxzaf5cwENejaQ&usqp=CAU",
-      }}
+      } }
     ></Image>
     <Image source={monkeyPng}></Image>
     <TextInput
@@ -177,7 +177,7 @@ return (
 Remove the comments from the image to make them appear in your app.
 
 Add styling for the TextInput:
-```text
+```jsx
 const styles = StyleSheet.create({
   image: {
     height: 500,
@@ -193,7 +193,7 @@ const styles = StyleSheet.create({
 ```
 
 Implement state management via useState:
-```text
+```jsx
 import React, { useState } from "react"; // the import
 //other imports
 
@@ -206,7 +206,7 @@ function App(){
 
 You would notice that the TextInput might not be visible. This is because that it is located at the bottom of the app which the screen doesn't show. To mitigate this, we will allow the view to be scrollable. We do this by converting the View component into using the ScrollView component.
 
-```text
+```jsx
 import {
   StyleSheet, Text, View, Image, TextInput, ScrollView // Add the ScrollView in our import.
 } from "react-native";
@@ -222,7 +222,7 @@ In this part, we will only use the View component and Stylesheet. This example i
 
 Create a new React Native app called flexboxApp and import the necessary components:
 
-```text
+```jsx
 import {View, StyleSheet} from "react-native";
 
 function App (){
