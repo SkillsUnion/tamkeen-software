@@ -1,13 +1,14 @@
+
+# Try-Catch-Finally
+
 # Lesson Objective
 
 - Define the purpose and syntax of Try and Catch and Finally blocks.
 
 - Learn how to use try,catch,finally to manage exceptions effectively.
 
+## Introduction
 
-
-
-# Try-Catch-Finally
 The other approach for handling exceptions is the EAFP approach using a `try-catch` block.
 
 ```java
