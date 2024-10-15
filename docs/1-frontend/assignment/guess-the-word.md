@@ -80,3 +80,6 @@ Style the app to clarify what each UI component is for. Create an image that app
 
 Allow the user to play multiple rounds and display their score across rounds, e.g. how many times they have guessed the word out of how many rounds.
 
+## Submission
+
+Submit the Github link of your assignment repository

@@ -10,5 +10,7 @@ Make a professional-looking portfolio page with CSS rules and layout techniques.
 
 Start by forking and cloning <a href="https://github.com/SkillsUnion/portfolio-page-bootcamp" target="_blank">Portfolio Page repo</a>.
 
-Deploy your site to the internet with <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site" target="_blank">GitHub Pages</a>
+## Submission
+
+Submit the Github link of your assignment repository.
 

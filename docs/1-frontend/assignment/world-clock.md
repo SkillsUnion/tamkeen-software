@@ -223,7 +223,7 @@ In `App.jsx`, update our `App` component to render 3 clocks, each with a differe
 
 To make it clearer which time zone each clock is rendering, add a time zone label next to the date string in `Clock`'s `return` statement. This can be any string that represents the time zone.
 
-Great job on making a clock app that shows multiple time zones! <a href="https://github.com/SkillsUnion/world-clock/blob/clock_component_prop" target="_blank">Here </a>is a reference solution for this section. Don't forget to review the reference solution at the bottom of the page to see how Rocket implemented our full app. Coding is like writing an essay and there are many right answers, so don't fret if yours looks different.
+Great job on making a clock app that shows multiple time zones! <a href="https://github.com/SkillsUnion/world-clock/blob/clock_component_prop" target="_blank">Here </a>is a reference solution for this section. Coding is like writing an essay and there are many right answers, so don't fret if yours looks different.
 
 ## Improve clock UI with React Bootstrap grid system
 
@@ -243,5 +243,5 @@ Refactor our world clock UI into its own component `WorldClock` in its own file 
 
 ## Submission
 
-Submit a pull request to the `main` branch of World Clock repo.
+Submit the Github link of your assignment repository.
 

@@ -25,5 +25,9 @@ Create a website that showcases your favourite recipes.
        <pre><code><strong>Homepage Listing Cuisines -> Cuisine Listing Recipes --> Recipe
        </strong></code></pre>
 6. You will need to create sub pages for each cuisine and then sub pages for each recipe listed on the Cuisine pages.
-7. Deploy your site to the internet with <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site" target="_blank">GitHub Pages</a>
+
+
+## Submission
+
+Submit the Github link of your assignment repository.
 

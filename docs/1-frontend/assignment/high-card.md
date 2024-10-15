@@ -160,5 +160,5 @@ If you have time and want to practise more.
 
 ## Submission
 
-Submit a pull request to the `main` branch of Rocket's High Card repo and share your PR link in your section Slack channel.
+Submit the Github repository of your assignment link
 
