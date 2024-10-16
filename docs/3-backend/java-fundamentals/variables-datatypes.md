@@ -31,6 +31,10 @@ public class VariableExample {
 ## Data Types
 In Java, variables must belong to a data type.
 
+<img src="data_type.png" width="450">
+
+
+
 There are 8 primitive data types in Java:
 
 | Whole Number | Decimal | Single Char | Boolean |

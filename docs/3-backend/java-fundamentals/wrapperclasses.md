@@ -12,16 +12,7 @@
 
 Recall Java has 8 primitive data types. For each of those types, there is a corresponding wrapper class (classes will be covered in more detail in a later lesson).
 
-| Primitive Data Type | Wrapper Class |
-| :-----------------: | :-----------: |
-|        byte         |     Byte      |
-|        short        |     Short     |
-|        char         |   Character   |
-|         int         |    Integer    |
-|        long         |     Long      |
-|        float        |     Float     |
-|       double        |    Double     |
-|       boolean       |    Boolean    |
+<img src="wrapperclasses.png" width="450" height="300">
 
 Wrapper classes provide a way to use primitive data types as objects, as well as provide some simple operations, which cannot be stored on a primitive.
 
