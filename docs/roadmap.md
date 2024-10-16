@@ -4,7 +4,7 @@
 
 ![SE Path](se_path.jpg)
 
-The following roadmap shows all the major topics that will covered in the Software Engineering Course. The next section would discuss what we be covering throughout the course.
+The following roadmap shows all the major topics that will covered in the Software Engineering Course. The next section would discuss what we will be covering throughout the course.
 
 ## **1. SOFTWARE ENGINEERING FUNDAMENTALS**
 **Module Objective:**  
