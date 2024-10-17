@@ -29,10 +29,9 @@ public class VariableExample {
 ```
 
 ## Data Types
-In Java, variables must belong to a data type.
+In Java, data types are divided into two main categories: primitive and non-primitive (also known as reference types).These categories are important for understanding how data is stored, manipulated, and used in Java programs. In this lesson we will discuss the primitive datatypes and we will look at non primitve datatypes in subsequent lessons
 
 <img src="data_type.png" width="450">
-
 
 
 There are 8 primitive data types in Java:

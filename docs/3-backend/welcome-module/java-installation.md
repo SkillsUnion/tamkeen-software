@@ -100,9 +100,17 @@ The JDK also includes a number of programming tools, like a compiler and a Java 
   openjdk version "17.0.2" 2022-01-18
   OpenJDK Runtime Environment Temurin-17+35 (build 17.0.2+8)
   OpenJDK 64-Bit Server VM Temurin-17+35 (build 17.0.2+8, mixed mode, sharing)
+
   ```
 
-#### 5. You may refer to following video for more support (Optional) :
+#### 5.Troubleshooting
+
+- **Environment Variable Not Set**: Ensure the `JAVA_HOME` path is set correctly. You can verify by running:
+  ```bash
+  echo $JAVA_HOME
+  
+
+#### 6. You may refer to following video for more support (Optional) :
 
 - {% include youtube.html id="https://www.youtube.com/watch?v=m3vR0aALrtY" %}
 
