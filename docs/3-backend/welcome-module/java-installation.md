@@ -6,7 +6,10 @@ To install Java you need to install Java Development Toolkit (JDK).
 JDK includes both a Java Runtime Environment (JRE) and a Java Virtual Machine (JVM). These are all you need to develop and run your java applications.
 The JDK also includes a number of programming tools, like a compiler and a Java web server, for programmers who need to install Java on Windows.We will discuss more about JDK in upcoming lessons.
 
-#### We will install Eclipse Temurin JDK17 because it is an LTS version with extended support till September 2029. LTS stands for Long Term Support, which means it will be supported for a longer period.
+#### We will install Eclipse Temurin JDK17 because it is an LTS version with extended support till September 2029.
+LTS stands for Long Term Support, which means it will be supported for a longer period.
+
+##### If you have any other preferences for JDK installation, feel free to choose an alternative.
 
 # Installation Steps for Eclipse Temurin JDK 17 (LTS)
 
@@ -100,9 +103,17 @@ The JDK also includes a number of programming tools, like a compiler and a Java 
   openjdk version "17.0.2" 2022-01-18
   OpenJDK Runtime Environment Temurin-17+35 (build 17.0.2+8)
   OpenJDK 64-Bit Server VM Temurin-17+35 (build 17.0.2+8, mixed mode, sharing)
+
   ```
 
-#### 5. You may refer to following video for more support (Optional) :
+#### 5.Troubleshooting
+
+- **Environment Variable Not Set**: Ensure the `JAVA_HOME` path is set correctly. You can verify by running:
+  ```bash
+  echo $JAVA_HOME
+  
+
+#### 6. You may refer to following video for more support (Optional) :
 
 - {% include youtube.html id="https://www.youtube.com/watch?v=m3vR0aALrtY" %}
 
