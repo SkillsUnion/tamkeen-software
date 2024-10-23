@@ -1,3 +1,3 @@
-# <img src="../assets/roadmap.png" width="1000" height="800">
+# <img src="../assets/roadmap.png" width="1000" height="600">
 
 
