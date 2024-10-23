@@ -1,9 +1,8 @@
-# Eclipse Temurin JDK 17 Hardware and Software requirement guide
+# Java installation Hardware and Software requirement guide
 
-This guide covers the hardware and software requirements to install **Eclipse Temurin JDK 17** on both Windows and macOS.
+This guide covers the hardware and software requirements to install **Java(JDK)** on both Windows and macOS.
 
 ---
-
 ## Hardware Requirements
 
 ### Windows
