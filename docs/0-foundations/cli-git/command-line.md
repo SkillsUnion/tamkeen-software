@@ -11,6 +11,18 @@
 
 The command line, also known as "terminal" is a text-based computer interface. We will use the command line to manage files, use Git version control and run Node applications. Using the command line is separate from writing application code, though we will need the command line to build apps effectively.
 
+## Opening a CLI (Command Line Interface) or Terminal Window
+
+### Windows Users
+
+Open Windows Powershell or Git Bash once you have installed Git in your machine. 
+
+Note that some commands might be different for Powershell but the basic commands would be the same.
+
+### Mac and Linux Users
+
+Open up Terminal from Finder or the searchbar.
+
 ## Common Commands
 
 Below, we have listed some of the most commonly used terminal commands that software engineers use. To learn more about these commands, google "man" followed by the command name to get the "manual" page for the command (eg. to learn more about "pwd", simply enter "man pwd" into google).
