@@ -26,8 +26,9 @@ CSS consists of **rules** like the example above, where rules consist of **selec
 CSS "selectors" can be HTML tags, CSS "classes", CSS "IDs", or any combination of tags, classes and IDs. 
 
 
-CSS classes and IDs are typically kebab-case strings that we label HTML elements with to apply styles to those elements with CSS. Classes are reusable across multiple elements; IDs are meant for only 1 element. Class selectors are prefixed with `.` and ID selectors are prefixed with `#`. 
+CSS classes and IDs are typically kebab-case strings that we label HTML elements with to apply styles to those elements with CSS. Classes are reusable across multiple elements; IDs are meant for only 1 element. 
 
+> **Class** selectors are prefixed with `.` and **ID** selectors are prefixed with `#`. 
 
 When developing applications, it is imperative that one utilises CSS "classes" to preserve style that is consistent across multiple pages or elements, this makes maintenance and alterations of these commonly styled elements straightforward and easy.
 
@@ -65,14 +66,14 @@ If you would like to explore the endless styling and presentation possibilities 
 
 | CSS property     | Description                                                                                                                                                                                                                                   | Example usage                                                                |
 | ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| color            | Set the text `color` using predefined colour names, or RGB, HEX, HSL, RGBA, HSLA values.                                                                                                                                                      | <p></p><p>p {<br>    color: #ffffff;<br>}</p>                                |
-| background-color | Set the `background-color` using predefined colour names, or RGB, HEX, HSL, RGBA, HSLA values.                                                                                                                                                | <p>div {<br>    background-color : #fff;<br>}</p>                            |
-| border           | The `border` property allows you to set the width, style and colour of the border. There are various styles border which are affected by colour and width. It is possible to set each of these properties individually.                       | <p>div { </p><p>    border: 2px solid #000;</p><p>}</p>                      |
-| font-size        | Set the `font-size` property, this sets the size of the text. It is possible to apply relative or absolute size when setting this property.                                                                                                   | <p>p {<br>    font-size: 12px;<br>}</p>                                      |
-| margin           | Set the space around the element, this is outside of any defined borders. You can define `margin` using shorthand or targeting individual sides. In the example we are using shorthand to define the top, right, bottom and then left margin  | <p>div { </p><p>    margin: 10px 15px 10px                15px;</p><p>}</p>  |
-| padding          | Set the space inside the element, this is inside of any defined borders. You can define `padding` using shorthand or targeting individual sides. In the example we are using shorthand to define the top, right, bottom and then left padding | <p>div { </p><p>    padding: 10px 15px 10px                15px;</p><p>}</p> |
-| height           | Set the `height` of the element. Commonly this is set with `length`, `%` or `inherit`. But there is more.  Note that this does not include margins, borders or padding.                                                                       | <p>div { </p><p>    height: 50%;</p><p>}</p>                                 |
-| width            | Set the `width` of the element. Commonly this is set with `length`, `%` or `inherit`. Note that this does not include margins, borders or padding.                                                                                            | <p>div { </p><p>    width: 200px;</p><p>}</p>                                |
+| color            | Set the text `color` using predefined colour names, or RGB, HEX, HSL, RGBA, HSLA values.                                                                                                                                                      | p {<br>    color: #ffffff;<br>}                                |
+| background-color | Set the `background-color` using predefined colour names, or RGB, HEX, HSL, RGBA, HSLA values.                                                                                                                                                | div {<br>    background-color : #fff;<br>}                            |
+| border           | The `border` property allows you to set the width, style and colour of the border. There are various styles border which are affected by colour and width. It is possible to set each of these properties individually.                       | div {<br>     border: 2px solid #000;<br>}                      |
+| font-size        | Set the `font-size` property, this sets the size of the text. It is possible to apply relative or absolute size when setting this property.                                                                                                   | p {<br>    font-size: 12px;<br>}                                      |
+| margin           | Set the space around the element, this is outside of any defined borders. You can define `margin` using shorthand or targeting individual sides. In the example we are using shorthand to define the top, right, bottom and then left margin  | div {<br>    margin: 10px 15px 10px                15px;<br>}  |
+| padding          | Set the space inside the element, this is inside of any defined borders. You can define `padding` using shorthand or targeting individual sides. In the example we are using shorthand to define the top, right, bottom and then left padding | div {<br>    padding: 10px 15px 10px                15px;<br>} |
+| height           | Set the `height` of the element. Commonly this is set with `length`, `%` or `inherit`. But there is more.  Note that this does not include margins, borders or padding.                                                                       | div { <br>    height: 50%;<br>}                                 |
+| width            | Set the `width` of the element. Commonly this is set with `length`, `%` or `inherit`. Note that this does not include margins, borders or padding.                                                                                            | div {<br>    width: 200px;<br>}                                |
 | overflow         | The `overflow` property informs the browser whether it should add scrollbars or clip the content when its too larger to fit in its specified area.                                                                                            | <p>div {<br>    overflow: scroll;<br>}</p>                                   |
 
 ## Using CSS classes
@@ -194,7 +195,7 @@ External styles are styles declared in CSS-specific files and "imported" with `l
 >}
 >```
 
-Unless we have a strong reason not to, Rocket recommends using external styles for all CSS to keep our CSS rules centralised in CSS files that can be re-used across HTML files.
+Unless we have a strong reason not to, We recommend using external styles for all CSS to keep our CSS rules centralised in CSS files that can be re-used across HTML files.
 
 Unless we plan to be CSS specialists, we do not need to memorise exact CSS specificity of every permutation of selectors and HTML elements. Most browsers provide precise tools to debug CSS specificity, and <a href="https://www.w3schools.com/css/css_specificity.asp" target="_blank">W3Schools documents</a> how to calculate CSS specificity when we need to.
 
@@ -230,7 +231,7 @@ Refresh `index.html` in Chrome and observe the change to the `h1` element.
 
 ### Codecademy Learn CSS
 
-Complete all exercises in the following Codecademy lessons when they are assigned in the Rocket course schedule. You will need to register a Codecademy account if you have not already.
+Try to complete all exercises in the following Codecademy lessons to help you get familiarized with CSS. You will need to register a Codecademy account if you have not already.
 
 1. <a href="https://www.codecademy.com/courses/learn-css/lessons/learn-css-setup-and-syntax/exercises/intro-to-css" target="_blank">Setup and Syntax</a>
 2. <a href="https://www.codecademy.com/courses/learn-css/lessons/learn-css-selectors/exercises/type" target="_blank">Selectors</a>

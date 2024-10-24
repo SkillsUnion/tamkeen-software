@@ -47,7 +47,7 @@ After the `DOCTYPE` declaration is typically a set of `html` opening and closing
 </html>
 ```
 
-The first set of tags within the outermost `html` tags is usually the `head` tags. `head` tags contain important site metadata such as title (what's displayed in the browser tab bar), SEO metadata and links to stylesheets for styling and JavaScript for interactivity.
+The first set of tags within the outermost `html` tags is usually the `head` tags. `head` tags contain important site metadata such as title (what's displayed in the browser tab bar), SEO (Search engine optimization) metadata and links to stylesheets for styling and JavaScript for interactivity.
 
 ```html
 <!DOCTYPE html>
@@ -79,7 +79,7 @@ That is the basic structure of all HTML pages. Feel free to play around with liv
 
 ### Summary
 
-The following are common HTML tags we are most likely to use and encounter. Block elements occupy full page width and inline elements only occupy width of their content.
+The following are common HTML tags we are most likely to use and encounter. **Block** elements occupy full page width and *inline* elements only occupy width of their content.
 
 | Tag name              | Description                                             | Block vs inline |
 | --------------------- | ------------------------------------------------------- | --------------- |
@@ -95,13 +95,13 @@ The following are common HTML tags we are most likely to use and encounter. Bloc
 
 ### Anchor Tags (`a`)
 
-Anchor tags link to other webpages and require an `href` parameter that contains a URL.
+Anchor tags link to other webpages and require an `href` attribute that contains a URL.
 
 ```html
 <a href="google.com">Google</a>
 ```
 
-To make the link open in a new tab, include the parameter `target="_blank"`.
+To make the link open in a new tab, include the attribute `target="_blank"`.
 
 ```html
 <a href="google.com" target="_blank">Google</a>
@@ -109,7 +109,7 @@ To make the link open in a new tab, include the parameter `target="_blank"`.
 
 ### Image Tags (`img`)
 
-Image tags are self-closing and do not have separate opening and closing tags. They require `src` and `alt` parameters representing the source of the image and alternate text describing the image for accessibility, SEO and to display if the image is not available. `src` can be either a file path or a URL.
+Image tags are self-closing and do not have separate opening and closing tags. They require `src` and `alt` attributes representing the source of the image and alternate text describing the image for accessibility, SEO and to display if the image is not available. `src` can be either a file path or a URL.
 
 ```html
 <img src="images/googlelogo.png" alt="Google logo!" />
@@ -228,6 +228,9 @@ Note that there is also only one body tag, this is where all of the html markup 
 [Semantic HTML tags](https://www.w3schools.com/html/html5_semantic_elements.asp) are part of a feature in HTML5 that provides context and meaning to both the browser and the developer.
 
 Many web sites have divs with ids like: `<div id="nav">` `<div class="header">` and `<div id="footer">` to indicate different parts of a page such as navigation, header, and footer.
+
+<img src="https://www.w3schools.com/html/img_sem_elements.gif" alt="Semantic HTML">
+Sample layout using semantic elements
 
 Using semantic elements, we can define different parts of a web page, here are some of them: 
 - `<article>`
