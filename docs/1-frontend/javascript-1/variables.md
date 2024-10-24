@@ -2,8 +2,6 @@
 
 ## Learning Objectives
 
-By the end of this lesson, you should be able to:
-
 - Describe what a variable is and how to assign it a value or expression.
 - Use the `var` **keyword** to declare a new JavaScript variable.
 - Explain how to achieve _accurate representation_ of your program with suitable variable names.
