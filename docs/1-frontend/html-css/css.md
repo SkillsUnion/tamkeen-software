@@ -74,7 +74,7 @@ If you would like to explore the endless styling and presentation possibilities 
 | padding          | Set the space inside the element, this is inside of any defined borders. You can define `padding` using shorthand or targeting individual sides. In the example we are using shorthand to define the top, right, bottom and then left padding | div {<br>    padding: 10px 15px 10px                15px;<br>} |
 | height           | Set the `height` of the element. Commonly this is set with `length`, `%` or `inherit`. But there is more.  Note that this does not include margins, borders or padding.                                                                       | div { <br>    height: 50%;<br>}                                 |
 | width            | Set the `width` of the element. Commonly this is set with `length`, `%` or `inherit`. Note that this does not include margins, borders or padding.                                                                                            | div {<br>    width: 200px;<br>}                                |
-| overflow         | The `overflow` property informs the browser whether it should add scrollbars or clip the content when its too larger to fit in its specified area.                                                                                            | <p>div {<br>    overflow: scroll;<br>}</p>                                   |
+| overflow         | The `overflow` property informs the browser whether it should add scrollbars or clip the content when its too larger to fit in its specified area.                                                                                            | div {<br>    overflow: scroll;<br>}                                   |
 
 ## Using CSS classes
 
