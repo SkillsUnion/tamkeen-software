@@ -2,14 +2,16 @@
 
 ## Learning Objectives
 
-1. Git Branches allow us to develop features independently of "production" code to avoid affecting what our teammates and users see before we are ready.
+1. Understand what branches are and what they can be used for
 2. How to create a new branch
 3. How to move between branches
 4. How to merge 1 branch to another and resolve merge conflicts
 
 ## Introduction
 
-A Git Branch is an independent series of commits. Every Git repo starts with a single branch, typically `main`, which we can imagine to be a linear series of commits.
+A Git Branch is an independent series of commits. Every Git repo starts with a single branch, typically `main`, which we can imagine to be a linear series of commits. 
+
+Git Branches allow us to develop features independently of "production" code to avoid affecting what our teammates and users see before we are ready.
 
 ![Every repo starts with the main branch by default](<./assets/0.2.1 - Branches - Single Branch.png>)
 

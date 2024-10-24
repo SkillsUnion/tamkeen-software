@@ -2,10 +2,9 @@
 
 ## Learning Objectives
 
-1. The command line is a text interface for manipulating our computers
-2. Navigate folders and display folder contents in the command line
-3. Create new folders and files in the command line
-4. Rename or delete folders and files in the command line
+1. Navigate folders and display folder contents in the command line
+2. Create new folders and files in the command line
+3. Rename or delete folders and files in the command line
 
 ## Introduction
 

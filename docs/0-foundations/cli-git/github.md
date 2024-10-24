@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-1. GitHub is a code-hosting website that hosts Git repos for individuals or teams to review and collaborate on
+1. Know what Github is and what is used for
 2. Know how to fork a repo on GitHub
 3. Know how to clone a repo from GitHub
 4. Know how to push changes to GitHub
@@ -22,7 +22,7 @@ GitHub is a code-hosting website that hosts Git repos for individuals or teams t
 
 ## GitHub Fork
 
-A GitHub "fork" is a copy of another GitHub repo. SWEs typically "fork" repos they do not have edit access to either to make improvements to merge back into original repos, or to create and maintain independent versions of repos. At Rocket Academy we will fork Rocket exercise repos to complete and submit assignments.
+A GitHub "fork" is a copy of another GitHub repo. Developers typically "fork" repos they do not have edit access to either to make improvements to merge back into original repos, or to create and maintain independent versions of repos. We will fork exercise repos to complete and submit assignments.
 
 We can fork a repo by clicking the Fork button on a GitHub repo page. Once forked, we can change our copy of the repo without affecting the original.
 
