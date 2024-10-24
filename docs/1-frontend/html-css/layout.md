@@ -171,7 +171,7 @@ To use flexbox we need to set "flex properties" on both containers of the elemen
 
 There are some common flex patterns that we should become aware of as developers as well as some key flex properties that should be explored before to applying flex onto our websites. Generally the properties `flex`, `flexDirection`, `alignItems` and `justifyContent` are utilised to achieve the desired layout. 
 
-Say we had this CSS classes and code block:
+Say we had these CSS classes and code block:
 
 ```html
 <div>
@@ -196,7 +196,7 @@ The resulting output on the screen would look something like this:
 
 <figure><img src="../assets/Example-without-flex.png" alt=""><figcaption><p>Example without flex</p></figcaption></figure>
 
-Lets add a flex property on the div containing all of the circle elements.
+Lets add a `flex` property on the div containing all of the circle elements.
 
 ```html
 <div class="flexContainer">
@@ -256,7 +256,7 @@ The next flex property that we will explore is `flexDirection`, this specifies t
 
 <figure><img src="../assets/Flex-and-flex-direction.png" alt=""><figcaption><p>flex and flex direction</p></figcaption></figure>
 
-Altering the order and changing the direction though important isn't really what developers use flex for. Flex allows developers to state how they want information rendered, depending on the size of the screen, the number of items and size of the items flex will dynamically sort out each element to render it on screen. In the next example we will explore `flex-wrap` which can wrap the "flex-items" if they overflow out of their current container. Below is the code were we apply `flex-wrap` and add in additional elements. When applying this property you can use `wrap`, `no-wrap` and `wrap-reverse`.
+Altering the order and changing the direction though important isn't really what developers use flex for. Flex allows developers to state how they want information rendered, depending on the size of the screen, the number of items and size of the items flex will dynamically sort out each element to render it on screen. In the next example we will explore `flex-wrap` which can wrap the "flex-items" if they overflow out of their current container. Below is the code were we apply `flex-wrap` and add in additional elements. When applying this property, you can use `wrap`, `no-wrap` and `wrap-reverse`.
 
 ```html
 <div class="flexContainer">
@@ -300,9 +300,9 @@ Altering the order and changing the direction though important isn't really what
 
 <figure><img src="../assets/flex-wrap.png" alt=""><figcaption><p>flex, flex-direction, flex-wrap</p></figcaption></figure>
 
-It is actually possible to combine the `flex-direction` and `flex-wrap` properties, to do this use the `flex-flow` property and apply both values within. This will be shown in the next example.
+It is actually possible to combine the `flex-direction` and `flex-wrap` properties: to do this use the `flex-flow` property and apply both values within. This will be shown in the next example.
 
-At this stage its possible to see the awesome power of flex and how it can be used within Software Engineering to create dynamic and re-sizeable user interfaces. Lets talk about another flex property that will be extremely helpful. `justify-content`, this property is used to align the "flex items" horizontally within the "flex container".
+At this stage, it's possible to see the awesome power of flex and how it can be used to create dynamic and re-sizeable user interfaces. Lets talk about another flex property that will be extremely helpful. `justify-content`, this property is used to align the "flex items" horizontally within the "flex container".
 
 ```css
 .circle {
@@ -418,7 +418,7 @@ As you can see from the image below the "flex-items" are centered horizontally a
 
 <figure><img src="../assets/Align-items.png" alt=""><figcaption><p>flex, flex-direction, flex-wrap, justify-content, align-items</p></figcaption></figure>
 
-To truly become great at flex, please go through the exercises below, this will help you greatly when considering your user interfaces, which is what you users will ultimately see.
+To truly become great at flexbox, please go through the exercises below, this will help you greatly when considering user interfaces, which is what users will ultimately see.
 
 ### Exercises
 
