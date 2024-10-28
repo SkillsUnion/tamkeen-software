@@ -74,7 +74,7 @@ return distanceInMiles;
 We define and name a function "input parameter" as `distanceInKm`. Functions can have 0 or more input parameters.
 
 ```javascript
-var convertKmToMiles = function (distanceInKm) {
+var convertKmToMiles = function (distanceInKm) { ... }
 ```
 
 All together our function looks like the following.

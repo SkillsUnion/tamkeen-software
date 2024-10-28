@@ -21,7 +21,7 @@ Setting up the environment:
 
 
 
-```
+```json
 {
   "name": "npm_modules",
   "version": "1.0.0",
@@ -39,7 +39,7 @@ Setting up the environment:
 
 Alter this file by adding in a new key and value pair.
 
-```
+```json
 {
   "type": "module",
   "name": "npm_modules",

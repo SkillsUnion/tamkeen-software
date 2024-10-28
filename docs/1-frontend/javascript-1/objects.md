@@ -63,7 +63,7 @@ The example encodes 3 attributes of a playing card. `rank` is a number to facili
 
 ### How to Access Object Attributes
 
-We can use the `.` operator to access Object attributes. In the following code snippet, we access each of the `playingCard` Object's attributes with the `.` operator. We can also access Object attributes using `[]`notation, but this will typically not be necessary.
+We can use the `.` operator to access Object attributes. In the following code snippet, we access each of the `playingCard` Object's attributes with the `.` operator. We can also access Object attributes using `[]` notation, but this will typically not be necessary.
 
 ```javascript
 // Access the rank attribute
@@ -129,7 +129,7 @@ When should we use Objects versus Arrays? Here is a summary.
 | ----------------------------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Is the data ordered or unordered?               | Unordered                                                                                    | Ordered                                                                                                                                                              |
 | What kind of data is stored inside?             | Attributes that represent different types of data, e.g. colours, suits, and ranks for cards. | Elements that are all the same type of data, both in terms of data type (e.g. boolean, number, string, Object, Array) and data meaning (e.g. all elements are cards) |
-| What operations do you want to do on this data? | Access a single piece of the data: `card.rank` `card.suit`                                   | Do the same operation to every piece of data you have (in a loop).                                                                                                   |
+| What operations do you want to do on this data? | Access a single piece of the data: `card.rank` or `card.suit`                                   | Do the same operation to every piece of data you have (in a loop).                                                                                                   |
 
 ### Card Shuffling
 
@@ -224,7 +224,7 @@ var main = function (input) {
 
 ## Hard-Coded Card Deck
 
-1 acceptable way to initialise a standard 52-card deck in our code is to hard-code it, i.e. manually specify each card and each of its attributes in code. Use this hard-coded deck for this module's exercises below.
+An acceptable way to initialise a standard 52-card deck in our code is to hard-code it, i.e. manually specify each card and each of its attributes in code. Use this hard-coded deck for this module's exercises below.
 
 ```javascript
 var deck = [

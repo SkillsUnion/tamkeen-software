@@ -118,7 +118,7 @@ var myFunc = function () {
 
 ## Arrow functions
 
-Arrow functions are Rocket's preferred syntax for writing functions in ES6 due to their conciseness and wide adoption. There are technical considerations for when to use arrow functions vs other function declaration syntax, but none of them should matter for Rocket's Bootcamp.
+Arrow functions are a new way for writing functions in ES6 due to their conciseness and wide adoption. There are technical considerations for when to use arrow functions vs other function declaration syntax, but none of them should matter for the bootcamp.
 
 ### 1: Arrow function syntax
 
@@ -168,7 +168,7 @@ function rollDiceNamed() {
 
 ## Template Literals
 
-Rocket strongly suggests using template literals for more concise string interpolation. This will help your code be more concise and readable.
+We strongly suggest using template literals for more concise string interpolation. This will help your code be more concise and readable.
 
 Old way: string concatenation
 

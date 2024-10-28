@@ -27,7 +27,7 @@ Similar to how we started with entering commands into the console, we will first
 
 ## DOM - Document Object Model
 
-By now you should be familiar that while the browser primarily reads `index.html` , the entire web page that is displayed is built from multiple files together, such as `script.js` and `styles.css`. Even within `index.html`, there is the `<head>` and `<body>` elements, each of which contain child elements. Data from various sources together define the information and structure of the document that is processed and displayed by the browser.
+By now you should be familiar that while the browser primarily reads `index.html`, the entire web page that is displayed is built from multiple files together, such as `script.js` and `styles.css`. Even within `index.html`, there is the `<head>` and `<body>` elements, each of which contain child elements. Data from various sources together define the information and structure of the document that is processed and displayed by the browser.
 
 ![](https://www.freecodecamp.org/news/content/images/2021/01/images.png)
 
@@ -59,7 +59,7 @@ If we wanted to access a specific paragraph, we can do so by referencing its id 
 
 `document.querySelector(".card")` will return the first element that has the "card" class.
 
-We can store the returned element in it's own variable, which will then allow us to access element properties or use other DOM methods on the element itself. Putting it all together:
+We can store the returned element in its own variable, which will then allow us to access element properties or use other DOM methods on the element itself. Putting it all together:
 
 ```javascript
 var button = document.querySelector('#submit-button');
