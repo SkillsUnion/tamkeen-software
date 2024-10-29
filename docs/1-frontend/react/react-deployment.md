@@ -20,7 +20,7 @@ Deployment to Github pages can be done in the following ways:
 Navigate into your project via a CLI tool (ubuntu terminal / powershell)
 Go through gitflow and save your current code.
 
-```
+```sh
 git add
 git commit -m 'commit-message'
 git push 
@@ -113,7 +113,6 @@ Within your local machine we need to make a new github workflow within a yml fil
 1. Create a new folder named `.github`
 2. Within the newly created directory create a `workflows` folder
 3. In the `workflows` folder create a new file named: `jekyll-gh-pages.yml`
-
 4. Paste in this file:
 
 ```yml
@@ -171,7 +170,6 @@ jobs:
 ```
 
 5. In your GitHub repository, go to `Settings -> Pages` and then choose source as `GitHub Actions`, not deploy from branch. 
-
 6. Now you should be able to deploy when you push to this branch, before this will work we need to go through git flow (add commit and push)
 Then run the command:
 

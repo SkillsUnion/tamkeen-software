@@ -39,7 +39,7 @@ JSX or JavaScript and XML affords developers the opportunity to write HTML-like 
 2. Close all HTML tags.
 3. DOM stands for "Document Object Model", which is a JavaScript representation of HTML rendered on a web page. Frontend frameworks like React use the DOM to programmatically manipulate UI without manually specifying HTML. You can read through <a href="https://www.w3schools.com/js/js_htmldom.asp" target="_blank">W3School's intro to JavaScript HTML DOM</a> (just the 1st page) for a primer.
 
-4. Use camelCase for most if its props,<a href="https://react.dev/learn/writing-markup-with-jsx#3-camelcase-salls-most-of-the-things" target="_blank"> click here for more details</a>. To apply CSS classes to JSX elements we will need to use the `className` keyword instead of `class`, which we used with vanilla HTML. This is because `class` is a reserved keyword in JS used to declare classes (which we will see in 4: Components and Props below).
+4. Use camelCase for most if its props,<a href="https://react.dev/learn/writing-markup-with-jsx#3-camelcase-salls-most-of-the-things" target="_blank"> click here for more details</a>. To apply CSS classes to JSX elements we will need to use the `className` keyword instead of `class`, which we used with vanilla HTML. This is because `class` is a reserved keyword in JS used to declare classes.
 
 ## <a href="https://react.dev/learn/javascript-in-jsx-with-curly-braces" target="_blank">JavaScript in JSX</a>
 

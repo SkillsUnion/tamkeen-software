@@ -5,9 +5,9 @@
 1. Construct React components following the core rules of component creation and rendering.
 2. Implement props to pass data from parent to child components in a React application.
 
-## <a href="https://react.dev/learn/your-first-component" target="_blank">React Components</a>
+## React Components
 
-The concept of Components is core to React, they are the foundation of our React code, we use components to build user interfaces. This makes them ideal starting points once you've understood the basics of React JSX. React allows developers to combine markup, CSS and JavaScript into components that could be reusable UI elements within your application. Similarly to HTML tags we can compose, order and nest components to develop full pages within React applications. When building a Component follow these rules:
+The concept of <a href="https://react.dev/learn/your-first-component" target="_blank">Components</a> is core to React, they are the foundation of our React code, we use components to build user interfaces. This makes them ideal starting points once you've understood the basics of React JSX. React allows developers to combine markup, CSS and JavaScript into components that could be reusable UI elements within your application. Similarly to HTML tags we can compose, order and nest components to develop full pages within React applications. When building a Component follow these rules:
 
 1. Export the Component
 2. Define the Component function

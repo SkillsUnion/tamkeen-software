@@ -6,9 +6,9 @@
 2. Implement event listeners and callback functions to respond to user interactions in React components.
 3. Apply techniques to manage event propagation and prevent default behaviors in React event handling.
 
-## <a href="https://react.dev/learn/responding-to-events" target="_blank">Handling Events</a>
+## Handling Events
 
-When users click on a button they expect some result, or some change, take the counter example if you click on the button the state increments. To develop these types of functionality within our React applications we will need to handle events, but assigning an event listener to our elements and define some callback functions to handle the event in a meaningful way. In our JSX code we need to follow these steps to handle events.
+When users click on a button they expect some result, or some change, take the counter example if you click on the button the state increments. To develop these types of functionality within our React applications we will need to <a href="https://react.dev/learn/responding-to-events" target="_blank">handle events</a>, by assigning an event listener to our elements and define some callback functions to handle the event in a meaningful way. In our JSX code we need to follow these steps to handle events.
 
 1. How do you handle events?
    1. Attach the event listener to the element, such as an `onClick` or `onBlur` event.

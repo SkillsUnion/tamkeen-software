@@ -16,9 +16,9 @@ To implement React Bootstrap into a React application open a CLI interface and c
 npm install react-bootstrap bootstrap
 ```
 
-This will install React Bootstrap and the bootstrap package within the application, there is still one more step that must be taken before you can utilise all of React-Bootstrap in your app.
+This will install **React Bootstrap** and the **bootstrap** package within the application, there is still one more step that must be taken before you can utilise all of React-Bootstrap in your app.
 
-Go to the main.jsx within your React application and this line at the top of the file:
+Go to the `main.jsx` within your React application and this line at the top of the file:
 
 ```jsx
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -28,7 +28,7 @@ This line imports the CSS for bootstrap into your application, any child compone
 
 Now that Bootstrap has been implemented in your application it might be a good idea to look at some of the pre-styled components you can implement, look at some examples and usage <a href="https://react-bootstrap.github.io/docs/components/accordion" target="_blank">here</a>.
 
-To showcase implementing React Bootstrap into a React Application we will implement some new styled buttons on our previously edited boilerplate code from our previous section.
+To showcase implementing React Bootstrap into a React Application, we will implement some new styled buttons on our previously edited boilerplate code from our previous lesson.
 
 ### React Bootstrap Component
 
@@ -79,7 +79,7 @@ The output on the browser is as follows:
 
 From the image above we can see a new blue button has been added into the application, we didnt style this button, it was all React-Bootstrap. This is how you can utilise React-Bootstrap within a React application. Utilise more complex components using this styling library to save yourself time during development.
 
-Checkout more React-Bootstrap Components <a href="https://react-bootstrap.netlify.app/docs/components/accordion" target="_blank">here</a>. Use a combination of pre-styled and custom components to quickly develop applications that can be tailored to your need, just be aware of the props that you can pass. Constantly run your React application to see whether or not your application is being styled appropriately. And remember when styling with React-Bootstrap you just need to import the component's that you need at the top of the page, then you can use them like normal HTML tags in your JSX.
+Check out more React-Bootstrap Components <a href="https://react-bootstrap.netlify.app/docs/components/accordion" target="_blank">here</a>(the sidebar contains all the available components). Use a combination of pre-styled and custom components to quickly develop applications that can be tailored to your need, just be aware of the props that you can pass. Constantly run your React application to see whether or not your application is being styled appropriately. And remember when styling with React-Bootstrap you just need to import the component's that you need at the top of the page, then you can use them like normal HTML tags in your JSX.
 
 ### React Bootstrap Grid System
 
