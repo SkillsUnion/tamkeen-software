@@ -2,13 +2,13 @@
 
 ## Lesson Objectives
 
-Understand the two categories of data types in Java, primitive and non-primitive.
+1. Understand the two categories of data types in Java, primitive and non-primitive.
 
-Learn how to correctly use different primitive data types in Java, including  int, float, char, boolean.
+2. Learn how to correctly use different primitive data types in Java, including  int, float, char, boolean.
 
-Declare, initialize, and manipulate variables in a Java program.
+3. Declare, initialize, and manipulate variables in a Java program.
 
-Understand the concept of type casting (implicit and explicit) in Java.
+4. Understand the concept of type casting (implicit and explicit) in Java.
 
 ## Variables
 

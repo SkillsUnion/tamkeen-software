@@ -3,7 +3,7 @@
 
 ## Lesson Objectives
 
-- Understand how to use the scanner class and console class to read input from user
+1. Understand how to use the scanner class and console class to read input from user
 
 #### There are a few ways to read a user's input. Lets see two of the most common ways:
 

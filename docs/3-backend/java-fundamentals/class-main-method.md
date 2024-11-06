@@ -2,11 +2,11 @@
 
 ## Learning Objectives
 
-- Get familiar with the key concepts of Java including class, objects, methods.
+1. Get familiar with the key concepts of Java including class, objects, methods.
 
-- identify the syntax for the public static void main(String[] args) method.
+2. Identify the syntax for the public static void main(String[] args) method.
 
-- learn how to use javac and java commands to compile and run java applications.
+3. Learn how to use javac and java commands to compile and run java applications.
 
 
 ## Introduction

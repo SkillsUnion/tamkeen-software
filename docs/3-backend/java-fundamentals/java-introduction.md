@@ -3,11 +3,11 @@
 
 ## Lesson Objectives
 
-  - Become familiar with Java and its key terminology, including JDK, JVM, and JRE.
+  1. Become familiar with Java and its key terminology, including JDK, JVM, and JRE.
 
-  - Understand the the relationship and differences between JDK, JRE, and JVM.
+  2. Understand the the relationship and differences between JDK, JRE, and JVM.
 
-  - Write and execute simple Java code snippets directly in JShell 
+  3. Write and execute simple Java code snippets directly in JShell 
 
 
 ## About Java

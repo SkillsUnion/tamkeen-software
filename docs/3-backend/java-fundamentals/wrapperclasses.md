@@ -2,11 +2,11 @@
 
 ## Lesson Objectives
 
-- Define and explain wrapper classes in Java and their importance in converting primitive data types into objects.
+1. Define and explain wrapper classes in Java and their importance in converting primitive data types into objects.
 
-- Understand the concept of boxing (converting a primitive type to its corresponding wrapper class object).
+2. Understand the concept of boxing (converting a primitive type to its corresponding wrapper class object).
 
-- Understand the concept of unboxing (converting a wrapper class object back to its corresponding primitive type).
+3. Understand the concept of unboxing (converting a wrapper class object back to its corresponding primitive type).
 
 ### Wrapper Classes
 
@@ -14,7 +14,7 @@ Recall Java has 8 primitive data types. For each of those types, there is a corr
 
 <img src="wrapperclasses.png" width="450" height="450">
 
-Wrapper classes provide a way to use primitive data types as objects, as well as provide some simple operations, which cannot be stored on a primitive.
+In Java, wrapper classes are needed to convert primitive data types (such as int, float, char, and boolean) into objects. This is essential because Java’s collections framework (like ArrayList which we will see in subsequent lessons) only works with objects, not primitives. Wrapper classes, such as Integer, Double, Character, and Boolean, "wrap" these primitives in object form, enabling their use in collections, generics, and with features like Java’s automatic boxing and unboxing. Additionally, wrapper classes provide utility methods for converting strings to numeric types, comparing values, and handling constants like MAX_VALUE and MIN_VALUE.
 
 For example, as you saw earlier, the `Integer` class provide a useful method to convert a `String` to an `Integer`.
 
