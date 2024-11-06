@@ -3,11 +3,27 @@
 
 ## Lesson Objectives
 
- -  Become familiar with key Java terminology, including JDK, JVM, and JRE.
+  - Become familiar with Java and its key terminology, including JDK, JVM, and JRE.
 
   - Understand the the relationship and differences between JDK, JRE, and JVM.
 
   - Write and execute simple Java code snippets directly in JShell 
+
+
+## About Java
+
+Java is a versatile, object-oriented programming language known for its "write once, run anywhere" capability. This means that Java code can run on any platform that supports the Java Virtual Machine (JVM), making it highly portable. It is widely used in web development, mobile applications, enterprise software, and large-scale systems due to its stability, security features, and extensive library support.
+
+## Key Reasons for Using Java:
+- Platform Independence: Java applications can run on any device with a JVM, enhancing portability.
+
+- Object-Oriented: Promotes modular, maintainable, and reusable code with principles like encapsulation and inheritance.
+
+- Robust and Secure: Java includes memory management, error handling, and security features, making it ideal for large applications.
+
+- Rich Ecosystem: A vast standard library (Java Standard Library) and frameworks like Spring and Hibernate support diverse development needs.
+
+- Scalability: Ideal for both small-scale applications and large, distributed systems.
 
 
 ## Java Terminology
