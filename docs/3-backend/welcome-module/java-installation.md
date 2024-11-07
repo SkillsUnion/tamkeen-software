@@ -55,13 +55,11 @@ LTS stands for Long Term Support, which means it will be supported for a longer 
 
  
 
- 
-
 
 ## For macOS:
 
 ### 1. Download Eclipse Temurin JDK 17
-- Visit the [Eclipse Temurin download page](https://adoptium.net/temurin/releases/?version=17).
+- Visit the <a href="https://adoptium.net/temurin/releases/?version=17" target="_blank">Eclipse Temurin download page</a>
 - Select the following:
   - **Version**: 17 (LTS)
   - **Operating System**: macOS
