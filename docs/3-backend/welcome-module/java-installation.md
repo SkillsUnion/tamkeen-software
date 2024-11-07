@@ -51,9 +51,9 @@ LTS stands for Long Term Support, which means it will be supported for a longer 
 
 #### 4. You can refer to following videos and article for more support (Optional):
 
-  {% include youtube.html id="https://www.youtube.com/watch?v=JlLvyzuSyFU&t=13s" %}
+  {% include youtube.html id="https://www.youtube.com/watch?v=JlLvyzuSyFU&t=12s" %}
 
- https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-do-I-install-Java-on-Windows 
+ 
 
  
 
