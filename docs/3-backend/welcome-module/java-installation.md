@@ -16,7 +16,7 @@ LTS stands for Long Term Support, which means it will be supported for a longer 
 ## For Windows:
 
 ### 1. Download Eclipse Temurin JDK 17
-- Go to the official [Eclipse Temurin website](https://adoptium.net/temurin/releases/?version=17).
+- Go to the official <a href="https://adoptium.net/temurin/releases/?version=17" target="_blank">Eclipse Temurin Website</a>
 - Under the **Choose a Version** section, select:
   - **Version**: 17 (LTS)
   - **Operating System**: Windows
