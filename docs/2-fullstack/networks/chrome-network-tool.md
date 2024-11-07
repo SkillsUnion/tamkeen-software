@@ -6,7 +6,7 @@
 
 ## Introduction
 
-Chrome and other modern browsers provide convenient functionality for analysing network requests and responses. This will help us debug our apps when our frontends do not receive the data we expect from our backends.
+Google Chrome and other modern browsers provide convenient functionality for analysing network requests and responses. This is through the DevTool's Network Panel. It will help us debug our apps when our frontend do not receive the data we expect from our backend.
 
 ## Usage
 
@@ -18,6 +18,6 @@ Click on an individual request to inspect its details. The Headers tab shows imp
 
 ![Clicking on an individual request shows us that request's details.](<../assets/network-panel-headers.png>)
 
-## Disable Cache
+## Disabling Cache
 
-Rocket recommends <a href="https://stackoverflow.com/a/7000899" target="_blank">disabling Chrome's cache when DevTools is open</a> to avoid situations when our apps do not reflect recent code changes due to caching. We recommend keeping this checkbox checked permanently to save us time during development.
+We recommend <a href="https://stackoverflow.com/a/7000899" target="_blank">disabling Chrome's cache when DevTools is open</a> to avoid situations when our apps do not reflect recent code changes due to caching. We recommend keeping this checkbox checked permanently to save us time during development.

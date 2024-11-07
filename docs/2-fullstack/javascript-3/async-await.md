@@ -2,11 +2,12 @@
 
 ## Learning Objectives
 
-1. Async-await can be cleaner syntax but is functionally the same as `.then` syntax
-2. How to use async-await syntax to manage promise control flow in lieu of `.then`
-3. Try-catch syntax provides us `.catch` functionality with async-await syntax
+1. Use async-await syntax to manage promise control flow in lieu of `.then`
+3. Apply try-catch syntax to provide the `.catch` functionality with async-await syntax
 
 ## Introduction
+
+Async-await can be cleaner syntax but is functionally the same as `.then` syntax
 
 `.then` syntax:
 
@@ -34,7 +35,7 @@ const myFunc = async () => {
 
 Async-await syntax allows us to write asynchronous JavaScript in a synchronous manner, like in the example above. This can result in cleaner code, but does not add new functionality. Rocket does not have a strong preference whether to use async-await or `.then` syntax.
 
-&#x20;`async` specifies a given function is asynchronous and returns a promise, and `await` will wait for a given promise to resolve before proceeding to the next line. `async` and `await` keywords must be used together; it is not meaningful to use `async` without `await`, and it is invalid to use `await` without `async`.
+`async` specifies a given function is asynchronous and returns a promise, and `await` will wait for a given promise to resolve before proceeding to the next line. `async` and `await` keywords must be used together; it is not meaningful to use `async` without `await`, and it is invalid to use `await` without `async`.
 
 ## Example: Async-await with `pg`
 
@@ -62,8 +63,6 @@ app.get("/users/:id", async (request, response) => {
   response.send(rows);
 });
 ```
-
-[Here](https://node-postgres.com/guides/async-express) are the official docs on how to use `pg` with async-await syntax in Express.
 
 ## Example: Catch errors with async-await
 

@@ -10,7 +10,7 @@
 
 HTTP "requests" are instructions sent over the internet to create, retrieve, update or delete data. HTTP "responses" are acknowledgments of HTTP requests, containing information describing the status of the request and containing any relevant data. Libraries like Firebase wrap HTTP requests and responses in their library functions, but most data sources do not have libraries like Firebase and we will need to explicitly send HTTP requests to access those data sources.
 
-We must assume it will take an indefinite amount of time to receive a response for an HTTP request, and use JavaScript promises or callbacks (promises preferred) to write logic that is dependent on the response. This is because our requests often must literally travel across the world and internet connectivity can be unstable.
+We must assume it will take an indefinite amount of time to receive a response for an HTTP request, and use JavaScript promises or callbacks (with preference in using promises) to write logic that is dependent on the response. This is because our requests often must literally travel across the world and internet connectivity can be unstable.
 
 ## Important HTTP request and response headers
 
@@ -37,7 +37,7 @@ The <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status" target="_
 | 404         | Not Found | Visited page that does not exist                                     |
 | 403         | Forbidden | We do not have access to retrieve this resource                      |
 
-Software engineers decide what status code to attach to each response in app logic. We will do this when we write our own backend servers in Module 3. When sending responses, we should strive to provide the most precise status code for the given request. <a href="https://www.restapitutorial.com/httpstatuscodes.html" target="_blank">This page</a> summarises HTTP status codes and what they represent.
+Software engineers decide what status code to attach to each response in the application logic. We will do this when we write our own backend servers in our backend module. When sending responses, we should strive to provide the most precise status code for the given request. <a href="https://www.restapitutorial.com/httpstatuscodes.html" target="_blank">This page</a> summarises HTTP status codes and what they represent.
 
 ## How to send requests
 
@@ -45,7 +45,7 @@ Our apps need to send HTTP requests to access data from external sources. We wil
 
 ### JavaScript
 
-Rocket recommends using the NPM library <a href="https://axios-http.com/docs/intro" target="_blank">Axios</a> to send HTTP requests from our apps. Axios is the most robust and popular JavaScript request-sending library we are aware of.&#x20;
+We recommend using the NPM library <a href="https://axios-http.com/docs/intro" target="_blank">Axios</a> to send HTTP requests from our apps. Axios is one of the most robust and popular JavaScript request-sending library that JS developers use.
 
 Below is an example Axios request from their <a href="https://axios-http.com/docs/example" target="_blank">official docs</a> that gets user data from the user with ID "12345". To use Axios we must install it as an <a href="https://www.npmjs.com/package/axios" target="_blank">NPM package</a> and import it in the relevant file with `import axios from "axios"`.
 
