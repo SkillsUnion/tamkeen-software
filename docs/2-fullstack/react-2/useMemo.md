@@ -7,23 +7,23 @@
 
 ## Introduction
 
-We’ve talked about `useState` and `useEffect` which is the building block of all React application. You can arguably create any React project with just these two hooks.
+We’ve talked about `useState` and `useEffect`, which are the building blocks of all React application. You can arguably create any React project with just these two hooks.
 
-As your app scales, you might find that these hooks alone might not be enough to create an _optimised_ application because there’ll be lots of state changes and side-effect that will be happening and it might **slow your app down.**
+As your app scales, you might find that these hooks alone might not be enough to create an _optimised_ application because there’ll be lots of state changes and side-effects that will be happening and it might **slow your app down.**
 
-This is why React comes with some built-in hooks to help alleviate this
+This is why React comes with some built-in hooks to help alleviate this.
 
 Here’s a list of additional React hooks from their <a href="https://react.dev/reference/react/hooks" target="_blank">documentation</a>.
 
-Before we dive in, let’s take a look at one of the technique React uses called memoization
+Before we dive in, let’s take a look at one of the technique React uses called _memoization_.
 
 ### Memoization
 
 So what is memoization?
 
-From wikipedia -
+From wikipedia:
 
-> … **memoization** is an <a href="https://en.wikipedia.org/wiki/Optimization_(computer_science)" target="_blank">optimisation</a> technique used primarily to speed up computer programs by storing the results of expensive <a href="https://en.wikipedia.org/wiki/Subroutine" target="_blank">function calls</a> and returning the cached result when the same inputs occur again.
+> … **memoization** is an <a href="https://en.wikipedia.org/wiki/Optimization_(computer_science)" target="_blank">optimisation technique</a> used primarily to speed up computer programs by storing the results of expensive <a href="https://en.wikipedia.org/wiki/Subroutine" target="_blank">function calls</a> and returning the cached result when the same inputs occur again.
 
 The key takeaways are:
 
@@ -35,7 +35,7 @@ Let’s take a look at an example of an expensive function call by implementing 
 
 ```jsx
 function fibonacci(n) {
-	  if (n < 2) return 1;
+	if (n < 2) return 1;
     return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
@@ -75,7 +75,7 @@ fibonnacci(50)
 // Answer: 20365011074
 ```
 
-We’ve introduced an additional param to our function called `cache` and set the value of it to be an empty array if it doesn’t exists.
+We’ve introduced an additional parameter to our function called `cache` and set the value of it to be an empty array if it doesn’t exists.
 
 This stores the _previous_ value of our result and we send the value to our function so that the program doesn’t need to recompute the value again and again and again and again and again.
 
@@ -85,11 +85,11 @@ This stores the _previous_ value of our result and we send the value to our func
 
 <a href="https://react.dev/reference/react/memo" target="_blank">React Top-Level API - React</a>
 
-One of the API that React provides us that helps with performance is `React.memo`
+One of the API that React provides us that helps with performance is `React.memo`.
 
-`React.memo` is a higher order component and is used as a performance optimisation by memoizing the result
+`React.memo` is a higher order component and is used as a performance optimisation by memoizing the result.
 
-Take for example a button component below
+Take for example a button component below:
 
 ```jsx
 import React, { useState } from 'react';
@@ -119,13 +119,13 @@ function App() {
 export default App;
 ```
 
-When my `App` loads, it will render the `Button` component
+When the `App` loads, it will render the `Button` component.
 
-Inside my `App`, if a user types in the input, it will call the function `changeText` which will call `setText` and re-render the components
+Inside the `App`, if a user types in the input, it will call the function `changeText` which will call `setText` and re-render the components.
 
 This might seem minor but on a page with many components, we don’t really want a simple `Button` component to re-render every time a user types right?
 
-This is where `React.memo` comes in and is a handy way to optimise unnecessary re-renders
+This is where `React.memo` comes in and is a handy way to optimise unnecessary re-renders.
 
 ```jsx
 import React, { useState } from 'react';
@@ -156,9 +156,9 @@ function App() {
 export default App;
 ```
 
-By simply wrapping it in `React.memo` whenever state changes in my `App` it will not cause a re-render of the `Button` component! React will skip rendering the component, and reuse the last rendered result.
+By simply wrapping it in `React.memo` whenever state changes in the `App`, it will not cause a re-render of the `Button` component! React will skip rendering the component, and reuse the last rendered result.
 
-💡 A good way to know when to use it for a component is if the component renders the same result given the same props.
+> Note: 💡 A good way to know when to use it for a component is if the component renders the same result given the same props.
 
 ## useMemo
 
@@ -329,13 +329,13 @@ function fibonacci(n) {
 export default App;
 ```
 
-The `Button` component now will not re-render unnecessarily and we have optimised our `App` to be more performant.
+The `Button` component now will not re-render unnecessarily and we have optimised our `App` to have improved performance.
 
 ## Conclusion
 
-Despite learning how to make our app more performant, it’s not always necessary to use these hooks. Remember that they are there as tools to help when things feel sluggish or slow. React is a very powerful library that knows how to optimise itself even without using the hooks that we have learned.
+Despite learning how to make our app more optimized, it’s not always necessary to use these hooks. Remember that they are there as tools to help when things feel sluggish or slow. React is a very powerful library that knows how to optimise itself even without using the hooks that we have learned.
 
-Here’s a great article on when you should use the hooks that we have learned by Kent C. Dodds
+Here’s a great article on when you should use the hooks that we have learned by Kent C. Dodds:
 
 <a href="https://kentcdodds.com/blog/usememo-and-usecallback" target="_blank">When to useMemo and useCallback</a>
 

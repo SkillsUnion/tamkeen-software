@@ -8,7 +8,7 @@
 
 ## Introduction
 
-The command line, also known as "terminal" is a text-based computer interface. We will use the command line to manage files, use Git version control and run Node applications. Using the command line is separate from writing application code, though we will need the command line to build apps effectively.
+The command line, also known as **terminal**, is a text-based computer interface. We will use the command line to manage files, use Git version control and run Node applications. Using the command line is separate from writing application code, though we will need the command line to build apps effectively.
 
 ## Opening a CLI (Command Line Interface) or Terminal Window
 
@@ -33,6 +33,8 @@ The command line will autocomplete file and folder names if we press `tab` after
 <table><thead><tr><th width="150">Command</th><th width="150">Meaning</th><th>Sample Usage</th><th>Explanation</th></tr></thead><tbody><tr><td><code>pwd</code></td><td>Present working directory</td><td><code>pwd</code></td><td>Retrieve the "absolute path" of the current folder (directory). <br><br>Absolute means relative to the root folder of your hard drive.</td></tr><tr><td><code>ls</code></td><td>List</td><td><code>ls</code></td><td>List the files and folders in the current folder</td></tr><tr><td><code>cd</code></td><td>Change directory</td><td><code>cd rocket/project1</code></td><td>Move to the specified folder. <br><br>If we do not specify a folder, <code>cd</code> will move us to the current user's home folder.<br><br>To move to the parent folder, use <code>cd ..</code>. The 2 dots are a special path referencing the parent folder.</td></tr><tr><td><code>mkdir</code></td><td>Create folder</td><td><code>mkdir components</code></td><td>Create a new folder at the specified path</td></tr><tr><td><code>cp</code></td><td>Copy</td><td>File: <code>cp App.js newComponent.js</code><br><br>Folder: <code>cp -r components components-new</code></td><td>Copy the contents of the first file to the second, overwriting contents of the second if any. <br><br>Use <code>cp -r</code> (recursive flag) to copy folders.</td></tr><tr><td><code>mv</code></td><td>Move</td><td><p>Move: <code>mv App.js components</code></p><p>Rename: <code>mv App.js index.js</code></p></td><td><p>Move the 1st argument to the 2nd argument. <br><br>If the 2nd argument is a folder, move the 1st argument inside the 2nd argument. </p><p></p><p>Otherwise, rename the 1st argument to be the 2nd argument.</p></td></tr><tr><td><code>rm</code></td><td>Remove</td><td>File: <code>rm unnecessary-file.txt</code><br><br>Folder: <code>rm -r unnecessary-folder</code></td><td><p>Delete a file or folder. This is irreversible and there is no trash folder. <br></p><p>Be very careful, and if you delete the root folder <code>/</code> you may have to reformat your computer.</p></td></tr></tbody></table>
 
 ## Common Special Paths
+
+Folder locations are usually denoted by its path: ex. C:/Windows/Users/Desktop. However, there are special paths that would point to common locations.
 
 The following paths are shortcuts to common locations and are often used in folder navigation.
 

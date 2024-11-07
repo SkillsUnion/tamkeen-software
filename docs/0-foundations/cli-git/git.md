@@ -9,11 +9,11 @@
 
 ## Introduction
 
-All software engineers use version control to manage and review project versions and to write code in teams. Git is the most popular version control system. Version control allows us to track which versions of our code have which features, and to write code in teams while avoiding potential conflicts.
+All software engineers use version control to manage and review project versions and to write code in teams. Version control allows us to track which versions of our code have which features, and to write code in teams while avoiding potential conflicts. **Git** is the most popular version control system.
 
 Version control is not strictly necessary to create programs, but it makes software development easier by reducing the fear of breaking code. If we break code when using version control, we can compare our changes to the last working version, easily find bugs to fix, or even rolling back to the last working version if needed.
 
-In this submodule we will learn how to create code versions, more commonly known as "commits".
+In this lesson, we will learn how to create code versions, more commonly known as "commits".
 
 We will continue to learn Git techniques as we progress through the course.
 

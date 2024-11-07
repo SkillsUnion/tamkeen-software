@@ -3,11 +3,9 @@
 ## Learning Objectives
 
 1. Know what Github is and what is used for
-2. Know how to fork a repo on GitHub
-3. Know how to clone a repo from GitHub
-4. Know how to push changes to GitHub
-5. Know how to pull changes from GitHub
-6. Know how to view repo commit history in GitHub
+2. Know how to fork and clone a repo on GitHub
+3. Know how to push and pull changes to GitHub
+4. Know how to view repo commit history in GitHub
 
 ## Introduction
 
