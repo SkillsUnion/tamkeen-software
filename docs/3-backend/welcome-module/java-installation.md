@@ -51,7 +51,7 @@ LTS stands for Long Term Support, which means it will be supported for a longer 
 
 #### 4. You can refer to following videos and article for more support (Optional):
 
-{% include youtube.html id="https://www.youtube.com/watch?v=JlLvyzuSyFU" %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JlLvyzuSyFU?si=qy5_PwfSVby21dvQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
  
 ## For macOS:
