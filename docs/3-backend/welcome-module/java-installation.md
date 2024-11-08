@@ -109,9 +109,9 @@ LTS stands for Long Term Support, which means it will be supported for a longer 
   echo $JAVA_HOME
   
 
-#### 6. You may refer to following video for more support (Optional) :
+#### 6. You may refer to following video for more support on how to install Adoptium JDK on Mac OS (Optional) :
 
- <a href="https://www.youtube.com/watch?v=m3vR0aALrtY" target="_blank"> Installing Adoptium JDK on Mac OS </a>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/m3vR0aALrtY?si=mErhLKwWKS7q6G0a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 ## Install Extension Pack for Java
