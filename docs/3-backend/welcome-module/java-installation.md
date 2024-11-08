@@ -111,8 +111,7 @@ LTS stands for Long Term Support, which means it will be supported for a longer 
 
 #### 6. You may refer to following video for more support (Optional) :
 
- {% include youtube.html id="https://www.youtube.com/watch?v=m3vR0aALrtY" %}
-
+Visit the <a href="https://www.youtube.com/watch?v=m3vR0aALrtY" target="_blank">Installing Adoptium JDK on Mac OS</a>
 
 
 ## Install Extension Pack for Java
