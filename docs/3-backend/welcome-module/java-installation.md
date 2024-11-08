@@ -51,21 +51,9 @@ LTS stands for Long Term Support, which means it will be supported for a longer 
 
 #### 4. You can refer to following videos and article for more support (Optional):
 
-<h3>Embedded YouTube Video</h3>
-
-<p>Watch this video:</p>
-
-<iframe width="560" height="315" 
-        src="https://www.youtube.com/watch?v=JlLvyzuSyFU&t=12s" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-</iframe>
+{% include youtube.html id="https://www.youtube.com/watch?v=JlLvyzuSyFU&t=12s" %}
 
  
-
-
 ## For macOS:
 
 ### 1. Download Eclipse Temurin JDK 17
@@ -131,7 +119,9 @@ LTS stands for Long Term Support, which means it will be supported for a longer 
 
 Once you have VSCode and JDK intalled,there are collection of extensions that you need to install to help you write Java code in VSCode. You can install it from the following link:
 
-https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack
+Visit the <a href="https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack" target="_blank">Extension Pack for Java</a>
+
+
 
 ---
 
