@@ -22,15 +22,13 @@ The users will be able to add new menu items,rate them,view all items,find the h
 ###    Create a new Java class called GourmetRatingTracker (or use your preferred project name).
 
 ###    Use of ArrayList:
+-    You will use two ArrayList objects.
 
-   -    You will use two ArrayList objects.
-
-    -   One to store the names of food items.
+     -   One to store the names of food items.
 
      -  One to store their ratings (integers between 1 and 10).
 
-     -  Ensure that these two lists are parallel,meaning the item at index i in the food list corresponds to the 
-        rating at index i in the rating list.
+ -  Ensure that these two lists are parallel,meaning the item at index i in the food list corresponds to the rating at index i in the rating list.
 
 ### Core Functionalities to Implement:
 
