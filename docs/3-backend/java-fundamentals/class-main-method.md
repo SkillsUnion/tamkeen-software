@@ -30,8 +30,7 @@ In the root folder, create a file named `Main.java`.
 
 The naming convention for a `class` is to use **PascalCase**. This means that the first letter of each word is capitalized.
 
-#### [Click here to know more on naming conventions in Java. ](https://www.oracle.com/java/technologies/javase/codeconventions-namingconventions.html)
-
+#### Click here to know more about naming conventions: <a href="https://www.oracle.com/java/technologies/javase/codeconventions-namingconventions.html" target="_blank">Naming Conventions In Java</a>
 
 
 ##  Define a class `Main`. The class name must be identical to the filename.
