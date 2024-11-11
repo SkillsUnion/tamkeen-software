@@ -49,13 +49,11 @@ LTS stands for Long Term Support, which means it will be supported for a longer 
      OpenJDK 64-Bit Server VM Temurin-17+35 (build 17.0.2+8, mixed mode, sharing)
      ```
 
-#### 4. You can refer to following videos and article for more support (Optional):
+#### 4. You can refer to following video for more support on how to install Adoptium JDK on Windows (Optional)  (Optional):
 
-  {% include youtube.html id="https://www.youtube.com/watch?v=JlLvyzuSyFU&t=12s" %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JlLvyzuSyFU?si=qy5_PwfSVby21dvQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
  
-
-
 ## For macOS:
 
 ### 1. Download Eclipse Temurin JDK 17
@@ -111,17 +109,18 @@ LTS stands for Long Term Support, which means it will be supported for a longer 
   echo $JAVA_HOME
   
 
-#### 6. You may refer to following video for more support (Optional) :
+#### 6. You may refer to following video for more support on how to install Adoptium JDK on Mac OS (Optional) :
 
- {% include youtube.html id="https://www.youtube.com/watch?v=m3vR0aALrtY" %}
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/m3vR0aALrtY?si=mErhLKwWKS7q6G0a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 ## Install Extension Pack for Java
 
 Once you have VSCode and JDK intalled,there are collection of extensions that you need to install to help you write Java code in VSCode. You can install it from the following link:
 
-https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack
+Visit the <a href="https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack" target="_blank">Extension Pack for Java</a>
+
+
 
 ---
 

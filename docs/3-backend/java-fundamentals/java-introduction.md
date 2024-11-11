@@ -39,7 +39,7 @@ Java is a versatile, object-oriented programming language known for its "write o
  The JVM (Java Virtual Machine) is the core part of Java, responsible for executing Java programs. It takes the compiled bytecode and translates it into machine code for the underlying operating system. The JRE (Java Runtime Environment) includes the JVM and the libraries necessary to run Java applications, but it does not provide development tools. The JDK (Java Development Kit), on the other hand, includes the JRE along with additional tools like compilers and debuggers, making it necessary for developing Java applications. In short, JVM runs the program, JRE runs pre-compiled programs, and JDK is used to develop and compile Java code.
  When you install JDK, JRE is part of it.
 
-#### [click here to learn more on jdk vs jre vs jvm.](https://www.digitalocean.com/community/tutorials/difference-jdk-vs-jre-vs-jvm)
+#### <a href="https://www.digitalocean.com/community/tutorials/difference-jdk-vs-jre-vs-jvm" target="_blank">Click here to learn more on jdk vs jre vs jvm</a>.
 
 ## Installation Check
 
