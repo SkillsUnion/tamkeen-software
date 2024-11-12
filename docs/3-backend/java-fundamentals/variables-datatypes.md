@@ -100,7 +100,8 @@ Non-primitive data types (also called reference types) are more complex types cr
 - Objects: Instances of classes (e.g., Integer, StringBuilder, ArrayList)
 
 Non-primitive data types offer more functionality and can store complex data structures, making them essential for object-oriented programming in Java.
-*We will learn about non-primititive data types in subsequent lessons.*
+**We will learn about non-primititive data types in subsequent lessons.**
+
 
 
 ## Casting
