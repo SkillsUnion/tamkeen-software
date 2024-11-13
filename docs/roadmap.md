@@ -1,13 +1,13 @@
-# Software Engineering Course Roadmap
+# Software Engineering Programme Roadmap
 
 ---
 
 ![SE Path](se_path.jpg)
 
-The following roadmap shows all the major topics that will covered in the Software Engineering Course. The next section would discuss what we will be covering throughout the course.
+The following roadmap shows all the major topics that will covered in the Software Engineering Programme. The next section would discuss what we will be covering throughout the programme.
 
 ## **1. SOFTWARE ENGINEERING FUNDAMENTALS**
-**Module Objective:**  
+**Learning Objective:**  
 Gain knowledge on tools that software engineers use day-to-day to create applications
 
 - **Git Fundamentals**: Learn how to setup a version control system for projects using Git
@@ -17,7 +17,7 @@ Gain knowledge on tools that software engineers use day-to-day to create applica
 ---
 
 ## **2. FRONTEND UI CREATION**
-**Module Objective:**  
+**Learning Objective:**  
 Develop proficiency in languages used in UI creation.
 
 - **HTML and CSS**: Learn how to create the structure and layout of webpages using HTML and CSS
@@ -29,7 +29,7 @@ Develop proficiency in languages used in UI creation.
 ---
 
 ## **3. MOBILE APP CREATION**
-**Module Objective:**  
+**Learning Objective:**  
 Gain hands-on experience with creating basic mobile applications
 
 - **React Native and Expo**: Learn how to create simple mobile applications using the phone's functionalities using React Native and Expo's external libraries
@@ -37,7 +37,7 @@ Gain hands-on experience with creating basic mobile applications
 ---
 
 ## **4. FULL-STACK API CONNECTION**
-**Module Objective:**  
+**Learning Objective:**  
 Learn how to set up and manage connections to APIs to retrieve data
 
 - **HTTP Requests and Responses**: Learn how to connect to APIs by sending requests and receiving responses using Axios
@@ -47,7 +47,7 @@ Learn how to set up and manage connections to APIs to retrieve data
 ---
 
 ## **5. JAVA FUNDAMENTALS**
-**Module Objective:**  
+**Learning Objective:**  
 Learn about Object-Oriented Programming using Java
 
 - **Java Fundamentals**: Learn the syntax of Java and provide comparison to languages such as JavaScript
@@ -56,7 +56,7 @@ Learn about Object-Oriented Programming using Java
 ---
 
 ## **6. DATABASE CREATION**
-**Module Objective:**  
+**Learning Objective:**  
 Understand how to build databases and manage data in them.
 
 - **Relational Databases**: Understand what Relational Databases are
@@ -65,7 +65,7 @@ Understand how to build databases and manage data in them.
 ---
 
 ## **7. BACKEND API CREATION**
-**Module Objective:**  
+**Learning Objective:**  
 Learn how to create APIs for frontend applications to connect to.
 
 - **RESTful APIs**: Learn about the concept of RESTful services
@@ -76,7 +76,7 @@ Learn how to create APIs for frontend applications to connect to.
 ---
 
 ## **8. DEVOPS PRACTICES**
-**Module Objective:**  
+**Lesson Objective:**  
 Learn the principles of DevOps to automate and streamline development, testing, and deployment processes.
 
 - **Agile and Scrum**: Learn about the Agile mindset and implement one of the most popular Agile methodologies, Scrum.
