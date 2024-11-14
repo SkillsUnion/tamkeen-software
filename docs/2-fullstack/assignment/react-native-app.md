@@ -12,3 +12,7 @@ Create a React Native App that uses two Expo libraries and switch between them u
 You can use any Expo Library found in Expo's [reference](https://docs.expo.dev/versions/latest/).
 
 Use tab-based or drawer-based navigation to switch between the components.
+
+## Submission
+
+Submit the Github link of your assignment repository

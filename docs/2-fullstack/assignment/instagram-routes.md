@@ -14,7 +14,7 @@ We will build on previous Instagram exercises to incorporate React Router and cr
 
 ## Setup
 
-1. Start with the code we wrote in the previous exercise in our forked and cloned copy of the <a href="https://github.com/SkillsUnion/instagram-base-app" target="_blank">Instagram starter repo</a>
+1. Start with the code in our forked and cloned copy of the <a href="https://github.com/SkillsUnion/instagram-base-app/tree/solution-posts-base" target="_blank">Instagram starter repo</a>
 2. Set up React Router in our repo as per the official <a href="https://reactrouter.com/en/6.18.0/start/overview#nested-routes" target="_blank">React Router documentation</a>
 3. Practice safe sharing, create implement your .env so that you do not share your Firebase credentials online when pushing to GitHub.
 
@@ -38,7 +38,7 @@ Re-create our chat page from Instagram Chat as a separate component. Add a navig
 
 ## Submission
 
-Deploy your app to the internet, follow Vitejs GitHub Pages <a href="https://vitejs.dev/guide/static-deploy.html" target="_blank">deployment instructions here</a>. Note that you will need to add the repo name within React Router's to and path properties.
+Submit the Github link of your assignment repository
 
 ## Note
 
