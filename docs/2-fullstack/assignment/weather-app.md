@@ -124,8 +124,4 @@ Render the forecast data in a graph instead of a table. You may find React chart
 
 ## Submission
 
-Deploy your app to the internet, follow Vitejs GitHub Pages <a href="https://vitejs.dev/guide/static-deploy.html" target="_blank">deployment instructions here</a>.
-
->**Use HTTPS URLs for API requests for deployment**
->
->HTTPS sites can only make HTTPS requests and not HTTP requests. To deploy our app to GitHub Pages, update all API URLs in our app to use HTTPS instead of HTTP (i.e. `https://myurl.com` instead of `http://myurl.com`). Open Weather Geocoding and Weather Icons docs share HTTP links, but luckily they both also support HTTPS.
+Submit the Github link of your assignment repository

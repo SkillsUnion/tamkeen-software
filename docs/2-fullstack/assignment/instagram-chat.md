@@ -63,4 +63,4 @@ Customise the UI to make it visually appealing. Rocket did not customise the UI 
 
 ## Submission
 
-Deploy your app to the internet, follow Vitejs GitHub Pages <a href="https://vitejs.dev/guide/static-deploy.html" target="_blank">deployment instructions here</a>.
+Submit the Github link of your assignment repository
