@@ -20,6 +20,7 @@ try {
 }
 ```
 
+We will follow the same example fromt the last lesson. Edit you class `LearnExceptions.java`, and add the `try-catch` block as shown above.
 In this approach, we try to execute the code in the `try` block. If there is an exception, we catch it in the `catch` block and handle it there.
 
 With this approach, we can also add a `finally` block to execute code that should always be executed, regardless of whether there is an exception or not.
@@ -35,7 +36,7 @@ try {
 }
 ```
 
-Let's look at an example with an array.
+Now let's look at an example with an array.You can use same class `LearnExceptions.java` and code along.
 
 ```java
 int[] numbers = { 1, 2, 3, 4, 5 };
@@ -68,7 +69,7 @@ finally {
 }
 ```
 
-Here is another example with a `Scanner`.
+Here is another example with a `Scanner`. 
 
 ```java
 Scanner scanner = new Scanner(System.in);
@@ -112,3 +113,4 @@ try {
   System.out.println(exception);
 }
 ```
+#### Before proceeding to the next lesson, make sure that you have tried out coding and running all the different exception scenarios using `try-catch-finally` block as shown above.

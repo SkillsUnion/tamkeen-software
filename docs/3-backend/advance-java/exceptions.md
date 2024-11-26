@@ -12,13 +12,14 @@
 
 An exception (or exceptional event) is a problem that arises during the execution of a program. When an Exception occurs the normal flow of the program is disrupted and the program/Application terminates abnormally, which is not recommended, therefore, these exceptions are to be handled.
 
-https://docs.oracle.com/javase/tutorial/essential/exceptions/definition.html
+**<a href="https://docs.oracle.com/javase/tutorial/essential/exceptions/definition.html" target="_blank">Read more on Exceptions here</a>**
 
 When an error occurs within a method, the method creates an object and hands it off to the runtime system. The object, called an **exception object**, contains information about the error, including its type and the state of the program when the error occurred. Creating an exception object and handing it to the runtime system is called **throwing an exception**.
 
 <img src="https://www3.ntu.edu.sg/home/ehchua/programming/java/images/Exception_CallStack.png" width="450">
 
-Source: https://www3.ntu.edu.sg/home/ehchua/programming/java/j5a_exceptionassert.html
+**<a href="https://www3.ntu.edu.sg/home/ehchua/programming/java/j5a_exceptionassert.html" target="_blank">Source</a>**
+
 
 The runtime system searches the **call stack** for a method that contains a block of code that can handle the exception. This block of code is called an **exception handler**.
 
