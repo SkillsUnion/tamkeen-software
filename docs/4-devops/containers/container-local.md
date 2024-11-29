@@ -1,4 +1,4 @@
-# Containerization
+# Containerization - Local
 
 ## Learning Objectives
 1. Explain what is a container and why is it used
@@ -73,15 +73,13 @@ INSTRUCTION arguments
 
 >Note: The instruction is not case-sensitive. However, convention is to make them UPPERCASE to distinguish them from arguments.
 
-A sample React Application is included in this repository [here](./sample-app/). TODO: Create a separate repo for the sample-app
+A sample React Application that you can fork and clone is included in this repository [here](https://github.com/SkillsUnion/se-sample-container).
 
 Follow the respective steps to create a `Dockerfile` where you will use to create an image and run the image as container locally.
 
-Step 1: Create `Dockerfile` file within the `sample-app` folder.
+Step 1: Create `Dockerfile` file within the root folder of the project.
 
 Step 2: Fill the file content with the following:
-
-*Note to the instructor: please walk the learners through each line of instruction as you type it out*
 
 ```dockerfile
 FROM node:16-alpine
@@ -180,3 +178,36 @@ ENV PORT=8081
 COPY --from=build /app/target/simple-crm-0.0.1-SNAPSHOT.jar /app.jar
 ENTRYPOINT ["java", "-jar", "/app.jar"]
 ```
+
+### Naming build stages
+
+By default, the stages aren't named, and can refer to by their index, starting with 0 for the first `FROM` instruction. Docker, however, can name use stages using the `AS` keyword together with the build name you want.
+
+```Dockerfile
+# The first instruction is named "build"
+FROM maven:3.9.6-eclipse-temurin-17 AS build
+```
+
+After creating the name (also called alias) for the build, it can be referred to by the other stages using its name
+
+```Dockerfile
+# The build here is the artifact that is produced by the first stage
+COPY --from=build /app/target/simple-crm-0.0.1-SNAPSHOT.jar /app.jar
+```
+
+### Running multi-stage builds
+
+Running a mult-stage build is similar to running a single stage build using the docker build command:
+`docker build -t <image name> .`
+
+### Docker logs
+
+Running containers can be monitored using the `docker log` command. It allows us to view log for each container. Try the command with the following options and see what the logs would show:
+
+| Commands | Descriptions |
+|-|-|
+| --details | Show extra details provided to logs |
+| --since | Show logs since timestamp (need to provide a timestamp value) |
+| --tail | Number of lines to show from the end of the logs (need to provide n number of lines) |
+| --timestamps | Show timestamps |
+| --until | Show logs before a timestamp (need to provide a timestamp value) | 
