@@ -27,7 +27,7 @@ A container registry acts as a place to store container images and share them ou
 
 Consider this logical flow:
 
-<!-- Add image of flow -->
+<img src="../assets/container-registry-deployment.png"/>
 
 1. Developers push code to the code version control system called GitHub
 2. When code changes are detected in the GitHub, the system would:
@@ -52,6 +52,8 @@ Step 2: Name the repository `education-space`, insert any description and select
 
 Step 3: Once the registry is created, there will be an instruction on the right that indicate you must push your image based on this convention: `your_username/repository_name:tagname`. 
 
+<img src="../assets/docker-command.png" />
+
 ### Tagging Images and Pushing to Image Registry
 
 *Pre-work: Modify the App.js in se-sample-container to include your name and rebuild the image.*
@@ -72,15 +74,17 @@ Then, push the image to the registry with:
 docker push <your dockerhub account>/education-space:latest
 ```
 
-and there will be a new image recorded in Docker Hub. If you do not wish to use `docker image tag` command, you would simply build a new image through `Dockerfile` using:
+and there will be a new image recorded in Docker Hub. 
+
+<img src="../assets/repo.PNG" />
+
+If you do not wish to use `docker image tag` command, you would simply build a new image through `Dockerfile` using:
 
 ```sh
 docker build -t <your dockerhub account>/education-space:latest .
 ```
 
-> Note: In production, it is generally a bad idea to tag `:latest` for every image you publish. The tag would typically reflect semantic versioning convention such as `:1.0.0`. 
-
-> Note: In real world use case, there would be one Docker Hub Repository to store all images built from a single code base
+> Note: In production, it is generally a bad idea to tag `:latest` for every image you publish. The tag would typically reflect semantic versioning convention such as `:1.0.0`. In real world use cases, there would be one Docker Hub Repository to store all images built from a single code base
 
 ### Pulling images from the registry
 
@@ -102,11 +106,11 @@ Pushing and pulling images to image registries allows developers to share images
 
 The Docker Hub repository is not only a storage for our application images; it also contains images that used to setup the environment for our Dockerfiles.
 
-<!-- Add image for docker hub registry -->
+<img src="../assets/dockerhub-registry.PNG" />
 
 These images are used in our Dockerfiles using the `FROM` keyword.
 
-<!-- Add image for from-dockerfile -->
+<img src="../assets/from-dockerfile.PNG" />
 
 ## Semantic Versioning
 
