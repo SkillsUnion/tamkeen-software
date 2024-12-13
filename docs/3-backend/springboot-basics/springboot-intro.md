@@ -231,7 +231,7 @@ Follow these steps to use the **Spring Boot Dashboard** in VS Code to run your S
 
 ## Embedded Video Guide for reference:
 
-Here’s a video guide to help you set up a Spring Boot project in VS Code:
+Kindly refer to the video guide to help you set up a Spring Boot project in VS Code:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/oYEozZ4PtKw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
