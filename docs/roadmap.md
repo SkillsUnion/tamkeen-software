@@ -18,7 +18,7 @@ Gain knowledge on tools that software engineers use day-to-day to create applica
 
 ## **2. FRONTEND UI CREATION**
 **Learning Objective:**  
-Develop proficiency in languages used in UI creation.
+
 
 - **HTML and CSS**: Learn how to create the structure and layout of webpages using HTML and CSS
 - **JavaScript Fundamentals**: Learn basic programming logic using JavaScript, a popular scripting language for web applications
