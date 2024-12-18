@@ -1,4 +1,11 @@
-## Part 5: Basic Routing
+# Basic Routing
+
+### Lesson Objectives
+
+1. Understand the concept of routing and how to define basic routes in Spring Boot using `@GetMapping` and `@RequestParam`.
+2. Learn how to use query parameters and path variables to create dynamic routes.
+3. Practice testing routes using tools like a browser, Postman, and `curl`.
+
 
 A route means the path to a resource. For example, the route to the homepage is `/` and the route to the about page is `/about`.
 
@@ -107,4 +114,6 @@ public String getUser(@PathVariable int id) {
 
 Test the route by accessing `localhost:8080/users/1`.
 
----
+#### Additional Resources
+- <a href="https://spring.io/guides/gs/rest-service/" target="_blank">Spring Boot Guide: Building a RESTful Web Service</a>
+- <a href="https://docs.spring.io/spring-boot/docs/current/reference/html/web.html" target="_blank">Spring Boot Documentation on Web Applications</a>

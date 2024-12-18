@@ -1,5 +1,13 @@
-### Dependencies
+# Dependencies
 
+### Lesson Objectives
+1. Understand the purpose of dependencies in a Spring Boot application and how to configure them using Maven.
+
+2. Learn how to add and manage dependencies in the `pom.xml` file for a Spring Boot project.
+
+3. Gain hands-on experience with installing and using the `spring-boot-starter-web` and `spring-boot-devtools` dependencies.
+
+---
 Dependencies are external libraries that our application depends on. For example, if we want to use the Spring Web library, we need to add the dependency to our project.
 
 We can search for dependencies in **<a href="https://mvnrepository.com/" target="_blank">Maven Central</a>**.
@@ -65,3 +73,16 @@ Let's add a second dependency, the **<a href ="https://mvnrepository.com/artifac
 Try changing the code or the server port. You will notice that the application will restart automatically.
 
 ---
+
+#### Additional Resources: 
+
+<a href="https://docs.spring.io/spring-boot/docs/current/reference/html/" target="_blank">Spring Boot Documentation</a>
+
+<a href="https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html" target="_blank">Maven Dependency Management Guide</a>
+
+
+
+
+
+
+

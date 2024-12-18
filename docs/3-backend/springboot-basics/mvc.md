@@ -1,4 +1,14 @@
-## Separation of Controller file
+# Model View Controller
+
+### Lesson Objectives
+1. Understand the Model-View-Controller (MVC) architectural pattern and its components.
+
+2. Learn how to create a separate controller file in Spring Boot for better organization and maintainability.
+
+3. Explore the use of `application.properties` for configuration management and how to access its values using the `@Value` annotation.
+
+4. Learn about dependency injection in Spring Boot and how to use `@Autowired` and `@Component` annotations.
+
 
 Currently we have all our routes in the main application file. This is not ideal as the file will become very long and difficult to maintain.
 
@@ -12,7 +22,8 @@ The Model-View-Controller (MVC) is an architectural pattern that separates an ap
 
 - **Controller**: The controller provides model data to the view.
 
-You can read more about MVC [here](https://www.freecodecamp.org/news/model-view-controller-mvc-explained-through-ordering-drinks-at-the-bar-efcba6255053/).
+You can read more about MVC <a href = "https://www.freecodecamp.org/news/model-view-controller-mvc-explained-through-ordering-drinks-at-the-bar-efcba6255053/" target= "_blank"> here 
+</a>.
 
 In a typical API-centric application, the view is usually a frontend application (e.g. React, Vue, Angular, etc).
 
@@ -128,4 +139,9 @@ This is how dependency injection works:
 3. Use `@AutoWired` to inject the bean into the class that depends on it.
 
 ---
+
+### Resource Links
+- <a href="https://www.baeldung.com/spring-mvc-tutorial" target="_blank">Spring MVC Tutorial by Baeldung</a>
+- <a href="https://docs.spring.io/spring-framework/docs/current/reference/html/web.html#mvc" target="_blank">Spring Framework Documentation: MVC</a>
+
 

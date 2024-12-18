@@ -1,11 +1,11 @@
 
 ## Logging in Spring Boot with SLF4J
 
-
-
 **Lesson Objectives:**
 1. Understand the importance of logging in Spring Boot applications.
+
 2. Learn to integrate and use SLF4J for logging.
+
 3. Practice implementing different log levels in a sample Spring Boot application.
 
 ---
