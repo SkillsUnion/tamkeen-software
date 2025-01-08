@@ -1,15 +1,15 @@
-# Crud Operation: Create
+# Crud Operations: Create
 
 ## Lesson Objectives
 
-Understand the First CRUD Operation: Learn how to create data using a simple Customer class and an ArrayList as a temporary datastore.
+- Understand the First CRUD Operation: Learn how to create data using a simple Customer class and an ArrayList as a temporary datastore.
 
-Implement API Endpoints in Spring Boot: Use annotations such as @PostMapping and @RequestBody to build RESTful endpoints for creating and managing Customer objects.
+- Implement API Endpoints in Spring Boot: Use annotations such as @PostMapping and @RequestBody to build RESTful endpoints for creating and managing Customer objects.
 
-Learn to Generate Unique Identifiers: Use the UUID class to generate unique IDs for Customer objects and explore how to enforce immutability with the final keyword.
+- Learn to Generate Unique Identifiers: Use the UUID class to generate unique IDs for Customer objects and explore how to enforce immutability with the final keyword.
 
 
-## Building Our `simple-crm`
+### Building Our `simple-crm`
 
 If you have not done the last activity from the previous lesson, you can start creating a new Spring Boot project now.
 
@@ -106,4 +106,4 @@ Let's also make the `id` field `final` so that it cannot be changed once it is s
 private final String id;
 ```
 
-Now try to create a new `Customer` object using Postman. What is the `id` of the new `Customer` object?
+Now try to create a new `Customer` object using Postman. 

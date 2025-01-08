@@ -1,10 +1,10 @@
-# Crud Operation: Read
+# Crud Operations: Read
 
 ## Lesson Objective
 
-Learn to Implement API Endpoints for Data Retrieval: Understand how to create endpoints to fetch all customer data and retrieve specific customer data using @GetMapping and @PathVariable.
+- Learn to Implement API Endpoints for Data Retrieval: Understand how to create endpoints to fetch all customer data and retrieve specific customer data using @GetMapping and @PathVariable.
 
-Enhance Data Management Skills: Explore techniques to preload data into a list and use helper methods to efficiently locate specific items in a collection.
+- Enhance Data Management Skills: Explore techniques to preload data into a list and use helper methods to efficiently locate specific items in a collection.
 
 
 ### Read
@@ -76,4 +76,4 @@ public Customer getCustomer(@PathVariable String id) {
 
 Try retrieving a customer using Postman.
 
-What happens when we try to retrieve a customer that does not exist?
+
