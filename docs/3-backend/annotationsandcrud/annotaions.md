@@ -1,13 +1,17 @@
-# Lesson: Introduction to `@Component`, `@Controller`, and `@RestController`
 
-## Objectives
-By the end of this lesson, you will:
-- Understand the purpose of `@Component`, `@Controller`, `@RestController`, and `@ResponseBody`.
+# Annotations
+
+## Lesson Objectives
+
+
+- Understand the purpose of `@Component`, `@Controller`, `@RestController`, and `@ResponseBody` annotations.
+
 - Learn their use with simple examples and explanations.
 
 ---
 
-## 1. `@Component`
+
+### 1. `@Component`
 
 ### Definition:
 `@Component` is a generic annotation that marks a class as a Spring-managed bean. It enables Spring to detect and register the class as a bean during component scanning, allowing it to be injected into other classes using dependency injection.
@@ -172,9 +176,3 @@ public class HomeController {
 - The `home` method uses the `GreetingService` to return a greeting message as the API response.
 
 ---
-
-## Summary
-- `@Component`: Marks a class as a generic Spring-managed bean.
-- `@Controller`: Handles web views in an MVC architecture.
-- `@RestController`: Handles REST APIs, returning JSON or raw data.
-- `@ResponseBody`: Directly returns data from a specific method in a `@Controller`.
