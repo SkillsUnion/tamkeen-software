@@ -124,8 +124,7 @@ In the Primary Side Bar, under the Maven or Java Projects tab, click on the plus
    - **Step 1**: Open the terminal in VS Code (`Ctrl+``).
    - **Step 2**: Run `mvn clean install` to build the project.
 
-   <a href="https://raw.githubusercontent.com/alsoknownasmonkey/tutorials/master/images/vscode-maven-build.png" target="_blank"> Running Maven in VS Code </a>
-
+   
 ---
 
 
