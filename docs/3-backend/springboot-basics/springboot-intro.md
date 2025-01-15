@@ -181,7 +181,7 @@ Follow these steps to use the **Spring Boot Dashboard** in VS Code to run your S
 ## Step 3: Access the Spring Boot Dashboard  
 1. Click on the **Spring Boot Dashboard** icon in the Activity Bar on the left-hand side of VS Code (it looks like a Spring leaf).  
 
-   <img src= "./assets/springboot_dashboard.png"  width="450">
+   <img src= "../assets/springboot_dashboard.png"  width="450">
   
  
    

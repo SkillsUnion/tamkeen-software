@@ -10,7 +10,7 @@
 
 
 
-<img src="./assets/mvn_project_.png" width=400>
+<img src="../assets/mvn_project_.png" width=400>
 
 
 ---
@@ -81,41 +81,41 @@ We can create a Maven project using <a href =  "https://maven.apache.org/guides/
 In the Primary Side Bar, under the Maven or Java Projects tab, click on the plus sign to create a new Maven project.
 
 ##### Select the `maven-archetype-quickstart` archetype and click Next:
-<img src="./assets/maven_setup1.png" width=500>
+<img src="../assets/maven_setup1.png" width=500>
 
 
 ##### Select the version of Maven to use. Click Next.
-<img src="./assets/maven_setup2.png" width=500>
+<img src="../assets/maven_setup2.png" width=500>
 
 
 ##### Enter the group ID (`package` path), usually in reverse domain name notation e.g. sg.edu.ntu
-<img src="./assets/maven_setup3.png" width=500>
+<img src="../assets/maven_setup3.png" width=500>
 
 
 ##### Enter the artifact ID (project name).
- <img src="./assets/maven_setup4.png" width=500>
+ <img src="../assets/maven_setup4.png" width=500>
 
 
 ##### Choose a folder to place the project in.
- <img src="./assets/maven_setup5.png" width=500>
+ <img src="../assets/maven_setup5.png" width=500>
 
 
 ##### Hit 'enter' to use the default version value.
- <img src="./assets/maven_setup6.png" width=500>
+ <img src="../assets/maven_setup6.png" width=500>
 
 
 ##### The project properties will be listed for confirmation. Type 'Y' to confirm.
- <img src="./assets/maven_setup7.png" width=500>
+ <img src="../assets/maven_setup7.png" width=500>
 
 
 ##### The project is now created in the folder you chose.
-<img src="./assets/maven_setup8.png" width=500>
+<img src="../assets/maven_setup8.png" width=500>
 
 
 ##### Open the project in a new VSCode window.
 
 ##### Open the `pom.xml` file and update the compiler settings to 17
-<img src="./assets/maven_setup9.png" width=500>
+<img src="../assets/maven_setup9.png" width=500>
 
 
 
