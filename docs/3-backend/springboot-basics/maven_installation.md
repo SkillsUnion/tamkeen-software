@@ -4,8 +4,10 @@
 
 
 
-<img src="./assets/mvn_project_.PNG" width=500>
+<img src="./assets/mvn_project_.png" width=400>
 
+
+---
 
 
 Maven is a build automation tool used primarily for Java projects. It is used to manage dependencies and automate the build process such as compiling source code, packaging the compiled code into a JAR file, as well as running automated tests. This lesson will guide you through:
@@ -19,7 +21,7 @@ Maven is a build automation tool used primarily for Java projects. It is used to
 ### Step 1: Installing Maven on Windows
 
 #### 1.1 Download Maven
-1. Go to the [Maven Download Page](https://maven.apache.org/download.cgi).
+1. Go to the <a href="https://maven.apache.org/download.cgi" target="_blank"> Maven Download Page </a>
 2. Under "Files", click on the link to download the binary zip file (e.g., `apache-maven-3.x.x-bin.zip`).
 
 #### 1.2 Install Maven
@@ -49,7 +51,8 @@ brew install maven
 ```
 
 #### 2.2 Manual Installation (if Homebrew is not available)
-1. Download Maven from the [Maven Download Page](https://maven.apache.org/download.cgi).
+1. Download Maven from the <a href="https://maven.apache.org/download.cgi" target="_blank"> Maven Download Page
+</a>
 2. Extract the ZIP file to a directory (e.g., `/usr/local/apache-maven`).
 3. Set the `MAVEN_HOME` environment variable:
    Add the following to your `~/.bash_profile` or `~/.zshrc` file:
@@ -74,7 +77,7 @@ Check your VSCode extensions to see if Maven for Java is installed. This should 
 
 ### Creating a Maven Project
 
-We can create a Maven project using CLI (https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html) or using VSCode.
+We can create a Maven project using <a href =  "https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html" target="_blank">CLI </a> or using VSCode.
 
 In the Primary Side Bar, under the Maven or Java Projects tab, click on the plus sign to create a new Maven project.
 
@@ -122,7 +125,7 @@ In the Primary Side Bar, under the Maven or Java Projects tab, click on the plus
    - **Step 1**: Open the terminal in VS Code (`Ctrl+``).
    - **Step 2**: Run `mvn clean install` to build the project.
 
-   ![Running Maven in VS Code](https://raw.githubusercontent.com/alsoknownasmonkey/tutorials/master/images/vscode-maven-build.png)
+   <a href="https://raw.githubusercontent.com/alsoknownasmonkey/tutorials/master/images/vscode-maven-build.png" target="_blank"> Running Maven in VS Code </a>
 
 ---
 
