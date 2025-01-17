@@ -1,15 +1,14 @@
-### Lesson: Installing PostgreSQL and DBeaver
+## Installing PostgreSQL and DBeaver
 
-This lesson provides step-by-step instructions to install **PostgreSQL** on Windows and Mac, and how to install **DBeaver** and connect it to PostgreSQL.
 
----
+## Lesson Objectives
 
-### Lesson Objectives
 - Understand how to install PostgreSQL on Windows and Mac systems.
 - Learn how to set up and configure DBeaver as a database management tool.
 - Successfully connect DBeaver to a PostgreSQL database and explore its features.
 
 ---
+#### This lesson provides step-by-step instructions to install **PostgreSQL** on Windows and Mac, and how to install **DBeaver** and connect it to PostgreSQL.
 
 #### **1. Installing PostgreSQL**
 

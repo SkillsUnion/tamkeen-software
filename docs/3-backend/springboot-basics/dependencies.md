@@ -76,9 +76,9 @@ Try changing the code or the server port. You will notice that the application w
 
 #### Additional Resources: 
 
-<a href="https://docs.spring.io/spring-boot/docs/current/reference/html/" target="_blank">Spring Boot Documentation</a>
+- <a href="https://docs.spring.io/spring-boot/docs/current/reference/html/" target="_blank">Spring Boot Documentation</a>
 
-<a href="https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html" target="_blank">Maven Dependency Management Guide</a>
+- <a href="https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html" target="_blank">Maven Dependency Management Guide</a>
 
 
 
