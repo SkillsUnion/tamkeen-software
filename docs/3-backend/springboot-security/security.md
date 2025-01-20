@@ -1,6 +1,7 @@
 ##  Spring Security 
 
 ## Objectives
+
 - Understand the basics of Spring Security.
 
 - Learn how to integrate Spring Security into a Spring Boot application.
@@ -31,7 +32,7 @@ After adding this dependency, Spring Security will automatically apply a default
 
 ---
 
-##  Configuring the Most Basic Authentication
+###  Configuring the Most Basic Authentication
 
 If you just want to specify a fixed username and password for your application, you can do so in the `application.properties` file without creating a custom configuration.
 
