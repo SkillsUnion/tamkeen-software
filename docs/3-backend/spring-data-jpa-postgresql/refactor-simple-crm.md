@@ -1,6 +1,6 @@
 ## Refactoring `SimpleCrm` to Use PostgreSQL
 
-### Lesson Objectives for the File
+### Lesson Objectives:
 
   - Learn how to integrate Java Persistence API (JPA) with PostgreSQL for building robust, production-ready database solutions.
 

@@ -1,6 +1,13 @@
 ##  JPA Query Creation from Method Name
 
-JPA provides a set of <a href="https://docs.spring.io/spring-data/jpa/docs/current/api/org/springframework/data/jpa/repository/JpaRepository.html" target="_blank" > methods </a> for us to perform CRUD operations. However, there may be times when we need to perform more complex queries. For example, we may want to find all customers with a certain first name.
+## Lesson Objectives: 
+
+- Learn how to create custom queries using method names in JPA repositories to retrieve data based on specific criteria.  
+
+- Practice implementing derived query methods in the service and controller layers to support search functionality in a Spring Boot application.  
+
+
+#### JPA provides a set of <a href="https://docs.spring.io/spring-data/jpa/docs/current/api/org/springframework/data/jpa/repository/JpaRepository.html" target="_blank" > methods </a> for us to perform CRUD operations. However, there may be times when we need to perform more complex queries. For example, we may want to find all customers with a certain first name.
 
 In this case, we can create a query using the method name. This is known as JPA Query Creation from Method Name.
 
