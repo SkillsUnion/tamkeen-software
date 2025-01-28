@@ -89,7 +89,8 @@ LBYL means that you check for errors before you execute the code.
 
 EAFP means that you let the code run, throw an exception if there is an error, and then handle the exception.
 
-LBYL vs EAFP: https://programmingduck.com/articles/lbyl-eafp
+**<a href="https://programmingduck.com/articles/lbyl-eafp" target="_blank"> LBYL vs EAFP </a>**
+
 
 Using the LBYL approach in our `main`, we can first check if the divisor is zero before we allow the `divide` method to be called.
 
