@@ -1,0 +1,49 @@
+# Continuous Deployment
+
+## Learning Objectives
+1. Explain what Continuous Delivery is and what its benefits are
+2. Configure CD workflow for tagged container release based on the Semantic Versioning convention
+3. Implement the CD Pipeline that pull image from registry and deploy them to a container hosted environment.
+
+## Continuous Deployment / Delivery
+
+Continuous delivery is an extension of continuous integration since it automatically deploys all code changes to a testing and/or production environment after the build stage. It emphasizes automation, testing, and frequent reliable releases to enable rapid delivery of software updates.
+
+### Principles of Continuous Delivery
+
+In order for teams to implement Continuous Delivery, they must adhere to the following principles:
+- Repeatable reliable process
+- Automate everything
+- Version control
+- Build with quality
+- Do the hardest parts first
+- Everyone is responsible
+- "Done" means released
+- Continuous improvement
+- Benefits of Continuous Delivery
+
+Having Continuous Delivery for your products provide the following benefits:
+
+Automate the Software Release Process
+Improve Developer Productivity
+Find and Address Bugs Quicker
+Deliver Updates Faster
+CD Pipeline
+The Continuous Delivery Pipeline typically contains the following jobs:
+
+Detect there is a release
+Pull respective image from container registry
+Deploy the container to the respective environments
+Environments
+Usually, there are three types of environments:
+
+Staging - An environment to perform User Acceptance Test by stakeholders before deploying to production.
+
+Production - An environment where real users consumes the software (web app or mobile app).
+
+Disaster Recovery - In case of natural disaster such as earthquake or fire on the production physical servers, Disaster Recovery enviroment will be activated to replace the production.
+
+### Use Case of Continuous Deployment - Software A/B Testing
+[Software A/B Testing](https://vwo.com/ab-testing/#what-is-a-b-testing), also known as split testing, compares two versions of an app or webpage to identify the better performer. It shows two or more versions of a variable (web page element, etc.) to different sets of users to determine which version leaves the maximum impact and drives business metrics.
+
+Having Continuous Deployment allows teams to create and deploy multiple versions of a codebase by simply changing a variable and running it through the CICD pipeline. This closes the testing time gap and feedback based on the A/B testing can be applied for the next release cycle.
