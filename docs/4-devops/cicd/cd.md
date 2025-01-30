@@ -68,4 +68,4 @@ Here are some of the most popular hosting services that are available:
 5. Digital Ocean
 6. Render
 
-Some platforms offer hosting services for multiple programming languages and some would offer for a specific set of languages. 
+Some platforms offer hosting services for multiple programming languages and some would offer for a specific set of languages. So feel free to choose what ever service your team and project needs.
