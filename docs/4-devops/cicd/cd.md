@@ -24,26 +24,33 @@ In order for teams to implement Continuous Delivery, they must adhere to the fol
 
 Having Continuous Delivery for your products provide the following benefits:
 
-Automate the Software Release Process
-Improve Developer Productivity
-Find and Address Bugs Quicker
-Deliver Updates Faster
-CD Pipeline
-The Continuous Delivery Pipeline typically contains the following jobs:
-
-Detect there is a release
-Pull respective image from container registry
-Deploy the container to the respective environments
-Environments
-Usually, there are three types of environments:
-
-Staging - An environment to perform User Acceptance Test by stakeholders before deploying to production.
-
-Production - An environment where real users consumes the software (web app or mobile app).
-
-Disaster Recovery - In case of natural disaster such as earthquake or fire on the production physical servers, Disaster Recovery enviroment will be activated to replace the production.
+- Automate the Software Release Process
+- Improve Developer Productivity
+- Find and Address Bugs Quicker
+- Deliver Updates Faster
 
 ### Use Case of Continuous Deployment - Software A/B Testing
 [Software A/B Testing](https://vwo.com/ab-testing/#what-is-a-b-testing), also known as split testing, compares two versions of an app or webpage to identify the better performer. It shows two or more versions of a variable (web page element, etc.) to different sets of users to determine which version leaves the maximum impact and drives business metrics.
 
 Having Continuous Deployment allows teams to create and deploy multiple versions of a codebase by simply changing a variable and running it through the CICD pipeline. This closes the testing time gap and feedback based on the A/B testing can be applied for the next release cycle.
+
+## CD Pipeline
+
+### CD Pipeline jobs
+
+The Continuous Delivery Pipeline typically contains the following jobs:
+
+1. Detect there is a release
+2. Pull respective image from container registry
+3. Deploy the container to the respective environments
+
+### Environments
+
+Usually, there are three types of environments that developers use to determine which code they would release to:
+
+- Staging - An environment to perform User Acceptance Test by stakeholders before deploying to production.
+- Production - An environment where real users consumes the software (web app or mobile app).
+- Disaster Recovery - In case of natural disaster such as earthquake or fire on the production physical servers, Disaster Recovery enviroment will be activated to replace the production.
+
+Note that depending on the software development team, you can create more environments to suit the needs of the project.
+
