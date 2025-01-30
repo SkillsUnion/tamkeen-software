@@ -54,3 +54,18 @@ Usually, there are three types of environments that developers use to determine 
 
 Note that depending on the software development team, you can create more environments to suit the needs of the project.
 
+### Hosting options
+
+There are multitudes of hosting options available for developer teams, some can be in-house and some use cloud infrastructure, these allows teams to host their applications and related services, such as databases. 
+
+Do note that most if not all hosting sites would be paid in order for developers to use their services.
+
+Here are some of the most popular hosting services that are available:
+1. AWS EC2
+2. Google Cloud Platform
+3. Microsoft Azure
+4. Heroku
+5. Digital Ocean
+6. Render
+
+Some platforms offer hosting services for multiple programming languages and some would offer for a specific set of languages. 
