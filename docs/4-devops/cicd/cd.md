@@ -69,3 +69,72 @@ Here are some of the most popular hosting services that are available:
 6. Render
 
 Some platforms offer hosting services for multiple programming languages and some would offer for a specific set of languages. So feel free to choose what ever service your team and project needs.
+
+For this program, we will be using Render for demonstration purposes, but feel free to try out other hosting services.
+
+## Render Setup
+
+[Render](https://render.com/) is a fully-managed cloud platform where you can host static sites, backend APIs, databases, cron jobs, and all your other apps in one place.
+
+### Render Account Setup
+
+Go to Render's homepage and click on "Sign-in" and choose your Github or Google account to allow Render to link to your accounts. 
+
+<img src="../assets/render_signup.JPG">
+
+Follow the prompts that would appear to finish setup. After this, you will be directly to your workspace.
+
+<img src="../assets/render_workspace.JPG">
+
+In the workspace, you can see all the services and projects that you have hosted. And you can create your own service using the "Add New" button.
+
+### Hosting Demonstration 
+
+For this part, we will attempt to host the [simple ExpressJS app](https://github.com/SkillsUnion/se-sample-cicd) that we have been working on in the previous lesson. We would be continuing where we left off in the previous lesson. Previously, we had worked on the CI pipeline starting from the publish.
+
+We start by creating a new "Web Service" and look for the Github repository that we would want to connect to (we will change the setting later so that it won't automatically deploy). Provide a appropriate name for the service and select the appropriate details:
+
+<img src="../assets/render_webservice.JPG">
+
+Note: Make sure that you select the "Free" Instance Type to avoid incurring costs.
+
+<img src="../assets/render_free.JPG">
+
+After creating the web service, access the settings on the left side of the page.
+
+<img src="../assets/render_settings.JPG">
+
+Find the "Auto-Deploy" and change it to "No" and copy your Deploy Hook URL. We will use the Deploy Hook URL to connect our CircleCI pipeline to Render.
+
+After getting the Deploy Hook URL, we create the deploy job in CircleCI and add it to our workflow:
+
+```yaml
+# Deploy job
+deploy:
+    docker:
+      - image: cimg/node:16.10
+    steps:
+      - setup_remote_docker
+      - checkout
+      - run: 
+          name: Render Push
+          command: |
+            curl "<your Deploy Hook URL>"
+
+# Workflow
+# Add the code after the publish job.
+- publish:
+    requires:
+    - test
+- deploy:
+    requires:
+    - publish
+```
+
+This would us to push the codes and deploy it to Render, and when we click on the URL link in our web service, we would see our code reflected.
+
+<img src="../assets/render_deploy.JPG">
+
+## Exercise:
+
+Host the simple ExpressJS app successfully in Render.

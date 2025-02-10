@@ -237,6 +237,21 @@ In this job, we will:
 1. Run `docker build`
 1. Run `docker push`
 
+```yaml
+publish: #also known as the build-and-push
+    executor: docker/docker #define the execution environment in which the steps of a job will run.
+    steps:
+      - setup_remote_docker
+      - checkout
+      - docker/check
+      - docker/build: #build the image
+          image: terencegaffudsu/education-space
+          tag: v1.0.1
+      - docker/push: #pushes the image to the specified account in the environment variables
+          image: terencegaffudsu/education-space
+          tag: v1.0.1
+```
+
 ### The Workflow
 
 Now, we will tie all the jobs together using a workflow. It is also where we declare the relationships between the jobs.
@@ -244,6 +259,7 @@ Now, we will tie all the jobs together using a workflow. It is also where we dec
 In the workflow, we will:
 1. Start running a `build` job.
 2. Start running a `test` job ensuring that the `build` job passes.
+3. Run the `publish` job after the `test` job to ensure that the image we will publish has passed all the tests.
 
 ```yaml
 workflows:
@@ -253,6 +269,9 @@ workflows:
       - test:
         requires:
           - build
+      - publish:
+          requires:
+            - test
 ```
 
 ### Exercise 1
