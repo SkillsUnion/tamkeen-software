@@ -16,13 +16,9 @@ This is a **semi-complete** assignment where you will complete the sections mark
 
 ### Steps to Complete the Assignment:
 
-#### 1. **Fork and Clone the Existing Repository**
+### 🔹 Important Reminder:  
+Do **not** fork and clone the repository again. You should continue working on the **same repository** that you forked and cloned during the first Spring Boot assignment (_Spring Boot Assignment: Product-CRUD_). Simply make the required changes for this assignment, **commit and push**, and submit your **GitHub repository link** as usual.  
 
-- Fork and clone the existing repository from <a href="https://github.com/SkillsUnion/product-crud-assignment.git" target="_blank"> product-crud-assignment </a>
-
-- Open the project in your IDE (VS Code).
-
----
 
 ## 1. Project Setup
 
