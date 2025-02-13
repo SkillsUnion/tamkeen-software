@@ -20,7 +20,7 @@ A all-covering approach is a key strategy and vital in monitoring and managing a
 
 1. Observability: Provides insights into application health, resource usage, and system performance.
 2. Troubleshooting: Helps diagnose and resolve failures efficiently.
-3. Auto-scaling: Kubernetes uses monitoring data to scale pods dynamically.
+3. Auto-scaling: Containers uses monitoring data to scale pods dynamically.
 4. Compliance & Security: Ensures systems adhere to performance and security policies.
 
 ### Monitoring Tools
