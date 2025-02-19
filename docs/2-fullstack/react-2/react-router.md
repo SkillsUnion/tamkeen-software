@@ -464,7 +464,7 @@ export default User;
 
 If you would like to checkout the code implementation please checkout <a href="https://github.com/SkillsUnion/react-routing/tree/nested_routes_route" target="_blank">this repository</a>.
 
-## Private Routing
+## Optional - Private Routing
 
 It should be noted that the section below should only be attempted after authentication has been implemented within an application. 
 
