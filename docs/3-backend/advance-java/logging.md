@@ -1,5 +1,13 @@
 ##  Java Logging
 
+## Lesson Objectives:
+
+- Understand the purpose of logging and how it helps in debugging and monitoring applications.
+
+- Learn how to use `java.util.logging` (JUL) to log messages at different levels.
+
+- Configure logging to output messages to a file instead of the console.
+
 Create a `LoggerDemo.java` and code along.
 
 Logging is a way to record information about the program's execution. It is useful for debugging and monitoring the program.
