@@ -33,7 +33,7 @@ const myFunc = async () => {
 };
 ```
 
-Async-await syntax allows us to write asynchronous JavaScript in a synchronous manner, like in the example above. This can result in cleaner code, but does not add new functionality. Rocket does not have a strong preference whether to use async-await or `.then` syntax.
+Async-await syntax allows us to write asynchronous JavaScript in a synchronous manner, like in the example above. This can result in cleaner code, but does not add new functionality.
 
 `async` specifies a given function is asynchronous and returns a promise, and `await` will wait for a given promise to resolve before proceeding to the next line. `async` and `await` keywords must be used together; it is not meaningful to use `async` without `await`, and it is invalid to use `await` without `async`.
 

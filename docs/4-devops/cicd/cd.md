@@ -134,7 +134,3 @@ deploy:
 This would us to push the codes and deploy it to Render, and when we click on the URL link in our web service, we would see our code reflected.
 
 <img src="../assets/render_deploy.JPG">
-
-## Exercise:
-
-Host the simple ExpressJS app successfully in Render.
