@@ -38,14 +38,14 @@ The naming convention for a `class` is to use **PascalCase**. This means that th
 ```java
 public class Main {
   public static void main(String args[]){
-    System.out.println(args[0]);
+    System.out.println("Hello World");
   }
 }
 ```
 
 - `class` is used to define a class.
 - `main` is the entry point of all Java projects.
-- `System.out.println(args[0])` will output its value to the console.
+- `System.out.println("Hello World")` will output the value "Hello World" to the console.
 - `public` is an access modifier. It means that the class is accessible to all other classes.
 
 ---
@@ -58,7 +58,7 @@ Then, we use the `java` command to run the `.class` file. String values can be p
 
 ```sh
 $ javac Main.java
-$ java Main "Hello World"
+$ java Main 
 ```
 
 You may also run the code directly from VSCode using the "Run Java" button.
