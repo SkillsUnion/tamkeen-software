@@ -40,10 +40,10 @@ Gitflow has numerous, longer-lived branches and larger commits. Under this model
 Gitflow can be used for projects that have a scheduled release cycle and for the DevOps best practice of continuous delivery. 
 
 Branches:
-1. Main branch - Stores the official release history.
-2. Develop branch - Serves as an integration branch for features.
-3. Feature branch - Each new feature should reside in its own branch. Feature branches use `develop` as their parent branch instead of `main`. When a feature is complete, it gets merged back into `develop`. Features should never interact directly with `main`.
-4. Release branch - Created once the `develop` branch has enough features for a release or a release date is approaching. No new features can be added after this point—only bug fixes, documentation generation, and other release-oriented tasks should go in this branch.
+1. Main - Stores the official release history.
+2. Develop - Serves as an integration branch for features.
+3. Feature - Each new feature should reside in its own branch. Feature branches use `develop` as their parent branch instead of `main`. When a feature is complete, it gets merged back into `develop`. Features should never interact directly with `main`.
+4. Release - Created once the `develop` branch has enough features for a release or a release date is approaching. No new features can be added after this point—only bug fixes, documentation generation, and other release-oriented tasks should go in this branch.
 
 Once it's ready to ship, the `release` branch gets merged into `main` and tagged with a version number. In addition, it should be merged back into `develop`, which may have progressed since the release was initiated.
 
@@ -61,7 +61,7 @@ How to do GitFlow
 
 ### GitHub Flow
 
-Github Flow is a simpler alternative to GitFlow ideal for smaller teams as they don’t need to manage multiple versions and it is ideal when there is a need to maintain a single production version.
+Github Flow is a simpler alternative to GitFlow that is ideal for smaller teams as they don’t need to manage multiple versions and it is ideal when there is a need to maintain a single production version.
 
 Unlike GitFlow, it doesn't have any `develop` and `release` branches. The team start off with the `main` branch then developers create `feature` branches that stem directly from `main`, to isolate their work which are then merged back into `main`. The feature branch is then deleted.
 
@@ -85,3 +85,6 @@ Developers can create short-lived branches with a few small commits compared to 
 
 > All developments must be small batch iterations and is directly pushed into the `main` (trunk) branch. 
 
+<img src="https://trunkbaseddevelopment.com/trunk1a.png">
+
+> Note: The main branch is labelled as "master" but this is an outdated naming convention. The main branch is now the proper term for the branch.

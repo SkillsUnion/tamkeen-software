@@ -3,7 +3,7 @@
 ## Learning Objective
 1. Know what is a Container Image Registry
 2. Push and pull images from the image registry
-3. Understand t
+3. Use Semantic Versioning to label application versions
 
 ## Cloud Native Applications
 
