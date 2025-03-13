@@ -50,7 +50,7 @@ Usually, there are three types of environments that developers use to determine 
 
 - Staging - An environment to perform User Acceptance Test by stakeholders before deploying to production.
 - Production - An environment where real users consumes the software (web app or mobile app).
-- Disaster Recovery - In case of natural disaster such as earthquake or fire on the production physical servers, Disaster Recovery enviroment will be activated to replace the production.
+- Disaster Recovery - In case of natural disaster such as earthquake or fire on the production physical servers, the Disaster Recovery environment will be activated to replace the production.
 
 Note that depending on the software development team, you can create more environments to suit the needs of the project.
 
@@ -68,7 +68,7 @@ Here are some of the most popular hosting services that are available:
 5. Digital Ocean
 6. Render
 
-Some platforms offer hosting services for multiple programming languages and some would offer for a specific set of languages. So feel free to choose what ever service your team and project needs.
+Some platforms offer hosting services for multiple programming languages and some would offer for a specific set of languages. So feel free to choose the service your team and project needs.
 
 For this program, we will be using Render for demonstration purposes, but feel free to try out other hosting services.
 
