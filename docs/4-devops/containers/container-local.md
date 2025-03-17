@@ -7,6 +7,12 @@
 
 ## Containerization
 
+Containerization is a software deployment process that bundles an application's code with all the files and libraries it needs to run on any infrastructure.
+
+Traditionally, to run any application on your computer, you had to install the version that matched your machine’s operating system. This can cause developers to say “It works on my machine”.
+
+To solve this, we would use the concept of Containerization.
+
 Containers are lightweight packages of your application code together with dependencies such as specific versions of programming language runtimes and libraries required to run your software services.
 
 <img src="https://middleware.io/wp-content/uploads/2021/12/containerization-explained.jpg" width="50%">

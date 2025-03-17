@@ -3,11 +3,11 @@
 ## Learning Objective
 1. Know what is a Container Image Registry
 2. Push and pull images from the image registry
-3. Understand t
+3. Use Semantic Versioning to label application versions
 
 ## Cloud Native Applications
 
-In the previous lesson, we started learning about containerization and hosting a docker container locally. We have also experienced what it meant by building images and deploying them locally using docker run. In this lesson, we will go deeper into understanding Clound Native Apps and Container Registry.
+In the previous lesson, we started learning about containerization and hosting a docker container locally. We have also experienced what it meant by building images and deploying them locally using docker run. In this lesson, we will go deeper into understanding Cloud Native Apps and Container Registry.
 
 The quick answer to what makes an app cloud native are simply use of container technology or serverless. This is only half true because there are qualities in how "cloud native" your application is. To migrate a traditional software into cloud native applications is not easy feat. Some migrations can take months and years to complete.
 

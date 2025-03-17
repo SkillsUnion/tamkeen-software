@@ -61,7 +61,7 @@ For this course, we will be using the following tools:
 2. Docker - Containerization
 3. CircleCI - DevOps Pipeline
 4. Snyk - Vulnerability Scan
-5. Heroku - Hosting Platform
+5. Render - Hosting Platform
 
 There are other tools such as Github Actions, Jenkins, Kubernetes, Splunk, and Prometheus as well as hosting platforms such as AWS and Google Cloud Platform. DevOps is an infinite loop of continuous feedback and improvement through these tools.
 
