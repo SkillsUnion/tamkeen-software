@@ -1,5 +1,5 @@
 
-# Annotations
+## Annotations
 
 ## Lesson Objectives
 
@@ -10,6 +10,9 @@
 
 ---
 
+### `Annotations`
+
+In Spring Boot, **annotations** are special labels (starting with `@`) that tell the framework how to set up and manage different parts of your application. They help reduce manual configuration by marking classes and methods for specific purposes. For example, `@RestController` tells Spring that a class handles web requests, and `@Autowired` lets Spring automatically provide required objects. Annotations make development easier by letting Spring handle many tasks behind the scenes. Lets look at most commonly used annotations in Spring boot applications.
 
 ### 1. `@Component`
 

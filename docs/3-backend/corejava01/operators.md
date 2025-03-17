@@ -211,8 +211,8 @@ System.out.println("10 + 5 * 2: " + order1);
 System.out.println("(10 + 5) * 2: " + order2);
 ```
 
-Complete Precedence Table:
-https://www.cs.bilkent.edu.tr/~guvenir/courses/CS101/op_precedence.html
+
+<a href ="https://www.cs.bilkent.edu.tr/~guvenir/courses/CS101/op_precedence.html" target ="_blank">Complete Precedence Table </a>
 
 
 
