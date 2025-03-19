@@ -50,6 +50,8 @@ We will use this as a datastore for now in order to create, read, update, and de
 
 To let our user create a customer by calling an API, we need a `POST` endpoint.
 
+#### `@PostMapping`: This annotation in Spring Boot is used to handle HTTP POST requests. It maps a method to a specific URL so that when a client sends data to the server (like adding a new user), this method processes it.
+
 ```java
 @PostMapping("/customers")
 public Customer createCustomer(Customer customer) {

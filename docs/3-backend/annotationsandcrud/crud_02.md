@@ -9,7 +9,9 @@
 
 ### Read
 
-For read, we will usually create 2 endpoints. One to get all the objects, and another to get a specific object.
+`@GetMapping` annotation is used in Spring Boot to handle HTTP GET requests. It maps a method to a specific URL so that when a client (like a browser or API call) requests data, this method returns the response.
+
+#### For read, we will usually create 2 endpoints. One to get all the objects, and another to get a specific object.
 
 #### Get all customers
 
@@ -45,7 +47,8 @@ Now try to get all the customers using Postman.
 
 #### Get a specific customer
 
-To get a specific customer, we need to know the `id` of the customer. We can get the `id` from the URL. using the `@PathVariable` annotation.
+#### To get a specific customer, we need to know the `id` of the customer. We can get the `id` from the URL. using the `@PathVariable` annotation.
+`@PathVariable`annotation extracts values from the URL path and passes them as method parameters. It is useful for fetching data based on dynamic values like user IDs.
 
 Since we are storing the data in an array, we need to find the index of the customer in the array.
 

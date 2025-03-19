@@ -9,6 +9,8 @@
 
 ### Update
 
+`@PutMapping` annotation is used in Spring Boot to update existing data. It handles HTTP PUT requests, which are used to modify an existing record.
+
 To update a customer, similarly we need to get the `id` of the customer using the `@PathVariable` annotation.
 
 We can use the previous helper method to get the index of the customer in the `customers` list.
@@ -48,6 +50,7 @@ Note that you can also use the Patch method to update a resource. The `PATCH` me
 
 ### Delete
 
+`@DeleteMapping` annotation is used to delete data. It handles HTTP DELETE requests to remove a specific record.
 To delete a customer, again, we need to use `@PathVariable` to get the `id` of the customer.
 
 We can use the previous helper method to get the index of the customer in the `customers` list.
