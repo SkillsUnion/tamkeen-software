@@ -29,10 +29,10 @@ LTS stands for Long Term Support, which means it will be supported for a longer 
   1. **Welcome screen**: Click **Next**.
   2. **License Agreement**: Read the agreement and accept it by checking the box, then click **Next**.
   3. **Installation Folder**: You can choose the default installation path (e.g., `C:\Program Files\Eclipse Adoptium\jdk-17`) or select a custom path. Click **Next**.
-  4. **Set Environment Variables**: Make sure the options to set the `JAVA_HOME` variable and add the JDK to the `PATH` are selected (this will make it easier to use the JDK from the command line). As shown in the image below, for Set Java Home variable click on the drop down and choose "Entile feature will be installed on local hard drive". You dont have to make any changes to JavaSoft oracle registry key option, just leave it as it is and click next.
+  4. **Set Environment Variables**: Make sure the options to set the `JAVA_HOME` variable and add the JDK to the `PATH` are selected (this will make it easier to use the JDK from the command line). As shown in the image below, for "Set Java Home variable" click on the drop down and choose "Entile feature will be installed on local hard drive". You **dont** have to make any changes to "JavaSoft oracle registry key option", just leave it as it is and click next.
 
        <img src="../assets/jdk-installation.png" width=400>
-       
+
   5. **Installation**: Click **Install** to begin the installation process.
   
 - Wait for the installation to complete and click **Finish**.
