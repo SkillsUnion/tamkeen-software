@@ -19,7 +19,7 @@ The users will be able to add new menu items,rate them,view all items,find the h
 
 ###    Fork and clone a copy of <a href="https://github.com/SkillsUnion/gourmet-rating-tracker.git" target="_blank">gourmet-rating-tracker repo</a>
 
-###    Create a new Java class called GourmetRatingTracker (or use your preferred project name).
+###    Create a new Java class called GourmetRatingTracker (or use your preferred class name). You are provided with a semi-complete Java program for this assignment **Gourmet Rating Tracker**.You can copy the semi complete java program in the class you create ie GourmetRatingTracker.java. Your task is to complete the incomplete methods marked with `// add your code here`and then save and push the code backto your repository.
 
 ###    Use of ArrayList:
 -    You will use two ArrayList objects.
