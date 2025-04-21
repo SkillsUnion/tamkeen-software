@@ -9,6 +9,11 @@
 
 - Understand the role of throws clause in method declarations for checked exceptions.
 
+## Checked and Unchecked Exception
+
+
+<img src="../assets/checked-unchecked.png" width=400>
+
 ## Unchecked Exceptions
 
 So far we have seen `ArithmeticException`, `ArrayIndexOutOfBoundsException`, and `InputMismatchException`. These types of exceptions are known as **unchecked exceptions**. Unchecked exceptions are exceptions that are not checked at compile time. They are also known as **runtime exceptions** because they occur at runtime i.e., when the program is running.
