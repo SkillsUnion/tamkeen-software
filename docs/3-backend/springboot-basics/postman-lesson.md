@@ -72,7 +72,7 @@ In Postman:
 5. Sign in to your Postman account to access your workspace, collections, and history.
 6. Test your endpoints
 
-GET <a href='http://localhost:8080/hello" target="_blank"> http://localhost:8080/hello </a>
+GET <a href="http://localhost:8080/hello" target="_blank"> http://localhost:8080/hello </a>
 
 5. Click `Send Request` above the line. Response will appear in the response panel.
 
