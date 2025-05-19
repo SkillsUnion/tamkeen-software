@@ -24,7 +24,7 @@ Go to the App.js file, alter the parent div of your local code to reflect the bl
  <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p style={{ color: "red", fontWeight: "bold" }}>
+        <p style={ { color: "red", fontWeight: "bold" } }>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
@@ -62,7 +62,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p style={{ color: "red", fontWeight: "bold" }}>
+        <p style={ { color: "red", fontWeight: "bold" } }>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <h1 style={customHeaderStyle}>This new header</h1>
