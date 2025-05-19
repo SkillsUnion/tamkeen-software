@@ -22,16 +22,29 @@ PostgreSQL is an open-source relational database management system known for its
 
 ---
 
-## Setting Up PostgreSQL
+## Setting Up PostgreSQL and JPA dependencies:
 
-### Adding PostgreSQL Dependency
-Add the PostgreSQL dependency to the `pom.xml` file:
+### Adding Required Dependencies
+
+#### To enable JPA and PostgreSQL integration in your Spring Boot project, include the following dependencies in your `pom.xml`:
+
 ```xml
-<dependency>
-    <groupId>org.postgresql</groupId>
-    <artifactId>postgresql</artifactId>
-</dependency>
+<dependencies>
+    <!-- Spring Data JPA for ORM support -->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-data-jpa</artifactId>
+    </dependency>
+
+    <!-- PostgreSQL JDBC Driver -->
+    <dependency>
+        <groupId>org.postgresql</groupId>
+        <artifactId>postgresql</artifactId>
+    </dependency>
+</dependencies>
 ```
+
+
 
 ### Configuring PostgreSQL
 Next, we need to update the  `application.properties` with PostgreSQL settings:
