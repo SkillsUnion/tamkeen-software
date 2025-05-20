@@ -29,7 +29,7 @@ PostgreSQL is an open-source relational database management system known for its
 #### To enable JPA and PostgreSQL integration in your Spring Boot project, include the following dependencies in your `pom.xml`:
 
 ```xml
-<dependencies>
+
     <!-- Spring Data JPA for ORM support -->
     <dependency>
         <groupId>org.springframework.boot</groupId>
@@ -41,10 +41,11 @@ PostgreSQL is an open-source relational database management system known for its
         <groupId>org.postgresql</groupId>
         <artifactId>postgresql</artifactId>
     </dependency>
-</dependencies>
+
 ```
 
-
+#### Make sure you have already created database simple_crm after installing postgreSQL and Dbeaver.
+###### If not created the database, refer to the last lesson on installation and create a database simple_crm first.
 
 ### Configuring PostgreSQL
 Next, we need to update the  `application.properties` with PostgreSQL settings:
@@ -137,7 +138,7 @@ public class Customer {
     @Column(name = "year_of_birth")
     private int yearOfBirth;
 
-    // Getters, setters, and constructors
+    // include Getters, setters, and constructors
 }
 ```
 
