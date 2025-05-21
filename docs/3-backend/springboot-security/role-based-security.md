@@ -19,13 +19,13 @@ public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Excepti
             .requestMatchers("/reports/**").hasRole("MANAGER")
             .anyRequest().permitAll()
         )
-        .formLogin() // Enables form-based login
-        .and()
-        .httpBasic(); // Enables basic authentication
+        .formLogin(org.springframework.security.config.Customizer.withDefaults()) 
+        .httpBasic(org.springframework.security.config.Customizer.withDefaults()); 
 
     return http.build();
 }
 ```
+
 
 ### Explanation:
 
