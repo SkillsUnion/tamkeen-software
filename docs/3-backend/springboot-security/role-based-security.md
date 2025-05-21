@@ -1,8 +1,8 @@
 
 
- ## Role-Based Access Control (RBAC)
+ # Role-Based Access Control (RBAC)
 
- ## Lesson Objective:
+ # Lesson Objective:
 
  - Learn how to restrict access to endpoints using user roles with Spring Security's `hasRole()` and `PreAuthorize()` annotations.  
 
