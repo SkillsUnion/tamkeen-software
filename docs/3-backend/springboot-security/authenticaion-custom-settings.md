@@ -26,6 +26,7 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
+@EnableMethodSecurity
 public class SecurityConfig {
 
     @Bean
@@ -99,6 +100,7 @@ This Section below explains the complete Spring Security configuration using the
 
 ```java
 @Configuration
+@EnableMethodSecurity
 public class SecurityConfig {
 ```
 - Marks the class as a Spring configuration class.
