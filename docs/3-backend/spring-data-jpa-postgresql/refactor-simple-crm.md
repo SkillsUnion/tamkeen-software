@@ -354,3 +354,170 @@ The advantage of this approach is that it is independent of the database type si
 ---
 
 This lesson introduces JPA and PostgreSQL integration while guiding you through refactoring the `SimpleCrm` project with an emphasis on robust, production-ready practices.
+
+
+##  `Optional` and Exception Handling
+
+Currently, in our `CustomerServiceImpl`, we are doing this:
+
+```java
+@Override
+public Customer getCustomer(Long id) {
+    Customer foundCustomer = customerRepository.findById(id).get();
+    return foundCustomer;
+}
+```
+
+What happens when we get a customer id that does not exist?
+
+If you look at the `findById` method in the `CustomerRepository` interface, you will see that it actually returns an `Optional`.
+
+An `Optional` is a container object that may or may not contain a non-null value. It is used to represent the presence or absence of a value.
+
+Hence, we had to use `get()` to unwrap the `Optional` and get the `Customer` object. However, this is not a good practice. If the result is `null`, we will get a `NoSuchElementException`. You can try getting an invalid id.
+
+We should check if the `Optional` contains a value before unwrapping it.
+
+```java
+@Override
+public Customer getCustomer(Long id) {
+    Optional<Customer> optionalCustomer = customerRepository.findById(id);
+    if (optionalCustomer.isPresent()) {
+        // If the Optional contains a value, unwrap it and return the Customer object
+        Customer foundCustomer = optionalCustomer.get();
+        return foundCustomer;
+    }
+
+    throw new CustomerNotFoundException(id);
+}
+```
+
+Test getting an invalid id.
+
+This can also be further simplified with `orElseThrow()`.
+
+The method `customerRepository.findById(id)` will return an `Optional<Customer>`. `Optional` has a method `orElseThrow()` that will return the value if it is present, or throw an exception if it is not present. We can then use a lambda expression to throw a `CustomerNotFoundException` if the value is not present.
+
+```java
+@Override
+public Customer getCustomer(Long id) {
+    return customerRepository.findById(id).orElseThrow(() -> new CustomerNotFoundException(id));
+}
+```
+
+You can use whichever method you think is more readable.
+
+Currently, we are only getting a 404 error. We are not getting a proper error message, which may not be very helpful to the user.
+
+We could return the error message as a string, but our `ResponseEntity` is of type `Customer`. So we could change the type parameter of `ResponseEntity` to `Object`, which is the parent class of all classes in Java.
+
+```java
+@GetMapping("{id}")
+public ResponseEntity<Object> getCustomer(@PathVariable Long id) {
+
+    try {
+        Customer foundCustomer = customerService.getCustomer(id);
+        return new ResponseEntity<>(foundCustomer, HttpStatus.OK);
+    } catch (CustomerNotFoundException e) {
+        return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
+    }
+}
+```
+
+With this, we could return a `Customer` object if the customer is found, or a string if the customer is not found. But we lose the type safety. This means we could return any object, not just a `Customer` object.
+
+Another problem we have now is that we have all these `try-catch` blocks in our controller.
+
+---
+
+##  Global Exception Handler
+
+Spring Boot lets us create a global exception handler to handle all exceptions in our application using the `@ControllerAdvice` annotation. This allows us to define a centralized place to handle exceptions thrown from all controllers in our application.
+
+<img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*Rr3r5KfKYc6fVJfTZF-rHA.png" width=550 style="background-color: #fff;padding: 25px; border: 1px solid #333;border-radius: 5px">
+
+> Source: https://medium.com/@praneshgupta/springboot-exception-handling-in-apis-globalexceptionhandler-c549470f7834
+
+Create a new class `GlobalExceptionHandler.java`.
+
+Each exception handler method can be annotated with `@ExceptionHandler` to handle a specific exception.
+
+```java
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+
+@ControllerAdvice
+public class GlobalExceptionHandler {
+
+    // This is a handler for CustomerNotFoundException
+    @ExceptionHandler(CustomerNotFoundException.class)
+    public ResponseEntity<String> handleCustomerNotFoundException(CustomerNotFoundException ex) {
+        return new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_FOUND);
+    }
+}
+```
+
+Hence we no longer need the `try-catch` block in our controller. And we also do not have to return a `ResponseEntity<Object>` and instead return our original `ResponseEntity<Customer>`, which gives us type safety.
+
+```java
+@GetMapping("{id}")
+public ResponseEntity<Customer> getCustomer(@PathVariable Long id) {
+    Customer foundCustomer = customerService.getCustomer(id);
+    return new ResponseEntity<>(foundCustomer, HttpStatus.OK);
+}
+```
+
+Now, when an exception is thrown, it will be caught by this global exception handler. The specific exception handler method will be called to handle the exception.
+
+Currently we are returning it as a string. We could give it a more proper structure by creating a new `ErrorResponse` class .
+
+```java
+@Getter
+@Setter
+@AllArgsConstructor
+public class ErrorResponse {
+  private String message;
+  private LocalDateTime timestamp;
+}
+```
+
+And update the exception handler method to return an `ErrorResponse` object.
+
+```java
+@ExceptionHandler(CustomerNotFoundException.class)
+    public ResponseEntity<ErrorResponse> handleCustomerNotFoundException(CustomerNotFoundException ex) {
+    ErrorResponse errorResponse = new ErrorResponse(ex.getMessage(), LocalDateTime.now());
+    return new ResponseEntity<>(errorResponse, HttpStatus.NOT_FOUND);
+}
+```
+
+Providing a meaningful error message is useful for our frontend too as it can display the error message to the user.
+
+### General Exception Handler
+
+We can also add a general exception handler to handle all other exceptions that are not handled by the specific exception handlers. This is useful because there may be other exceptions that we have not yet handled or that we did not expect.
+
+For example, currently, we have not handled invalid interactions. Try to get an invalid interaction.
+
+We will get a `NoSuchElementException` when we try to get an interaction that does not exist.
+
+With a general exception handler, we can return a generic error message to the user.
+
+```java
+@ExceptionHandler(Exception.class)
+public ResponseEntity<ErrorResponse> handleException(Exception ex) {
+    // We can log the exception here
+    // logger.error(ex.getMessage(), ex);
+    // Return a generic error message
+    ErrorResponse errorResponse = new ErrorResponse("Something went wrong", LocalDateTime.now());
+    return new ResponseEntity<>(errorResponse, HttpStatus.INTERNAL_SERVER_ERROR);
+}
+```
+
+Try to get an invalid interaction again.
+
+With this in place, the user will get a generic error message when an exception is thrown and we do not have to expose too much information about our application.
+
+
