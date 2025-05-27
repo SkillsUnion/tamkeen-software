@@ -154,5 +154,16 @@ void testGetCustomerNotFound() {
     assertThrows(CustomerNotFoundException.class, () -> customerService.getCustomer(customerId));
 }
 ```
+This code runs the service method and checks:
+
+"Does it throw a CustomerNotFoundException when the customer is not found?"
+
+This test will pass if the exception is thrown correctly, meaning your error handling works.
+
+Summary:  
+This test checks that:
+
+- When the customer doesn’t exist in DB (`Optional.empty()`),  
+- The `customerService.getCustomer(id)` method correctly throws a `CustomerNotFoundException`.
 
 ---
