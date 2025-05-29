@@ -66,6 +66,23 @@ You **should not delete** your main `SecurityConfig` class. It is essential for 
 ```
 ---
 
+Also **Before running integration tests, make sure to comment out any `@PreAuthorize` annotations in your controller methods.** These security checks can block access during testing unless properly configured.
+
+```java
+// Create Operation
+    @PostMapping
+  //  @PreAuthorize("hasRole('ADMIN')")
+    public ResponseEntity<Customer> createCustomer(@RequestBody Customer customer) {
+
+        Customer newCustomer = customerService.createCustomer(customer);
+        return new ResponseEntity<>(newCustomer,HttpStatus.CREATED);
+    }
+```
+
+---
+
+
+
 ## Now that we’ve disabled security, let’s move on to writing our integration tests.
 
 ### Test Get Customer
