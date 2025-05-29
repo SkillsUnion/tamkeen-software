@@ -18,6 +18,56 @@ We need to annotate it first with `@SpringBootTest`, which will load the Spring 
 
 We also need to annotate it with `@AutoConfigureMockMvc`, which will autowire the `MockMvc` object. This object is used to perform the HTTP requests.
 
+
+## Disabling Security for Integration Testing in Spring Boot
+
+During integration testing, we often want to **bypass Spring Security** so that we can focus purely on the application logic, API responses, and database interactions without authentication interfering with the tests.
+
+---
+
+###  Why Disable Security in Tests?
+
+- To **avoid authentication/authorization checks** during test runs  
+- To test endpoints **freely using MockMvc or TestRestTemplate**  
+- To **speed up test execution** without configuring login credentials  
+- To **focus tests on business logic and data correctness**, not security behavior  
+
+---
+
+ ### Disable the Security
+
+You **should not delete** your main `SecurityConfig` class. It is essential for production security. However, for integration tests:
+
+- You can **comment out the  security code temporarily** during test runs 
+-  You can comment out the  Security logic code we had written earlier (for quick testing only) and replace it with new code as shown below :
+
+```java
+ @Bean
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception
+    {
+
+
+        http
+            .securityMatcher("/**") // Apply to all paths
+            .authorizeHttpRequests(auth -> auth.anyRequest().permitAll()) // Allow all requests
+            .csrf(csrf -> csrf.disable()); // Disable CSRF using new syntax
+        return http.build();
+        
+        /*http.authorizeHttpRequests(auth-> auth
+              .requestMatchers("/customers/**").authenticated()
+               .requestMatchers("/user/**").hasAnyRole("USER", "ADMIN")// show later
+              .anyRequest().permitAll()
+        )
+        .formLogin(org.springframework.security.config.Customizer.withDefaults()) //new code
+        .httpBasic(org.springframework.security.config.Customizer.withDefaults()); // new code
+        return http.build();*/
+
+    }
+```
+---
+
+## Now that we’ve disabled security, let’s move on to writing our integration tests.
+
 ### Test Get Customer
 
 ```java
