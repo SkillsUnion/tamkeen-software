@@ -190,6 +190,7 @@ We will break down what needs to be done in the three jobs listed in first part.
 ### The Build Job
 
 In this job, we will:
+1. Wrap all the jobs under a jobs: section.
 1. Define a node image container (we would use node v16 in this example, but we can use v18 and higher)
 1. Check out code 
 1. Install the `npm` 
@@ -251,6 +252,13 @@ publish: #also known as the build-and-push
           image: terencegaffudsu/education-space
           tag: v1.0.1
 ```
+> Note: we have to prepare the following for publishing as well:
+1. In config.yml, add `docker: circleci/docker@2.8.2` in the orbs section
+2. In CircleCI, prepare the project settings in CircleCI by clicking on the 3 dots on the right side of the project to access the Porject Settings, go to "Environment Variables" and add 2 variables:
+    a. DOCKER_LOGIN - docker username
+    b. DOCKER_PASSWORD - docker password
+3. Add the publish job in the workflow
+4. Push the code to Github
 
 ### The Workflow
 
@@ -267,8 +275,8 @@ workflows:
     jobs:
       - build
       - test:
-        requires:
-          - build
+          requires:
+            - build
       - publish:
           requires:
             - test
