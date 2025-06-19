@@ -282,6 +282,67 @@ workflows:
             - test
 ```
 
+This is how your config.yml should look like after setting up the jobs and workflows:
+
+```yaml
+version: 2.1
+
+# orbs
+orbs:
+  node: circleci/node@5.0.1
+  docker: circleci/docker@2.8.2
+
+# jobs
+jobs:
+  build:
+    docker:
+      - image: cimg/node:16.10
+    steps:
+      - checkout
+      - node/install-packages:
+          pkg-manager: npm
+      - run: |
+          echo "Installing dependencies..."
+          npm install
+  test:
+    docker:
+      - image: cimg/node:16.10
+    steps:
+      - checkout
+      - node/install-packages:
+          pkg-manager: npm
+      - run: |
+          echo "Run tests..."
+          npm run test
+  publish:
+    executor: docker/docker 
+    steps:
+      - setup_remote_docker
+      - checkout
+      - docker/check
+      - docker/build: #builds the image, similar to docker build -t "name:tag" .
+          image: terencegaffudsu/tamkeen-software
+          tag: v1.0.3
+      - docker/push: #pushes the image to specified account in the environment variables
+          image: terencegaffudsu/tamkeen-software
+          tag: v1.0.3
+
+
+# workflow
+workflows:
+  # Name of the workflow is simple_workflow
+  simple_workflow:
+    jobs:
+      - build
+      - test:
+          requires:
+            - build
+      - publish:
+          requires:
+            - test
+```
+
+
 ### Exercise 1
 Use the documentation to find out what each of the commands do:
 - checkout
