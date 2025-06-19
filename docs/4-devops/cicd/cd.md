@@ -20,7 +20,8 @@ In order for teams to implement Continuous Delivery, they must adhere to the fol
 - Everyone is responsible
 - "Done" means released
 - Continuous improvement
-- Benefits of Continuous Delivery
+
+### Benefits of Continuous Delivery
 
 Having Continuous Delivery for your products provide the following benefits:
 
@@ -100,7 +101,9 @@ Note: Make sure that you select the "Free" Instance Type to avoid incurring cost
 
 <img src="../assets/render_free.JPG">
 
-After creating the web service, access the settings on the left side of the page.
+After creating the web service, access the settings on the left side of the page or click on the Advanced after the environment variables.
+
+>Note: once the Deploy Web Service is clicked, cancel the deployment using the Cancel Deploy button.
 
 <img src="../assets/render_settings.JPG">
 
