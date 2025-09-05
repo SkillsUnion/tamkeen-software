@@ -516,3 +516,5 @@ const RequireAuth = ({ children, redirectTo, user }) => {
 The `RequireAuth` function checks to see if the user is authenticated, by validating the existence of a "user.uid", if this uid exists, then, the Component will proceed to render the appropriate Components, in this case the `Profile`. On the other hand if the uid is return undefined, the user is seen as not logged in and they will be redirected to the '/' path. 
 
 If you would like to checkout the code implementation, please checkout <a href="https://github.com/SkillsUnion/react-routing/tree/nested_routes_route_auth" target="_blank">this repository.</a>
+
+You can also look at this code implementation for the [Routing for Simple CRM](https://github.com/SkillsUnion/se-sample-react-router) to test out how it works for the project.

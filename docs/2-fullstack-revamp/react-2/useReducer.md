@@ -44,3 +44,294 @@ It should be noted that a new pattern of implementing useContext has been showca
 
 Try this out yourself by trying out the <a href="https://react.dev/learn/extracting-state-logic-into-a-reducer#challenges" target="_blank">React official challenge</a>.
 
+## States and Reducers
+
+- Similar to useState hook
+- Allows complex state management logic
+
+| State | Reducer |
+|---|---|
+| `const [state, setState] = useState(initialState)` | `const [state, dispatchFunc] = useReducer(reducerFunc, initState, ...)` | 
+| Main state management tool | Advanced state management tool |
+| Independent data and states | Related data and states |
+| Limited state updates | Complex state updates |
+| De-centralised states functions | Centralised state functions |
+
+## Application - Simple CRM
+
+### Step 1: Create Reducer Function
+
+Copy the sample code [here](https://github.com/SkillsUnion/se-sample-react-reducers) and follow through the code guide.
+
+Create a new folder `src\reducers` and create a new file `ProductReducers.jsx`, where it will export two objects:
+- Default product parameters
+- Reducer function, `productReducer(state, action)`
+
+```js
+// ProductReducers.jsx
+export const defaultProduct = {
+  count: 1,
+  discount: 0,
+  name: 'Bananas',
+  price: 2.99
+}
+
+export function productReducer(state, action) {
+  ...
+}
+```
+
+The reducer function accepts two arguments, the current `state` and the `action` to be taken. The reducer will calculate and return the next state. React will store the next state, renders the component and updates the UI.
+
+Actions can be of any user-defined form. Conventionally, we pass objects with a `type` property to identify to action. Once in the reducer function, the `action.type` supplied will determine how a new state is calculated and returned the caller function. The conditional branching can be achieved in code with a `switch` statement.
+
+```js
+// ProductReducer.jsx
+export function productReducer(state, action) {
+  switch (action.type) {
+    ...
+  }
+}
+```
+
+Next, we port the state management functions from `Product.jsx` into the reducer function by moving following state variables `count`, `discount`, `name` and `price`. 
+
+Let's start with the `handlerPlus` function which sets the `count` and `discount` state variables. 
+
+```js
+// Product (original code)
+const handlerPlus = () => {
+  setCount((prevCount) => {
+    let count = prevCount + 1;
+    if (count >= 5) {
+      setDiscount(20);
+    }
+    return count;
+  });
+};
+```
+
+We define the `action.type` for the above actions as 'PLUS_COUNT' (or any other descriptive constant):
+
+```js
+// ProductReducer.jsx
+export function productReducer(state, action) {
+  switch (action.type) {
+    case 'PLUS_COUNT': {
+      let newState = { ...state };  // Copy the previous state
+      newState.count = state.count + 1;
+      if (newState.count >= 5) {
+        newState.discount = 20;
+      }
+      return newState;  // Return the new updated state
+    }
+  }
+  default:
+    throw Error('productReducer - unknown action:', action.type);
+}
+```
+
+In the reducer function, we must create a copy of the previous state object *before* making any changes to its properties, because the incoming state object is **immutable**. We can copy the state with the ES6 object spread operator `{...}`. Once the state calculations are completed, the reducer function returns with a new state object. 
+
+### Step 2: Add a Reducer to a Component
+
+Call `useReducer` at the top-level `Product` component.
+
+```js
+// Product.jsx
+import { useReducer } from 'react';
+import { productReducer, defaultProduct } from '../reducers/ProductReducers';
+
+function Product() {
+  const [state, dispatch] = useReducer(productReducer, defaultProduct);
+  ...
+}
+```
+
+Since most of the state handling logic has moved the reducer function, we will use the `dispatch` function to trigger the action.
+
+```js
+// Product.jsx
+const handlerPlus = () => {
+  dispatch({ type: 'PLUS_COUNT' });
+}
+```
+
+Finally, we update the JSX to show the reducer's state object properties (e.g. `state.count`), instead of the original state variables.
+
+```js
+// Product.jsx
+return (
+  <div>
+    <Card
+      ...
+      count={state.count}
+      discount={state.discount}
+      ...
+    >
+  </div>
+...
+```
+You can now test the '+' button functionality. 
+
+### Step 3: Passing Arguments to a Reducer Function
+
+A reducer function can receive any number of arguments via `action` properties. For example, to pass `name` to `productReducer`, the caller function will pass a second parameter via `dispatch`:
+
+```js
+// Product.jsx
+const handlerChangeName = (value) => {
+  dispatch({ type: 'SET_NAME', name: value })
+}
+```
+
+In the reducer function, the `name` property is received in the `action` object:
+
+```js
+// ProductReducer.jsx
+case 'SET_NAME': {
+  return {...state, name: action.name }
+} 
+```
+
+Test the app's name field. Note how the values can be manipulated through the reducer functions.
+
+## Combining Context and Reducer Functions
+
+In this section, we will combine what we have learned and refactor `Product` and its component tree to use context as 'global' store for its data and handler functions.
+
+### Step 1: Create Context Provider
+
+Create the context folder `src\context` and add the context file `ProductContext.jsx` where you will add the context object, define and export `ProductProvider` and `ProductContext` functions. 
+
+```js
+// ProductContext.jsx
+import { createContext } from 'react';
+const ProductContext = createContext();
+
+export function ProductProvider({ children }) {
+  ...   
+}
+
+export default ProductContext;
+```
+
+### Step 2: Import Reducer Function
+
+We must import the reducer function that we created previously, as this is where the state variables and handler functions are stored. Port the reducer function calls from `Product.jsx` into `ProductContext.jsx`: 
+
+```js
+// ProductContext.jsx
+import { createContext, useReducer } from 'react';
+import { defaultProduct, productReducer } from '../reducers/ProductReducer';
+
+export function ProductProvider({ children }) {
+  const [state, dispatch] = useReducer(productReducer, defaultProduct);
+  
+  const handlerPlus = () => {
+    dispatch({ type: 'PLUS_COUNT' });
+  };
+  const handlerChangeName = (value) => {
+    dispatch({ type: 'SET_NAME', name: value });
+  };
+  ...  
+```
+
+### Step 3: Create Context Object
+
+Complete the product context provider by defining the actual states that you want to store in the context component and pass it to the `ProductContext.Provider` object as a `value` prop:
+
+```js
+// ProductContext.jsx
+...
+export function ProductProvider({ children }) {
+  ...
+  const context = {
+    count: state.count,
+    discount: state.discount,
+    name: state.name,
+    price: state.price,
+    handlerPlus: handlerPlus,
+    handlerChangeName: handlerChangeName,
+  }   
+  return (
+    <ProductContext.Provider value={context}>
+      {children}
+    </ProductContext.Provider>
+  )
+  ...
+```
+
+### Step 4: Add Context Provider to Top-Level Component
+
+Recall how the Context Provider needs to be added to the top-level component
+
+```js
+// App.jsx
+import { ProductProvider } from './context/ProductContext';
+
+function App() {
+  return (
+  ...
+    <ProductProvider>
+      <Product />
+    </ProductProvider>
+...     
+
+```
+ 
+> To the top-level component, `ProductProvider` is a short form of `ProductContext.Provider` 
+
+### Step 3: Apply the `useContext` Hook
+
+Refactor `Product.jsx` to use context:
+
+```js
+// Product.jsx
+import { useState, useContext } from 'react';
+import ProductContext from '../context/ProductContext';
+
+function Product() {
+  
+  // Replace useReducer --> useContext
+  //
+  // const [state, dispatch] = useReducer(productReducer, defaultProduct);
+  
+  const ctx = useContext(ProductContext);
+
+  // Remove all handlers functions as they have been moved to ProductContext
+  //
+  // const handlerPlus = () => {
+  // const handlerMinus  ...
+  // const handlerChangeName ... 
+  // const handlerChangePrice ...
+  
+  // Rename all references to state --> ctx object 
+
+  const handlerAddProduct = () => {
+    const newItem = {
+      name: ctx.name,
+      quantity: ctx.count,
+      price: ctx.price,
+      discount: ctx.discount,
+      total: ctx.count * ctx.price * (100-ctx.discount)/100,
+    } 
+  ...
+  // Remove all props that have been moved to the context 
+
+  return (
+    <div className={styles.container}>
+      <Card
+        handlerAddProduct={handlerAddProduct}
+      />
+      <ViewList list={list} sum={sumTotal} />
+    </div>    
+  )
+  export default Product;
+
+```
+
+## Exercise
+
+In order for the app to completely work, the handlerMinus and handlerChangePrice should also be included in the reducer function. The exercise's goal is for the learners to implement the two functions.
+
