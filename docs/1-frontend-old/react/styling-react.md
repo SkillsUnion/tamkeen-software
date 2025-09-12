@@ -107,6 +107,8 @@ Alter your App.css, target the App-link class to reflect the code below:
 
 The output should look like this within the browser.
 
+
+
 <figure><img src="../assets/cra-stylesheet.png" alt=""><figcaption><p>Stylesheet applied</p></figcaption></figure>
 
 Stylesheets are used within the Application by importing them at the top of the component. The full component should be similar to the code below.
@@ -149,31 +151,3 @@ export default App;
 ```
 
 In the component above we can see that we apply classes to JSX tags using the property className. It is possible to apply more than one className to a JSX tag just like in HTML. Generally when creating React applications developers would create common stylesheets for style that is consistent across components, and individual stylesheets for unique components that do not share style with other parts of the application.
-
-
-### Using CSS Modules
-
-Create a CSS module file with a ```.module.css``` extension, e.g. App.module.css. Write regular CSS in your .module.css file.
-```css
-.bodyText {
-  color: blue;
-  background-color: yellow;
-  padding: 20px;
-  border: 5px solid fuchsia;
-}
-```
-
-Import the CSS module file into your component:
-```jsx
-  // In App.js file
-   
-  import styles from './App.module.css'
-  function App() {
-    return (
-      <>
-         <div className={styles.bodyText}>Using CSS Modules (component.module.css).</div>
-      </>
-    )
-  }
-```
-CSS code inside a module is available only to the component that imports it, therefore there is no risk global name conflicts.

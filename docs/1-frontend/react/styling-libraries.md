@@ -18,7 +18,7 @@ npm install react-bootstrap bootstrap
 
 This will install **React Bootstrap** and the **bootstrap** package within the application, there is still one more step that must be taken before you can utilise all of React-Bootstrap in your app.
 
-Go to the `main.jsx` within your React application and this line at the top of the file:
+Go to the `App.jsx` within your React application and this line at the top of the file:
 
 ```jsx
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -32,7 +32,7 @@ To showcase implementing React Bootstrap into a React Application, we will imple
 
 ### React Bootstrap Component
 
-We will import Button from react-bootstrap such that we get pre-styled buttons without much effort. Alter the App.js file to reflect code below:
+We will import Button from react-bootstrap such that we get pre-styled buttons without much effort. Alter the App.jsx file to reflect code below:
 
 ```jsx
 import logo from "./logo.svg";
@@ -177,6 +177,3 @@ Below is the output of the code above, depending on the size of the window.
 <figure><img src="../assets/sm-screen.png" alt=""><figcaption><p>Small Screen ≥576px</p></figcaption></figure>
 
 The Grid system in `react-bootstrap` affords developers an easy way to dynamically resize content dependant on their users screens. This system of Bootstrap Components comes together to build fully responsive webpages, it should be noted that the underlying system used here is flexbox. This system is a fantastic way to ensure that an applications content can be visible to users across multiple device sizes without the need to add in hundreds of `@mediaqueries`.
-
-
-
