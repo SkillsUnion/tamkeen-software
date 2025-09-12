@@ -8,7 +8,11 @@ Learning Objectives
 
 ## Introduction
 
-In a previous section we introduced CSS, which is used to apply styles to HTML pages for beautifying content. Within ReactJS we can use CSS in order style our rendered output, you can apply any CSS style within React. It should be noted that because we are writing JSX, there are some different rules than applying style in HTML. An important distinction is that the className property is used on JSX elements to apply classes, this is because the word class in JavaScript is a reserved key word. We can use the boilerplate code that is generated from the npx Create React Application (`npx create-react-app sample-project`), we actually have some built in styling. Below is an example of the boilerplate output.
+In a previous section we introduced CSS, which is used to apply styles to HTML pages for beautifying content. Within ReactJS we can use CSS in order style our rendered output, you can apply any CSS style within React. It should be noted that because we are writing JSX, there are some different rules than applying style in HTML. An important distinction is that the ```className``` property is used on JSX elements to apply classes, this is because the word ```class``` in JavaScript is a reserved key word. 
+
+We can use the boilerplate code that is generated from the npx Create React Application (`npx create-react-app sample-project`), we actually have some built in styling. Below is an example of the boilerplate output.
+
+Create React App is another way of making a React application, but you would notice that it would act a little bit slower compared to ViteJS. So we would only be using Create React App for the styling lessons to help you get a feel on how styling works, but we will be moving back to ViteJS. 
 
 <figure><img src="../assets/cra.png" alt=""><figcaption><p>Create React Application</p></figcaption></figure>
 

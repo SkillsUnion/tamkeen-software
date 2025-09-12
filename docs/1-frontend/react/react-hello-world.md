@@ -91,17 +91,62 @@ To accomplish this part, instructor should demonstrate using the following JSX t
   <input type='checkbox'>   // Check box for each task
   <label>                   // Task label
 ```
-### Demo
+
+```jsx
+import './App.css';
+import MyComponent from './MyComponent';
+import MyExpressions from './MyExpressions';
+
+function App() {
+  return (
+    <div className='App'>
+      <h1>To Do List</h1>
+      <div>
+        <input type='checkbox' />
+        <label>Do the laundry</label>
+      </div>
+      <div>
+        <input type='checkbox' />
+        <label>Buy groceries</label>
+      </div>
+      <div>
+        <input type='checkbox' />
+        <label>Clean the toilet</label>
+      </div>
+      <div>
+        <MyComponent />
+      </div>
+    </div>
+  );
+}
+
+export default App;
+```
+### My First Component
 
 Create a `MyComponent` component and import into `App.jsx`
 
-### Activity (10 mins)
+```jsx
 
-Create a `ToDoList` component in the `./src` folder and import it into `App.jsx`. Use the JSX learned in this section to create the component.
+// Add module styles later...
+import styles from './MyComponent.module.css';
 
-> Instructors may refer to `code/my-app/src/App.jsx` for code sample
+function MyComponent() {   
+  }
+  return (
+    <div>
+      <h1 className={styles.heading}>My Component</h1>
+      <div>Sample content</div>
+    </div>
+  )
+}
+export default MyComponent; 
 
-## Part 3 - JSX Rules and Features
+```
+
+Add the component to the App.jsx
+
+## JSX Rules and Features
 
 ### Fragments 
 
@@ -147,3 +192,43 @@ return (
    - A math library function, e.g. Math.sqrt()
    - Conditional/ternary operator
    - Looping with array methods, e.g. array.map(), array.forEach()
+
+### Activity Solution:
+Here is a sample solution for the `MyExpressions` component:
+```jsx
+function MyExpressions() {
+    /* use this for ternary operator */
+    let isOn = false;
+  
+    /* Use this for iteration map */
+    let array = [5, 4, 3, 2, 1];
+  
+    function myFunction(item) {
+      return item + ' ';
+    }
+  
+    return (
+      <>
+        <h2>Embedding JS expressions in JSX</h2>
+  
+        {/* Math expression */}
+        <p>23 * 78 is {23 * 78}</p>
+  
+        {/* Math library functions */}
+        <p>Square root of 81 is {Math.sqrt(81)}</p>
+  
+        {/* Conditional operators (ternary) */}
+        {/* if...else will not work */}
+        <p>The light is {isOn ? 'ON' : 'OFF'}</p>
+  
+        {/* Loop with map ... using callback function */}
+        <p>Counting down: {array.map(myFunction)} </p>
+  
+        {/* Loop with map ... using arrow function */}
+        <p>Counting down: {array.map((item) => item + ' ')} </p>
+      </>
+    );
+  }
+  export default MyExpressions;
+  
+```

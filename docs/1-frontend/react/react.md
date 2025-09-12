@@ -26,7 +26,7 @@ Follow the prompts that would appear:
 1. Choose `y` for Ok to Proceed
 2. Enter `my-app` for the project name
 3. Choose `React` for the framework
-4. Choose `JavaScript` for the variant
+4. Choose `JavaScript` for the variant (you can also choose `JavaScript with SWC)
 
 A React project will be generated in the `my-app` folder. Take a look at how JSX is being rendered into DOM element.
 
@@ -39,6 +39,6 @@ Install the dependencies and start the app:
 npm install
 npm run dev
 ```
-Once the React app has compiled succesfully, the server will be up and you can view the app in your browser at `http://localhost:5713`. From this point onwards, the app automatically reload whenever you save any new changes to your source code. 
+Once the React app has compiled succesfully, the server will be up and you can view the app in your browser at `http://localhost:5173`. From this point onwards, the app automatically reload whenever you save any new changes to your source code. 
 
 While the server is running, port:5173 will be reserved until you 'kill' the server by  CTRL-C. If you start another React app server with `npm run dev`, you will be asked to choose a different port number.

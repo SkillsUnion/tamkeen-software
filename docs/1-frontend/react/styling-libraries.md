@@ -99,6 +99,10 @@ When implementing the grid system be sure to:
 Here is a simple implementation of the react-bootstrap grid system
 
 ```jsx
+  const columnStyle = {
+    border: "1px solid black"
+  }
+
  <Container>
           <Row>
             <Col style={columnStyle}> 1 of 1</Col>
@@ -132,7 +136,10 @@ Here is a simple implementation of the react-bootstrap grid system
 It is possible to make the `Col` Components respond to the windows width, based off the breakpoints that were pointed out earlier. This allows columns to wrap and resize their content to ensure that data is shown exactly as intended, to do this we need to make use of Bootstraps breakpoint properties on our `Col` Components as shown below. You are able to apply as many breakpoint properties on a `Col` as are needed.
 
 ```jsx
-<pre class="language-jsx"><code class="lang-jsx"><Container>
+const columnStyle = {
+    border: "1px solid black"
+  }
+<Container>
           <Row>
           
           {/* 
@@ -162,8 +169,8 @@ It is possible to make the `Col` Components respond to the windows width, based 
               6 of 6
             </Col>
           </Row>
-<strong>        </Container>
-</strong></code></pre>
+</Container>
+
 ```
 
 Below is the output of the code above, depending on the size of the window.
