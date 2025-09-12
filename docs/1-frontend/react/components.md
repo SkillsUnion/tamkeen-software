@@ -67,7 +67,7 @@ export default App;
 Test and run the application:
 
 ```
- npm start
+ npm run dev
 ```
 
 Create a Child component in the `components` folder:
