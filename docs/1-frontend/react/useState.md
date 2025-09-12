@@ -291,6 +291,4 @@ There are several ways to improve the code, here are some hints:
 - Create a reset button to reset the values
 - Use an `initialValues` object to store the default values 
 
-Once you have made an attempted to a solution, here is a possible [solution code](./code/2.3-part-4-final.jsx).
-
-TODO: Add codebase for this lesson
+Once you have made an attempted to a solution, here is a possible [solution code](https://github.com/SkillsUnion/se-sample-react-usestate/blob/main/2.3-part-4-final.jsx).
