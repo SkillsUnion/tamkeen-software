@@ -69,7 +69,7 @@ Refactor `Product` and move the presentational parts into a new `Card` component
 - Accepts user input using `Input`
 - Provision a new `ViewList` component to display product data
 
-![Final Product](assets/components-final.png)
+![Final Product](../assets/components-final.png)
 
 ### Generate the Product Item List
 
@@ -115,7 +115,7 @@ The `ViewList` component shall receive a list of items from `Product` and displa
 
 The product list array is stored as a state variable, `list` that cam be sent to the `ViewList` child component as a prop. Since `ViewList` is a *presentational component*, its single job is simply display the content of the `list` array.
 
-Start by creating a new `ViewList.jsx` file and its corresponding `ViewList.module.css` style sheet in the `components` folder. You may copy the CSS from this [file](./code/final/src/components/ViewList.module.css).
+Start by creating a new `ViewList.jsx` file and its corresponding `ViewList.module.css` style sheet in the `components` folder. You may copy the CSS from this [file](https://github.com/SkillsUnion/se-sample-react-unidataflow/blob/main/final/src/components/ViewList.module.css).
 
 
 ```js
