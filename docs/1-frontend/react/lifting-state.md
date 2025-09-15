@@ -56,7 +56,7 @@ The codebase can be found [here](https://github.com/SkillsUnion/se-sample-react-
 
 Refactor `Product.jsx` by splitting up the component into smaller logical container and presentational components. The starter `Product` component relationship looks like the following:
 
-![Product component relationship diagram](assets/components-begin.png)
+![Product component relationship diagram](../assets/components-begin.png)
 
 `Product` is a container component which:
 - Stores and manages all state variables
