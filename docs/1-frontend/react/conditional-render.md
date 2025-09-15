@@ -103,7 +103,7 @@ Test out the conditional rendering by clicking the button and see if the ViewLis
 
 ### Method 3: Using short circuit evaluations 
 
-Short circuit evaluation uses logical operations AND and OR (&& and ||) to determine the result. If the first condition is true, it will run the statement after the operation.
+Short circuit evaluation uses logical operations ```AND and OR (&& and ||)``` to determine the result. If the first condition is true, it will run the statement after the operation.
 
 In Product.jsx, remove / comment out the ternary expression created earlier and replace it with the following code:
 
