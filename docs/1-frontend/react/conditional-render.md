@@ -22,7 +22,6 @@ React components have the ability to render UI elements according to its current
 Copy the starter code [here](https://github.com/SkillsUnion/se-sample-react-condrendlist) for part-1 and start the React app.
 
 ```
-cd code
 cp -r part-1-begin work-1
 
 cd work-1

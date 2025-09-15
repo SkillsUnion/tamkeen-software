@@ -109,7 +109,7 @@ and returned as functions.
 
 You will encounter more examples of higher-order functions when using Javascript's popular Array methods, e.g. `map`, `filter` and `reduce`.
 
-## Part 3: Passing Event Handlers as Props
+## Passing Event Handlers as Props
 
 Let's refactor the `<button>` element and wrap its functionality and styling into its own component, called `<Button>` (with a capital 'B'). This new component will take some props from its parent, the first one being a *label* to identify the button on the page. Also, `Button` will come with its own customised CSS styling, courtesy of its corresponding `.module.css`
 
@@ -171,7 +171,7 @@ The final code for `Button.jsx` and `Counter.jsx` can be found [here](https://gi
 
 Implement a reset button component to zero out the quantity and pass an event handler to the component.
 
-## Part 4: Using Events to Capture Input Fields
+## Using Events to Capture Input Fields
 
 The `onChange` event handler is triggered when a value of an element, e.g. `<input>` changes. 
 
@@ -272,11 +272,10 @@ Now, the product name will update when the user keys in any text in the input bo
 
 ---
 ### Commonly used events
-| Event        | Description           |
-| ------------ |:---------------------:|
-| onClick      | The user clicks the element, typically used for buttons |
-| onChange     | The element has been changed, this is useful for input fields |
-| onSubmit     | The form has been submitted, this is useful for forms |
-| onKeyDown    | The user pushes a keyboard key |
-| onMouseOver  | The user moves the mouse over the element |
-| onMouseOut   | The user moves the mouse away from the element |
+Here are some commonly used events that can be used in React:
+- onClick - The user clicks the element, typically used for buttons |
+- onChange - The element has been changed, this is useful for input fields |
+- onSubmit - The form has been submitted, this is useful for forms |
+- onKeyDown - The user pushes a keyboard key |
+- onMouseOver - The user moves the mouse over the element |
+- onMouseOut - The user moves the mouse away from the element |
