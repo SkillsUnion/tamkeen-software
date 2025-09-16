@@ -56,7 +56,7 @@ When testing out a new programming language or framework, we often build a basic
 | **Update** | Edit and update an existing record |
 | **Delete** | Remove an existing record |
 
-In the previous lessons, we have already done **Create** and **Read** part of the app, refer to `handlerAddProduct` in `Product.jsx` and the `ViewList.jsx` component. In this section, we will continue the CRUD app by adding **Delete** function.
+The **Create** and **Read** parts of the app have already been made, and you can refer to `handlerAddProduct` in `Product.jsx` and the `ViewList.jsx` component. In this section, we will continue the CRUD app by adding **Delete** function.
 
 ### Step 1: Add Delete UI Element and Handler
 
@@ -163,3 +163,7 @@ return(
 There are many techniques to remove an item from an array in Javascript and this is just one of the popular ones. To delete an item from the list, apply the ES6 `filter` method to list to create a new list that includes every item in the current list, except for the item with the delete ID parameter. 
 
 The **Delete** function should work now.
+
+### Exercise:
+1. Try to update the Sum Total once an item has been deleted
+2. Try to implement the Update functionality for an item.
