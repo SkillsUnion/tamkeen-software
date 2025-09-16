@@ -24,15 +24,7 @@ Some points to consider about keys:
 
 ## Rendering Arrays as Lists
 
-Copy the starter code in this [repo](https://github.com/SkillsUnion/se-sample-react-condrendlist) and start the React app. We will be using a new template to do the second part of the lesson.
-
-```
-cd code
-cp -r part-2-begin work-2
-
-cd work-2
-npm run dev
-```
+Copy the starter code in this [repo](https://github.com/SkillsUnion/se-sample-react-condrendlist/part-2-begin) and start the React app.
 
 > Note: we will see some folders like `context` and `reducers` in this starter code, but we will deal with how these work when we move to the Full Stack module.
 
@@ -49,7 +41,7 @@ uuid is an external js library that is used to create UUIDs to be used as keys.
 Change into your work folder and start the React app.
 
 ```
-cd work-2
+cd part-2-begin
 npm run dev
 ```
 
@@ -64,7 +56,7 @@ When testing out a new programming language or framework, we often build a basic
 | **Update** | Edit and update an existing record |
 | **Delete** | Remove an existing record |
 
-In the previous chapters, we have already done **Create** and **Read** part of the app, refer to `handlerAddProduct` in `Product.jsx` and the `ViewList.jsx` component. In this section, we will complete the CRUD app by adding **Update** and **Delete** functions.
+In the previous lessons, we have already done **Create** and **Read** part of the app, refer to `handlerAddProduct` in `Product.jsx` and the `ViewList.jsx` component. In this section, we will continue the CRUD app by adding **Delete** function.
 
 ### Step 1: Add Delete UI Element and Handler
 
