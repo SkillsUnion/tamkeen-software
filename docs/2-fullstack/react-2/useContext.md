@@ -55,7 +55,7 @@ Within the `Profile.jsx` we can see how to use the user information that is shar
 
 ## Application - Simple CRM
 
-In this section, we will refactor `Product` and its component tree to use context as 'global' store for its data and handler functions.
+In this section, we will refactor `Product` and its component tree to use context as 'global' store for its data and handler functions. [Here](https://github.com/SkillsUnion/se-sample-react-context) is the codebase for the starter code.
 
 ### Step 1: Create Context Provider
 

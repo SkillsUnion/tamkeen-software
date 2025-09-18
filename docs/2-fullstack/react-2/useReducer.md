@@ -59,7 +59,7 @@ Try this out yourself by trying out the <a href="https://react.dev/learn/extract
 
 ## Application - Simple CRM
 
-### Step 1: Create Reducer Function
+### Create Reducer Function
 
 Copy the sample code [here](https://github.com/SkillsUnion/se-sample-react-reducers) and follow through the code guide.
 
@@ -133,7 +133,7 @@ export function productReducer(state, action) {
 
 In the reducer function, we must create a copy of the previous state object *before* making any changes to its properties, because the incoming state object is **immutable**. We can copy the state with the ES6 object spread operator `{...}`. Once the state calculations are completed, the reducer function returns with a new state object. 
 
-### Step 2: Add a Reducer to a Component
+### Add a Reducer to a Component
 
 Call `useReducer` at the top-level `Product` component.
 
@@ -174,7 +174,7 @@ return (
 ```
 You can now test the '+' button functionality. 
 
-### Step 3: Passing Arguments to a Reducer Function
+### Passing Arguments to a Reducer Function
 
 A reducer function can receive any number of arguments via `action` properties. For example, to pass `name` to `productReducer`, the caller function will pass a second parameter via `dispatch`:
 
@@ -200,7 +200,7 @@ Test the app's name field. Note how the values can be manipulated through the re
 
 In this section, we will combine what we have learned and refactor `Product` and its component tree to use context as 'global' store for its data and handler functions.
 
-### Step 1: Create Context Provider
+### Create Context Provider
 
 Create the context folder `src\context` and add the context file `ProductContext.jsx` where you will add the context object, define and export `ProductProvider` and `ProductContext` functions. 
 
@@ -216,7 +216,7 @@ export function ProductProvider({ children }) {
 export default ProductContext;
 ```
 
-### Step 2: Import Reducer Function
+### Import Reducer Function
 
 We must import the reducer function that we created previously, as this is where the state variables and handler functions are stored. Port the reducer function calls from `Product.jsx` into `ProductContext.jsx`: 
 
@@ -237,7 +237,7 @@ export function ProductProvider({ children }) {
   ...  
 ```
 
-### Step 3: Create Context Object
+### Create Context Object
 
 Complete the product context provider by defining the actual states that you want to store in the context component and pass it to the `ProductContext.Provider` object as a `value` prop:
 
@@ -262,7 +262,7 @@ export function ProductProvider({ children }) {
   ...
 ```
 
-### Step 4: Add Context Provider to Top-Level Component
+### Add Context Provider to Top-Level Component
 
 Recall how the Context Provider needs to be added to the top-level component
 
@@ -282,7 +282,7 @@ function App() {
  
 > To the top-level component, `ProductProvider` is a short form of `ProductContext.Provider` 
 
-### Step 3: Apply the `useContext` Hook
+### Apply the `useContext` Hook
 
 Refactor `Product.jsx` to use context:
 
