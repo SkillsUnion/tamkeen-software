@@ -125,9 +125,10 @@ export function productReducer(state, action) {
       }
       return newState;  // Return the new updated state
     }
+    default:{
+      throw Error('productReducer - unknown action:', action.type);
+    }
   }
-  default:
-    throw Error('productReducer - unknown action:', action.type);
 }
 ```
 
@@ -262,6 +263,11 @@ export function ProductProvider({ children }) {
   ...
 ```
 
+###  Mini-Exercise
+
+In order for the app to completely work, the handlerMinus and handlerChangePrice should also be included in the reducer function. The exercise's goal is for the learners to implement the two functions.
+
+
 ### Add Context Provider to Top-Level Component
 
 Recall how the Context Provider needs to be added to the top-level component
@@ -331,7 +337,40 @@ function Product() {
 
 ```
 
-## Exercise
+Then modify Card.jsx to include the context:
+```jsx
+//Card.jsx
+import { useContext } from "react";
+import ProductContext from "../context/ProductContext";
+import styles from "./Card.module.css";
+import Button from "./Button";
+import Input from "./Input";
 
-In order for the app to completely work, the handlerMinus and handlerChangePrice should also be included in the reducer function. The exercise's goal is for the learners to implement the two functions.
+function Card({
+  handlerAddProduct
+}) {
+  const ctx = useContext(ProductContext);
+  return (
+    <div className={styles.container}>
+      <div className={styles.name}>{ctx.name}</div>
+      <div className={styles.counter}>
+        <Button label="➖" onClick={ctx.handlerMinus} />
+        <span className={styles.count}>{ctx.count}</span>
+        <Button label="➕" onClick={ctx.handlerPlus} />
+      </div>
+      <div className={styles.price}>{`$ ${ctx.price}`} each</div>
+      <div className={styles.discount}>{`Discount: ${ctx.discount}%`}</div>
+      <div className={styles.form}>
+        <Input value={ctx.name} label="Product Name" onChange={ctx.handlerChangeName} />
+        <Input value={ctx.price} label="Price" onChange={ctx.handlerChangePrice} />
+      </div>
+      <Button label="Add Product" onClick={handlerAddProduct} />
+    </div>
+  );
+}
+export default Card;
+
+```
+
+Sometimes, if the application is small enough, simple state management using useState will be sufficient. However, if your application gets more complicated, then the use of useState and useReducer might be more beneficial to you and your team to handle complicated states.
 
