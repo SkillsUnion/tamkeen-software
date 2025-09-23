@@ -78,6 +78,4 @@ To launch the app in the emulator, restart the app using the `npx expo start` co
 
 ## Exercise
 
-### Setup completion
-
 Make sure that the React Native Demo app runs on both your mobile device and the emulated device

@@ -53,7 +53,7 @@ return (
 );
 ```
 
-> Note: In case you find it's font too tiny, use inline style to increase its font size: 
+> Note: In case you find the font too tiny, use inline style to increase its font size: 
 
 ```jsx
 <Text style={ {fontSize:50} }>Hello, smile!</Text>
@@ -78,9 +78,10 @@ To use local images, put the image into the project's `assets` folder. Create a 
 > Note: There are placeholder images available over the web. Just choose and download one as needed.
 > Note: This assumes that you have an image called `sample.png` in the `assets/images` folder
 
-Import the image as a variable:
+Import the image as a variable and the Image from react-native:
 ```jsx
-import samplePng from "./assets/sample.png";
+import samplePng from "./assets/images/sample.png";
+import { Text, View, Image } from "react-native";
 ```
 
 Use the Image component in the return statement:
@@ -121,7 +122,6 @@ const styles = StyleSheet.create({
 Then add the Image component, for images from the web, provide a `style` and `source` with the `uri` property. 
 
 ```jsx
-{% raw %}
 return (
   <View>
     <Text>Hello, smile!</Text>
@@ -135,7 +135,6 @@ return (
   </View>
 );
 
-{% endraw %}
 ```
 
 See the results of adding the two images.
@@ -152,29 +151,27 @@ Import the TextInput component from react-native:
 import { Text, View, Image, StyleSheet, TextInput } from "react-native";
 ```
 
-Include the TextComponent in the return block:
+Include the TextInput component in the return block and replace the "Hello, smile!" to the ```text``` state:
 
 ```jsx
 return (
   <View>
-    <Text>Hello, smile!</Text>
+    <Text>{text}</Text>
+    <TextInput
+      style={styles.input}
+      value={text}
+      onChangeText={setText}
+    ></TextInput>
     <Image
       style={styles.image}
       source={ {
         uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR2wcpqmDDUjViB6TEfWO-hxzaf5cwENejaQ&usqp=CAU",
       } }
     ></Image>
-    <Image source={monkeyPng}></Image>
-    <TextInput
-      style={styles.input}
-      value={text}
-      onChangeText={setText}
-    ></TextInput>
+    <Image source={samplePng}></Image>   
   </View>
 );
 ```
-
-Remove the comments from the image to make them appear in your app.
 
 Add styling for the TextInput:
 ```jsx
@@ -198,13 +195,13 @@ import React, { useState } from "react"; // the import
 //other imports
 
 function App(){
-    const [text, setText] = useState(null); 
+    const [text, setText] = useState(""); 
     ...
 }
 
 ```
 
-You would notice that the TextInput might not be visible. This is because that it is located at the bottom of the app which the screen doesn't show. To mitigate this, we will allow the view to be scrollable. We do this by converting the View component into using the ScrollView component.
+You would notice that the other components might not be visible. This is because that it is located at the bottom of the app which the screen doesn't show. To mitigate this, we will allow the view to be scrollable. We do this by converting the View component into using the ScrollView component.
 
 ```jsx
 import {
@@ -214,7 +211,7 @@ import {
 //and replace the View in the JSX with ScrollView
 ```
 
-After replacing the View with the ScrollView component, your app show allow scrolling and you would be able to scroll and see the TextInput component.
+After replacing the View with the ScrollView component, your app show allow scrolling and you would be able to scroll and see the components.
 
 ## Flexbox
 

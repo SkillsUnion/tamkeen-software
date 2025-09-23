@@ -22,7 +22,7 @@ The two most common ways of navigating in mobile apps is through the use of *tab
 
 ## Tab-based Navigation
 
-The most common style of navigation in mobile apps is **tab-based navigation**. This can be tabs on the bottom of the screen or on the top below the header (or even instead of a header). The example is taken from this [guide](https://reactnavigation.org/docs/tab-based-navigation).
+The most common style of navigation in mobile apps is **tab-based navigation**. This can be tabs on the bottom of the screen or on the top below the header (or even instead of a header). The documentation can be found on this [page](https://reactnavigation.org/docs/bottom-tab-navigator).
 
 ### Setup
 
@@ -141,7 +141,7 @@ npx create-expo-app --template blank DrawerNavigation
 Install the dependencies via the `npm install` command:
 
 ```sh
-npm install @react-navigation/native @react-navigation/drawer react-native-screens react-native-safe-area-context react-native-gesture-handler react-native-reanimated@3.10.1
+npm install @react-navigation/native @react-navigation/drawer react-native-screens react-native-safe-area-context react-native-gesture-handler react-native-reanimated
 ```
 
 The `react-navigation/native` package allows us to use the stack navigator for our application, and the `react-navigation/drawer` allow us to create a drawer. We also need to use react-native-gesture-handler to allow us to use swiping.
