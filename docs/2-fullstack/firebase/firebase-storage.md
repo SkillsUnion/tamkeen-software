@@ -14,6 +14,8 @@ Firebase Storage is a convenient tool to store and retrieve user-generated files
 
 We start by reading the official Firebase Storage tutorials linked below. We will skip the Get Started page and come back to it when working on the relevant lesson.
 
+> Note: Firebase Storage is a free service; however, you need to add billing information (ie. credit card / other payment options) in order for you to access this Firebase feature.
+
 ### Create a Reference
 
 Here is the documentation about <a href="https://firebase.google.com/docs/storage/web/create-reference" target="_blank">Creating References</a>
