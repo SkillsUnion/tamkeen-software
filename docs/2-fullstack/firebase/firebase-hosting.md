@@ -38,3 +38,7 @@ If you are unable to access the Firebase Realtime Database or Firebase Storage f
 ## Optional: Firebase and ViteJS
 
 You can also check out how to use firebase for ViteJS applications using the ViteJS <a href="https://vitejs.dev/guide/static-deploy#google-firebase" target="_blank">documentation</a>
+
+## Exercise
+
+Choose one of your applications (using ViteJS or Create React App) and host it to Firebase.
