@@ -72,4 +72,6 @@ Please checkout the finished code in this <a href="https://github.com/skillsUnio
 
 If you want to test out the application on your machine you will need to have registered an Application on Firebase with Realtime Database and Storage activated. 
 
+To get the Firebase Credentials needed for our app to run, go to Project Settings -> Your app (adding an app if you haven't using the "Add App" and choose Web App) -> and check "npm" in the SDK setup and configuration option. You will get details such as the apiKey, authDomain, databaseURL, etc.
+
 Use the `sample.env` within the application to create an `.env` file with your Firebase credentials. With this in mind if you want to run the application on your machine you will need to install the dependencies with the command `npm install` after the installation you can then run the application with the command `npm run dev`.  Then open a browser of your choice and navigate to  http://localhost:5173.

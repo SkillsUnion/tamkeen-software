@@ -35,3 +35,10 @@ Here is the <a href="https://firebase.google.com/docs/rules/basics?authuser=0\&h
 
 When you have successfully setup firebase authentication you can update your security rules for Firebase storage.
 
+### Sample Implementation
+
+Please checkout the finished code in this <a href="https://github.com/skillsUnion/firebase-examples/tree/auth" target="_blank">repository</a>, ensure that you're on the `auth` branch. 
+
+If you want to test out the application on your machine you will need to have registered an Application on Firebase with Authentication activated. 
+
+Use the `sample.env` within the application to create an `.env` file with your Firebase credentials. With this in mind if you want to run the application on your machine you will need to install the dependencies with the command `npm install` after the installation you can then run the application with the command `npm run dev`.  Then open a browser of your choice and navigate to  http://localhost:5173.
