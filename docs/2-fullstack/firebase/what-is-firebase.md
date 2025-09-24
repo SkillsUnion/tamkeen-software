@@ -2,10 +2,31 @@
 
 ## Learning Objectives
 
-1. Know what is Firebase Realtime Database and what it is used for
-2. Set up Firebase Realtime Database with React Apps powered by Vitejs
+1. Know what is Firebase is and what features does it have
+2. Setup a Firebase Project and try some features
+2. Know what is Firebase Realtime Database and what it is used for
+3. Set up Firebase Realtime Database with React Apps powered by Vitejs
 
 ### Introduction
+
+[Firebase](https://firebase.google.com/) is a platform by Google and a collection of tools for building, improving, and growing web and mobile applications, also known as a Backend-as-a-Service (BaaS). It allows developers to focus on frontend development and user experience by managing backend services like databases, secure user authentication, cloud storage, and hosting.
+
+### Setting up a Firebase Project
+
+Go to Firebase's [console](https://console.firebase.google.com/u/0/) or Go to the homepage (making sure that you're logged in to your Google account) and click on the "Go to console" on the upper right side of the homepage.
+
+The console would allow developers to create a new project by inputting the necessary information and domain.
+
+<img src="../assets/firebase_console.JPG" width="50%"/>
+
+<img src="../assets/firebase_project.JPG" width="50%"/>
+
+After creating the project, the console will show the app and developers can explore the different features using the Build option on the left-hand side.
+
+<img src="../assets/firebase_app.JPG" width="50%"/>
+<img src="../assets/firebase_build.JPG" width="50%"/>
+
+### Firebase Realtime Database
 
 {% include youtube.html id="U5aeM5dvUpA" %}
 Firebase Realtime Database is a convenient tool to develop app prototypes. Source: Firebase
@@ -60,4 +81,6 @@ Please checkout the finished code in this <a href="https://github.com/skillsUnio
 
 If you want to test out the application on your machine you will need to have registered an Application on Firebase with Realtime Database activated. 
 
-Use the `sample.env` within the application to create an `.env` file with your Firebase credentials. With this in mind if you want to run the application on your machine you will need to install the dependencies with the command `npm install` after the installation you can then run the application with the command `npm run dev`. Then open a browser of your choice and navigate to  http://localhost:5173.
+To get the Firebase Credentials needed for our app to run, go to Project Settings -> Your app (adding an app if you haven't using the "Add App" and choose Web App) -> and check "npm" in the SDK setup and configuration option. You will get details such as the apiKey, authDomain, databaseURL, etc. 
+
+You can use the `sample.env` within the application to create an `.env` file with your Firebase credentials and call them in the `firebase.jsx` file. With this in mind if you want to run the application on your machine you will need to install the dependencies with the command `npm install` after the installation you can then run the application with the command `npm run dev`. Then open a browser of your choice and navigate to  http://localhost:5173.
