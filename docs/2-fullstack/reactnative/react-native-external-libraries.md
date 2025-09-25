@@ -108,11 +108,11 @@ export default function App() {
       <CameraView 
         onBarcodeScanned={scanned ? undefined : handleBarCodeScanned}
         style={StyleSheet.absoluteFillObject}
-        barcodeScannerSettings={{ //This property allows you to provide what kinds of barcodes/qr codes it will scan.
+        barcodeScannerSettings={ { //This property allows you to provide what kinds of barcodes/qr codes it will scan.
           barcodeTypes: ["qr", "pdf417", "code128"],
-        }}
+        } }
       />
-      {scanned && <Button title={'Tap to Scan Again'} onPress={() => setScanned(false)} />}
+      {scanned && <Button title={'Tap to Scan Again'} onPress={ () => setScanned(false) } />}
     </View>
   );
 }
