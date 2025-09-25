@@ -60,7 +60,7 @@ import { Text, View } from 'react-native';
 
 function HomeScreen() {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+    <View style={ { flex: 1, justifyContent: 'center', alignItems: 'center' } }>
       <Text>Home!</Text>
     </View>
   );
@@ -68,7 +68,7 @@ function HomeScreen() {
 
 function SettingsScreen() {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+    <View style={ { flex: 1, justifyContent: 'center', alignItems: 'center' } }>
       <Text>Settings!</Text>
     </View>
   );
@@ -93,7 +93,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 function HomeScreen() {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+    <View style={ { flex: 1, justifyContent: 'center', alignItems: 'center' } }>
       <Text>Home!</Text>
     </View>
   );
@@ -101,7 +101,7 @@ function HomeScreen() {
 
 function SettingsScreen() {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+    <View style={ { flex: 1, justifyContent: 'center', alignItems: 'center' } }>
       <Text>Settings!</Text>
     </View>
   );
@@ -158,7 +158,7 @@ import { Text, View } from 'react-native';
 
 function Feed() {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+    <View style={ { flex: 1, justifyContent: 'center', alignItems: 'center' } }>
       <Text>Feed!</Text>
     </View>
   );
@@ -166,7 +166,7 @@ function Feed() {
 
 function Article() {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+    <View style={ { flex: 1, justifyContent: 'center', alignItems: 'center' } }>
       <Text>Article!</Text>
     </View>
   );
@@ -187,7 +187,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 
 function Feed() {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+    <View style={ { flex: 1, justifyContent: 'center', alignItems: 'center' } }>
       <Text>Feed!</Text>
     </View>
   );
@@ -195,7 +195,7 @@ function Feed() {
 
 function Article() {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+    <View style={ { flex: 1, justifyContent: 'center', alignItems: 'center' } }>
       <Text>Article!</Text>
     </View>
   );
